@@ -1,0 +1,5 @@
+# update homebrew
+alias brewu='brew update && brew upgrade && brew doctor'
+
+# chrome, clear cache
+alias chromeclear='mv ~/Library/Caches/Google/Chrome/Default/* ~/.Trash/'
