@@ -6,3 +6,6 @@ alias chromeclear='mv ~/Library/Caches/Google/Chrome/Default/* ~/.Trash/'
 
 # cd to default Code directory
 alias cdcode='cd ~/Dropbox/Work/personal/code'
+
+# get high-quality version from youtube videos
+alias movhigh='movgrab -f mp4:1280'
