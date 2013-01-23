@@ -9,3 +9,9 @@ alias cdcode='cd ~/Dropbox/Work/personal/code'
 
 # get high-quality version from youtube videos
 alias movhigh='movgrab -f mp4:1280'
+
+# delete .DS_Store files
+alias dsdelete='find . -iname ".DS_Store" -delete'
+
+# delete empty files
+alias deleteempty='find . -type f -empty -delete'
