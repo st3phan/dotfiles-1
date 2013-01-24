@@ -14,4 +14,4 @@ alias movhigh='movgrab -f mp4:1280'
 alias dsdelete='find . -iname ".DS_Store" -delete'
 
 # delete empty files
-alias deleteempty='find . -type f -empty -delete'
+alias zerodelete='find . -type f -empty -delete'
