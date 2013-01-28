@@ -20,5 +20,5 @@ brew install brew-cask
 
 # Install apps and move them to /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew cask install alfred github keka skype sublime-text transmission
+brew cask install alfred github google-chrome keka skype sublime-text transmission
 brew cask linkapps
