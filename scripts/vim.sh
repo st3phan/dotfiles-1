@@ -7,11 +7,6 @@ curl -so ${HOME}/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pat
 # Get 'Solarized' colorscheme
 git clone git://github.com/altercation/vim-colors-solarized.git ${HOME}/.vim/bundle/vim-colors-solarized
 
-# Get 'Tomorrow-Theme'
-mkdir -p ${HOME}/.vim/colors
-git clone https://github.com/chriskempson/tomorrow-theme.git /tmp/Tomorrow-Theme/
-mv /tmp/Tomorrow-Theme/vim/colors/Tomorrow-Night.vim ${HOME}/.vim/colors/
-
 # Install plugins
 # vim-surroung
 git clone https://github.com/tpope/vim-surround.git ${HOME}/.vim/bundle/vim-surround

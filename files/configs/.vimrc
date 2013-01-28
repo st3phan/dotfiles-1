@@ -4,7 +4,6 @@ set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
 "colorscheme solarized " colorscheme
 "set background=dark " background
-colorscheme tomorrow-night
 set number " line numbers
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
