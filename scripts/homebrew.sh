@@ -12,6 +12,5 @@ brew install zsh --disable-etcdir
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
-brew cask install --appdir="~/Applications" 
-
-brew cask linkapps
+# Install apps and move them to /Applications
+brew cask install alfred github skype sublime-text transmission
