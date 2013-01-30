@@ -1,8 +1,12 @@
 #!/bin/bash
 
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/scripts/osx.sh | sh
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/scripts/homebrew.sh | sh
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/scripts/zsh.sh | sh
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/scripts/vim.sh | sh
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/scripts/other_installs.sh | sh
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/scripts/app_specific_configs.sh | sh
+git clone https://github.com/vitorgalvao/dotfiles.git /tmp/dotfiles/
+
+cat /tmp/dotfiles/osx.sh | sh
+cat /tmp/dotfiles/homebrew.sh | sh
+cat /tmp/dotfiles/zsh.sh | sh
+cat /tmp/dotfiles/vim.sh | sh
+cat /tmp/dotfiles/other_installs.sh | sh
+cat /tmp/dotfiles/app_specific_configs.sh | sh
+
+mv /tmp/dotfiles/manual/ ${HOME}/Desktop/

@@ -18,4 +18,4 @@ git clone https://github.com/vim-scripts/tComment.git ${HOME}/.vim/bundle/tComme
 git clone https://github.com/othree/html5.vim.git ${HOME}/.vim/bundle/html5.vim
 
 # dotfile
-curl -L https://raw.github.com/vitorgalvao/dotfiles/master/files/configs/.vimrc > ${HOME}/.vimrc
+mv /tmp/dotfiles/files/configs/.vimrc ${HOME}/
