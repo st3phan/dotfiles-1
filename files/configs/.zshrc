@@ -14,5 +14,6 @@ source $HOME/.zsh-alias
 # Set colors
 LSCOLORS=hxfxcxdxbxegedabagacad
 
-# Set PATH
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# Other settings
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export EDITOR="vim"
