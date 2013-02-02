@@ -1,3 +1,4 @@
+map s LinkHints.activateModeWithQueue
 map f LinkHints.activateModeToOpenInNewTab
 map d LinkHints.activateMode
 map j scrollPageDown
