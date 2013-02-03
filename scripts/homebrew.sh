@@ -19,7 +19,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-APPS_TO_INSTALL="alfred dropbox github google-chrome keka skype sublime-text transmission"
+APPS_TO_INSTALL="alfred dropbox flux github google-chrome keka skype sublime-text transmission"
 brew cask install ${APPS_TO_INSTALL}
 
 # Move .app files to /Applications/
