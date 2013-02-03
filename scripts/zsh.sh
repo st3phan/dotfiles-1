@@ -14,5 +14,5 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-
 curl -L https://github.com/vitorgalvao/dotfiles/raw/master/dotfiles/files/extras/oneend.zsh-theme > ${HOME}/.oh-my-zsh/themes/oneend.zsh-theme
 
 # dotfiles
-mv /tmp/dotfiles/files/configs/.zshrc ${HOME}/
-mv /tmp/dotfiles/files/configs/.zsh-alias ${HOME}/
+mv "/tmp/dotfiles/files/.zshrc" "${HOME}/"
+mv "/tmp/dotfiles/files/.zsh-alias" "${HOME}/"
