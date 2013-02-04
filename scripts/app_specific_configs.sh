@@ -43,3 +43,16 @@ defaults write org.m0k.transmission MagnetOpenAsk -bool false
 defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
+
+#############################
+### Mplayerx              ###
+#############################
+# Time in seconds to navigate when pressing left/right arrows
+defaults write org.niltsh.MPlayerX SeekStepTimeL -float -3
+defaults write org.niltsh.MPlayerX SeekStepTimeR -float +3
+
+# Menu key in Apple Remote toggles elapse/remaining time
+defaults write org.niltsh.MPlayerX ARMenuKeyTogTimeDisp -bool true
+
+# Show current time when paused
+defaults write org.niltsh.MPlayerX PauseShowTime -bool true
