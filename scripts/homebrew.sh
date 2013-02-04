@@ -24,7 +24,7 @@ APPS_TO_INSTALL="alfred dropbox f-lux github google-chrome keka mplayerx skype s
 brew cask install ${APPS_TO_INSTALL}
 
 # Move .app files to /Applications/
-for APP in $(echo ${APPS_TO_INSTALL})
+for APP in ${APPS_TO_INSTALL}
 do
 	mv /usr/local/Cellar/${APP}/*/*.app /Applications/
 done
@@ -32,7 +32,7 @@ done
 # Remove leftovers from /usr/bin/Cellar
 brew cask uninstall ${APPS_TO_INSTALL}
 
-for APP in $(echo ${APPS_TO_INSTALL})
+for APP in ${APPS_TO_INSTALL}
 do
 	mv /usr/local/Cellar/${APP}/ ${HOME}/.Trash/
 done
