@@ -16,4 +16,4 @@ LSCOLORS=hxfxcxdxbxegedabagacad
 
 # Other settings
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export EDITOR="vim"
+export EDITOR="subl"
