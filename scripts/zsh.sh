@@ -10,8 +10,8 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 mkdir -p ${HOME}/.oh-my-zsh/custom/plugins
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-# make 'oneend' theme
-curl -L https://github.com/vitorgalvao/dotfiles/raw/master/dotfiles/files/extras/oneend.zsh-theme > ${HOME}/.oh-my-zsh/themes/oneend.zsh-theme
+# add 'oneend' theme
+mv "/tmp/dotfiles/files/oneend.zsh-theme" "${HOME}/.oh-my-zsh/themes/"
 
 # dotfiles
 mv "/tmp/dotfiles/files/.zshrc" "${HOME}/"
