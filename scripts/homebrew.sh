@@ -35,3 +35,9 @@ for APP in $(echo ${APPS_TO_INSTALL})
 do
 	mv /usr/local/Cellar/${APP}/ ${HOME}/.Trash/
 done
+
+##############################
+### Cleanup cache          ###
+##############################
+brew cleanup --force -s
+rm -rf $(brew --cache)
