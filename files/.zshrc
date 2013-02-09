@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="oneend"
 
 # Plugins to load (in ~/.oh-my-zsh/plugins/*)
-plugins=(zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting)
 
 # Source other files
 source $ZSH/oh-my-zsh.sh
