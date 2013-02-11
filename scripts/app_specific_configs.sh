@@ -25,7 +25,7 @@ defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 
 # Maximum active transfers
 defaults write org.m0k.transmission Queue -bool true
-defaults write org.m0k.transmission QueueDownloadNumber -num 2
+defaults write org.m0k.transmission QueueDownloadNumber -int 2
 defaults write org.m0k.transmission QueueSeed -bool true
 
 # Define prompts
