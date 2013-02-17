@@ -12,6 +12,12 @@ brew install imagemagick --use-png --use-tiff
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
 brew install zsh --disable-etcdir
 
+# Install howdoi
+# This might be needed due to an error while installing (more information at https://github.com/gleitz/howdoi)
+sudo chmod -R go+w /Library/Python/2.7/site-packages/
+# Install
+brew install https://raw.github.com/gleitz/howdoi/master/howdoi.rb
+
 ##############################
 ### Brew cask              ###
 ##############################
