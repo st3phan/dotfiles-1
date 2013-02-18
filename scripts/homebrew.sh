@@ -32,7 +32,7 @@ brew cask install ${APPS_TO_INSTALL}
 # Move .app files to /Applications/
 for APP in ${APPS_TO_INSTALL}
 do
-	mv /usr/local/Cellar/${APP}/*/*.app /Applications/
+	mv /usr/local/Caskroom/${APP}/*/*.app /Applications/
 done
 
 # Remove leftovers from /usr/bin/Cellar
@@ -40,7 +40,7 @@ brew cask uninstall ${APPS_TO_INSTALL}
 
 for APP in ${APPS_TO_INSTALL}
 do
-	mv /usr/local/Cellar/${APP}/ ${HOME}/.Trash/
+	mv /usr/local/Caskroom/${APP}/ ${HOME}/.Trash/
 done
 
 ##############################
