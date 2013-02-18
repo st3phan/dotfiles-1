@@ -35,7 +35,7 @@ do
 	mv /usr/local/Caskroom/${APP}/*/*.app /Applications/
 done
 
-# Remove leftovers from /usr/bin/Cellar
+# Remove leftovers from /usr/bin/Caskroom/
 brew cask uninstall ${APPS_TO_INSTALL}
 
 for APP in ${APPS_TO_INSTALL}
