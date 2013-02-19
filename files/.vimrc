@@ -1,6 +1,7 @@
 call pathogen#infect() " starts pathogen
 
 set nocompatible " stops from behaving in a vi compatible way
+set backspace=indent,eol,start " makes backspace work like in most other apps
 syntax enable " color code syntax
 "colorscheme solarized " colorscheme
 "set background=dark " background
