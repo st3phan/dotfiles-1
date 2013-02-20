@@ -1,15 +1,15 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=${HOME}/.oh-my-zsh
 
 # Set name of the theme to load (in ~/.oh-my-zsh/themes/)
 ZSH_THEME="oneend"
 
-# Plugins to load (in ~/.oh-my-zsh/plugins/*)
+# Plugins to load (from oh-my-zsh)
 plugins=(git zsh-syntax-highlighting)
 
 # Source other files
-source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh-alias
+source ${ZSH}/oh-my-zsh.sh
+source ${HOME}/.zsh-alias
 
 # Set colors
 LSCOLORS=hxfxcxdxbxegedabagacad
