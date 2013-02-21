@@ -5,7 +5,7 @@ alias brewu='brew update && brew upgrade && brew doctor'
 alias brewfix='ls -l /usr/local/Library/Formula | grep phinze-cask | awk "{print $9}" | for evil_symlink in $(cat -); do rm -v /usr/local/Library/Formula/$evil_symlink; done'
 
 # Fix duplicates in “open with”
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
+alias openwithfix='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
 # cd to default Code directory
 alias cdc='cd ~/Dropbox/Work/personal/code'
