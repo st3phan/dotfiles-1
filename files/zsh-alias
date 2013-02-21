@@ -1,0 +1,48 @@
+# update homebrew
+alias brewu='brew update && brew upgrade && brew doctor'
+
+# fix homebrew-cask importing errors
+alias brewfix='ls -l /usr/local/Library/Formula | grep phinze-cask | awk "{print $9}" | for evil_symlink in $(cat -); do rm -v /usr/local/Library/Formula/$evil_symlink; done'
+
+# Fix duplicates in “open with”
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
+
+# cd to default Code directory
+alias cdc='cd ~/Dropbox/Work/personal/code'
+
+# cd to default Processing directory
+alias cdp='cd ~/Dropbox/Work/personal/processing'
+
+# get high-quality version from youtube videos
+alias movhigh='movgrab -t youtube -f mp4:1280'
+
+# delete .DS_Store files
+alias dsd='find . -iname ".DS_Store" -delete'
+
+# delete empty files
+alias zerod='find . -type f -empty -delete'
+
+# Alias for git
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+alias gc='git commit -v'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gcp='git cherry-pick'
+alias gd='git diff'
+alias gl='git log --graph --pretty=format":%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gm='git merge --no-ff'
+alias gmf='git merge --ff-only'
+alias gp='git push'
+alias gpoat='git push origin --all && git push origin --tags'
+alias gpl='git pull'
+alias gre='git remote'
+alias gr='git reset'
+alias grh='git reset --hard'
+alias gss='git status -s'
+alias gst='git status'
+alias gclean='git clean -ndx'
+alias gcleanf='git clean -dxf'
