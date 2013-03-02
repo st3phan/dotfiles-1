@@ -8,6 +8,7 @@ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # Install apps
 brew install atool lftp mediainfo mkvtoolnix movgrab mplayer trash tree vim
+brew install git --without-completions
 brew install imagemagick --use-png --use-tiff
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
 brew install zsh --disable-etcdir
