@@ -9,12 +9,6 @@ chmod +x /tmp/tiny-scripts/*
 mv /tmp/tiny-scripts/ /usr/local/bin/
 
 ##############################
-### cputhrottle            ###
-##############################
-curl 'http://www.willnolan.com/cputhrottle/cputhrottle.gz' | gunzip > /usr/local/bin/cputhrottle
-chmod +x /usr/local/bin/cputhrottle
-
-##############################
 ### SublimeTex2            ###
 ##############################
 # Call from CLI
