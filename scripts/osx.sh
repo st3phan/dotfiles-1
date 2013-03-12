@@ -58,6 +58,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Set the timezone; see `systemsetup -listtimezones` for other values
 systemsetup -settimezone "Europe/Lisbon" > /dev/null
 
+# Enable spell checking by default
+defaults write -g WebContinuousSpellCheckingEnabled -bool true
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
