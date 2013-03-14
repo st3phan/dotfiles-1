@@ -15,3 +15,10 @@ mv /tmp/tiny-scripts/ /usr/local/bin/
 ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl
 # Install personal preferences
 mv "/tmp/dotfiles/files/Preferences.sublime-settings" "${HOME}/Library/Application Support/Sublime Text 2/Packages/User/"
+
+##############################
+### Source Code Pro (font) ###
+##############################
+curl -L "http://sourceforge.net/projects/sourcecodepro.adobe/files/latest/download?source=dlp" -o /tmp/SourceCodePro.zip
+unzip /tmp/SourceCodePro.zip -d /tmp/
+mv /tmp/SourceCodePro_FontsOnly*/OTF/SourceCodePro-Regular.otf /Library/Fonts/
