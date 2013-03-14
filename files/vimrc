@@ -1,10 +1,10 @@
 call pathogen#infect() " starts pathogen
 
+set backspace=indent,eol,start
 set nocompatible " stops from behaving in a vi compatible way
-set backspace=indent,eol,start " makes backspace work like in most other apps
 syntax enable " color code syntax
-"colorscheme solarized " colorscheme
-"set background=dark " background
+colorscheme solarized " colorscheme
+set background=dark " background
 set number " line numbers
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
