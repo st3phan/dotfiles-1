@@ -7,7 +7,6 @@
 # Always edit placeholders
 defaults write com.shpakovski.mac.codebar AutoEditPlaceholders -bool YES
 
-
 #############################
 ### Transmission          ###
 #############################
@@ -56,3 +55,8 @@ defaults write org.niltsh.MPlayerX ARMenuKeyTogTimeDisp -bool true
 
 # Show current time when paused
 defaults write org.niltsh.MPlayerX PauseShowTime -bool true
+
+#############################
+### iTerm2                ###
+#############################
+mv "/tmp/dotfiles/files/iTerm2.plist" "${HOME}/Library/Preferences/com.googlecode.iterm2.plist"
