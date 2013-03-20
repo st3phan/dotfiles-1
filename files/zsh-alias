@@ -22,6 +22,9 @@ alias dsd='find . -iname ".DS_Store" -delete'
 # delete empty files
 alias zerod='find . -type f -empty -delete'
 
+# quicklook
+alias ql='qlmanage -p &>/dev/null'
+
 # Alias for git
 alias g='git'
 alias ga='git add'
