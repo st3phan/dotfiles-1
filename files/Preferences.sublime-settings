@@ -1,4 +1,10 @@
 {
+	// color scheme
 	"color_scheme": "Packages/Dayle Rees Color Schemes/Peacock.tmTheme",
-	"ignored_packages": []
+	// don't ignore "Vintage" (makes it act like vim)
+	"ignored_packages": [],
+	// ask before closing if there are unsaved changes
+	"hot_exit": false,
+	// don't remember last opened files on start
+    "remember_open_files": false
 }
