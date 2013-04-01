@@ -27,8 +27,11 @@ brew cask install ${APPS_TO_INSTALL}
 # Move .app files to /Applications/
 for APP in ${APPS_TO_INSTALL}
 do
-	mv /usr/local/Caskroom/${APP}/*/*.app /Applications/
+	find "/usr/local/Caskroom/${APP}" -iname "${APP}.app" -print0 | xargs -0 -I {} mv {} /Applications/
 done
+
+# Get mvim
+find /usr/local/Caskroom/macvim -iname "mvim" -exec mv -v "{}" /usr/local/bin/ \;
 
 # Remove leftovers from /usr/bin/Caskroom/
 brew cask uninstall ${APPS_TO_INSTALL}
