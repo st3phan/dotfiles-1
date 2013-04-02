@@ -11,6 +11,9 @@ plugins=(git zsh-syntax-highlighting)
 source ${ZSH}/oh-my-zsh.sh
 source ${HOME}/.zsh-alias
 
+# Disable autocorrect
+unsetopt correct_all
+
 # Set colors
 LSCOLORS=hxfxcxdxbxegedabagacad
 
