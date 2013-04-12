@@ -6,7 +6,7 @@
 	// ask before closing if there are unsaved changes
 	"hot_exit": false,
 	// don't remember last opened files on start
-    "remember_open_files": false,
-    // wrap lines by default
-    "word_wrap": "true"
+	"remember_open_files": false,
+	// wrap lines by default
+	"word_wrap": "true"
 }
