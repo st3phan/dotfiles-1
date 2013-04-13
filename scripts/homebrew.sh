@@ -24,7 +24,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-APPS_TO_INSTALL="alfred dropbox f-lux google-chrome google-chrome-canary keka macvim mplayerx skype spectacle sublime-text transmission xtra-finder"
+APPS_TO_INSTALL="alfred dropbox f-lux google-chrome google-chrome-canary keka macvim mplayerx skype spectacle sublime-text u-torrent xtra-finder"
 brew cask install ${APPS_TO_INSTALL}
 
 # Move .app files to /Applications/
