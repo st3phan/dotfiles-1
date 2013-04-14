@@ -13,7 +13,8 @@ Bundle 'sophacles/vim-processing'
 
 """""
 " general options
-set backspace=indent,eol,start
+set backspace=indent,eol,start " fixes backspace behaviour
+filetype plugin on " allows running commands from plugins
 set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
 colorscheme solarized " colorscheme
@@ -25,11 +26,17 @@ set autoindent " auto indent code
 set tabstop=4 " how many columns (spaces) a tab counts for
 set shiftwidth=4 " how many columns (spaces) text is reindented
 set incsearch " highlights search matches as they are typed
+set nofoldenable " disables code folding
 
 """""
-" set autocompletions
+" set autocompletions and language specific options
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" processing
+let g:use_processing_java=1 " uses processing_java to run skectches
+" map Ctrl+b to run skectches
+map <C-b> :call RunProcessing()<CR>
 
 """""
 " map the Tab key in a clever way for code completion
