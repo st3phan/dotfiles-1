@@ -36,7 +36,11 @@ nmap <leader><up> <C-w><up>
 nmap <leader><right> <C-w><right>
 nmap <leader><down> <C-w><down>
 nmap <leader><left> <C-w><left>
-" map <leader> + = to equalise equalise window size
+" map split window resizing options
+nmap <leader>+ <C-w>+
+nmap <leader>- <C-w>-
+nmap <leader>< <C-w><
+nmap <leader>> <C-w>>
 nmap <leader>= <C-w>=
 
 """""
