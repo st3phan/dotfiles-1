@@ -1,4 +1,4 @@
-" required options for vundle
+""""" required options for vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -12,7 +12,7 @@ Bundle 'othree/html5.vim'
 Bundle 'sophacles/vim-processing'
 
 """""
-" general options
+""""" general options
 set backspace=indent,eol,start " fixes backspace behaviour
 filetype plugin on " allows running commands from plugins
 set nocompatible " stops from behaving in a vi compatible way
@@ -29,14 +29,25 @@ set incsearch " highlights search matches as they are typed
 set nofoldenable " disables code folding
 
 """""
-" set autocompletions and language specific options
+""""" key mappings
+let mapleader=',' " maps '<leader>' to ','
+" map split window navigation to <leader> + arrow_direction
+nmap <leader><up> <C-w><up>
+nmap <leader><right> <C-w><right>
+nmap <leader><down> <C-w><down>
+nmap <leader><left> <C-w><left>
+" map <leader> + = to equalise equalise window size
+nmap <leader>= <C-w>=
+
+"""""
+""""" set autocompletions and language specific options
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " processing
 let g:use_processing_java=1 " uses processing_java to run skectches
-" map Ctrl+b to run skectches
-map <C-b> :call RunProcessing()<CR>
+" map <leader> + b to run skectches
+map <leader>b :call RunProcessing()<CR>
 
 """""
 " map the Tab key in a clever way for code completion
