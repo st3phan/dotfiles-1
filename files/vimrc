@@ -5,12 +5,13 @@ Bundle 'gmarik/vundle'
 
 " my bundles
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 " toggle comments by typing 'gc'
 Bundle 'vim-scripts/tComment'
 " html5 and inline svg omnicomplete funtion, indent and syntax
 Bundle 'othree/html5.vim'
 Bundle 'sophacles/vim-processing'
-" implements some of textmate's snippets features
+" textmate-style snippets
 Bundle 'msanders/snipmate.vim'
 " auto-close pairs like () and []
 Bundle 'Townk/vim-autoclose'
@@ -22,6 +23,10 @@ filetype plugin indent on " respects commands and indents from plugins and filet
 set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
 colorscheme solarized " colorscheme
+" coloscheme for macvim
+if has('gui_running')
+	colorscheme molokai
+endif
 set background=dark " background
 set number " line numbers
 set guioptions-=T " remove toolbar on GUI
@@ -49,6 +54,9 @@ nmap <leader>- <C-w>-
 nmap <leader>< <C-w><
 nmap <leader>> <C-w>>
 nmap <leader>= <C-w>=
+" map changing split windows from vertical to horizontal and the reverse
+nmap <leader>- <C-w>t <C-w>H
+nmap <leader>_ <C-w>t <C-w>K
 " show and hide invisibles (tabs, EOL)
 nmap <leader>i :set list!<cr>
 
