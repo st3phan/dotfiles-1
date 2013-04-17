@@ -24,12 +24,15 @@ set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
 set autoindent " auto indent code
 set tabstop=4 " how many columns (spaces) a tab counts for
+set softtabstop=4 " how many columns (spaces) a tab will convert to
 set shiftwidth=4 " how many columns (spaces) text is reindented
 set incsearch " highlights search matches as they are typed
 set nofoldenable " disables code folding
+set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
 
 """""
-""""" key mappings
+""""" mappings
+" key mappings
 let mapleader=',' " maps '<leader>' to ','
 " map split window navigation to <leader> + arrow_direction
 nmap <leader><up> <C-w><up>
@@ -42,6 +45,8 @@ nmap <leader>- <C-w>-
 nmap <leader>< <C-w><
 nmap <leader>> <C-w>>
 nmap <leader>= <C-w>=
+" show and hide invisibles (tabs, EOL)
+nmap <leader>i :set list!<cr>
 
 """""
 """"" set autocompletions and language specific options
