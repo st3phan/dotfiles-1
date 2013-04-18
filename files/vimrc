@@ -5,7 +5,6 @@ Bundle 'gmarik/vundle'
 
 " my bundles
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'tomasr/molokai'
 " toggle comments by typing 'gc'
 Bundle 'vim-scripts/tComment'
 " html5 and inline svg omnicomplete funtion, indent and syntax
@@ -23,10 +22,6 @@ filetype plugin indent on " respects commands and indents from plugins and filet
 set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
 colorscheme solarized " colorscheme
-" coloscheme for macvim
-if has('gui_running')
-	colorscheme molokai
-endif
 set background=dark " background
 set number " line numbers
 set guioptions-=T " remove toolbar on GUI
