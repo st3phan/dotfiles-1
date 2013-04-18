@@ -14,6 +14,8 @@ Bundle 'sophacles/vim-processing'
 Bundle 'msanders/snipmate.vim'
 " auto-close pairs like () and []
 Bundle 'Townk/vim-autoclose'
+" multiple cursors
+Bundle 'terryma/vim-multiple-cursors'
 
 """""
 """"" general options
@@ -56,7 +58,7 @@ nmap <leader>_ <C-w>t <C-w>K
 nmap <leader>i :set list!<cr>
 
 """""
-""""" set autocompletions and language specific options
+""""" set autocompletions and language-specific options
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
