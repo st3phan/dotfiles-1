@@ -25,6 +25,9 @@ alias zerod='find . -type f -empty -delete'
 # quicklook
 alias ql='qlmanage -p &>/dev/null'
 
+# fix file and directory permissions
+fixpermissions() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f -exec chmod 644 {} \; }
+
 # Alias for git
 alias g='git'
 alias ga='git add'
