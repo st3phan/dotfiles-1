@@ -4,6 +4,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " my bundles
+" themes
+Bundle 'nelstrom/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 " toggle comments by typing 'gc'
 Bundle 'tpope/vim-commentary'
@@ -41,6 +43,10 @@ filetype plugin indent on " respects commands and indents from plugins and filet
 set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
 colorscheme solarized " colorscheme
+" theme for GUI
+if has ('gui_running')
+	colorscheme blackboard
+endif
 set background=dark " background
 set number " line numbers
 set ruler " show the line number on the bar
