@@ -47,6 +47,7 @@ set ruler " show the line number on the bar
 set autoread " watch for file changes
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
+set guifont=Source\ Code\ Pro:h11 " font on GUI (macvim)
 set autoindent " auto indent code
 set tabstop=4 " how many columns (spaces) a tab counts for
 set softtabstop=4 " how many columns (spaces) a tab will convert to
