@@ -9,6 +9,8 @@ Bundle 'nelstrom/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 " toggle comments by typing 'gc'
 Bundle 'tpope/vim-commentary'
+" surround text with pairs like (), for example by visually selecting and doing S}
+Bundle 'tpope/vim-surround'
 " html5 and inline svg omnicomplete funtion, indent and syntax
 Bundle 'othree/html5.vim'
 " haml and sass support
@@ -61,6 +63,10 @@ set shiftwidth=4 " how many columns (spaces) text is reindented
 set incsearch " highlights search matches as they are typed
 set nofoldenable " disables code folding
 set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
+" source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 """""
 """"" mappings
@@ -80,8 +86,13 @@ nmap <leader>= <C-w>=
 " map changing split windows from vertical to horizontal and the reverse
 nmap <leader>- <C-w>t <C-w>H
 nmap <leader>_ <C-w>t <C-w>K
+" navigate between tabs like in chrome
+map <D-A-right> gt
+map <D-A-left> gT
 " show and hide invisibles (tabs, EOL)
 nmap <leader>i :set list!<cr>
+" Toggle spell checking on and off with '<leader>s' and set region to en_gb
+nmap <silent> <leader>s :set spell!<CR>:set spelllang=en_gb<CR>
 
 """""
 """"" set autocompletions and language-specific options
@@ -92,21 +103,3 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 let g:use_processing_java=1 " uses processing_java to run skectches
 " map <leader> + b to run skectches
 map <leader>b :call RunProcessing()<CR>
-
-"""""
-" map the Tab key in a clever way for code completion
-" function! SuperCleverTab()
-"     if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
-"         return "\<Tab>"
-"     else
-"         if &omnifunc != ''
-"             return "\<C-X>\<C-O>"
-"         elseif &dictionary != ''
-"             return "\<C-K>"
-"         else
-"             return "\<C-N>"
-"         endif
-"     endif
-" endfunction
-
-" inoremap <Tab> <C-R>=SuperCleverTab()<cr>
