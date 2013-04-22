@@ -11,12 +11,14 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-commentary'
 " surround text with pairs like (), for example by visually selecting and doing S}
 Bundle 'tpope/vim-surround'
-" html5 and inline svg omnicomplete funtion, indent and syntax
-Bundle 'othree/html5.vim'
 " haml and sass support
 Bundle 'tpope/vim-haml'
 " markdown syntax
 Bundle 'tpope/vim-markdown'
+" some handy mappings (useful for text bubbling — see custom mappings down)
+Bundle 'tpope/vim-unimpaired'
+" html5 and inline svg omnicomplete funtion, indent and syntax
+Bundle 'othree/html5.vim'
 " processing bundle
 Bundle 'sophacles/vim-processing'
 " textmate-style snippets
@@ -70,7 +72,6 @@ endif
 
 """""
 """"" mappings
-" key mappings
 let mapleader=',' " maps '<leader>' to ','
 " map split window navigation to <leader> + arrow_direction
 nmap <leader><up> <C-w><up>
@@ -95,11 +96,19 @@ nmap <leader>i :set list!<cr>
 nmap <silent> <leader>s :set spell!<CR>:set spelllang=en_gb<CR>
 
 """""
-""""" set autocompletions and language-specific options
+""""" set autocompletions and plugin-specific options
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
-" processing
+" sophacles/vim-processing
 let g:use_processing_java=1 " uses processing_java to run skectches
 " map <leader> + b to run skectches
 map <leader>b :call RunProcessing()<CR>
+
+" tpope/unimpaired
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
