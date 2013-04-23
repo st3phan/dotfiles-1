@@ -92,8 +92,10 @@ map <D-A-right> gt
 map <D-A-left> gT
 " show and hide invisibles (tabs, EOL)
 nmap <leader>i :set list!<cr>
-" Toggle spell checking on and off with '<leader>s' and set region to en_gb
-nmap <silent> <leader>s :set spell!<CR>:set spelllang=en_gb<CR>
+" toggle spell checking on and off with '<leader>s' and set region to en_gb
+nmap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
+" toggle search highlight with <leader>h
+nmap <leader>h :set hlsearch!<cr>
 
 """""
 """"" set autocompletions and plugin-specific options
