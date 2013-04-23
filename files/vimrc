@@ -33,6 +33,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 " insert mode completions with <tab>
 Bundle 'ervandew/supertab'
+" more intuitive interface for the undo tree, call with :GundoToggle
+Bundle 'sjl/gundo.vim'
 " syntax checker
 Bundle 'scrooloose/syntastic'
 " extend motions (eg <leader><leader>w)
