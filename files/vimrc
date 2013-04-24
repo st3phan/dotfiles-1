@@ -5,8 +5,9 @@ Bundle 'gmarik/vundle'
 
 " my bundles
 " themes
-Bundle 'nelstrom/vim-blackboard'
+Bundle 'chriskempson/tomorrow-theme', { 'rtp': 'vim/' }
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'morhetz/gruvbox'
 " toggle comments by typing 'gc'
 Bundle 'tpope/vim-commentary'
 " surround text with pairs like (), for example by visually selecting and doing S}
@@ -51,9 +52,9 @@ filetype plugin indent on " respects commands and indents from plugins and filet
 set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
 colorscheme solarized " colorscheme
-" theme for GUI
+" colorscheme for GUI
 if has ('gui_running')
-	colorscheme blackboard
+	colorscheme gruvbox
 endif
 set background=dark " background
 set number " line numbers
