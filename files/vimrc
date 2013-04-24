@@ -17,6 +17,8 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 " some handy mappings (useful for text bubbling — see custom mappings down)
 Bundle 'tpope/vim-unimpaired'
+" git wrapper
+Bundle 'tpope/vim-fugitive'
 " html5 and inline svg omnicomplete funtion, indent and syntax
 Bundle 'othree/html5.vim'
 " processing bundle
