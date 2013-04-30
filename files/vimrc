@@ -26,6 +26,8 @@ Bundle 'othree/html5.vim'
 Bundle 'sophacles/vim-processing'
 " textmate-style snippets
 Bundle 'msanders/snipmate.vim'
+" visually select text and press '*' and '#' to search for it
+Bundle 'nelstrom/vim-visual-star-search'
 " auto-close pairs like () and []
 Bundle 'Townk/vim-autoclose'
 " multiple cursors
