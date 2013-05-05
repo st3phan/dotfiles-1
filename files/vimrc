@@ -56,7 +56,7 @@ syntax enable " color code syntax
 colorscheme solarized " colorscheme
 " colorscheme for GUI
 if has ('gui_running')
-	colorscheme gruvbox
+colorscheme gruvbox
 endif
 set background=dark " background
 set number " line numbers
@@ -74,7 +74,7 @@ set nofoldenable " disables code folding
 set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
 " source the vimrc file after saving it
 if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
 """""
@@ -103,6 +103,8 @@ nmap <leader>i :set list!<cr>
 nmap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
 " toggle search highlight with <leader>h
 nmap <leader>h :set hlsearch!<cr>
+" type 'N' to type normal mode commands in command mode
+nmap N :normal 
 
 """""
 """"" set autocompletions and plugin-specific options
