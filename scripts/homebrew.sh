@@ -7,7 +7,7 @@
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # Install apps
-brew install atool cpulimit iterm2 lftp macvim mediainfo mkvtoolnix mplayer trash tree vim
+brew install atool cpulimit iterm2 lftp mediainfo mkvtoolnix mplayer trash tree vim
 brew install git --without-completions
 brew install imagemagick --with-libtiff --with-librsvg
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
@@ -21,7 +21,18 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-brew cask install air-server alfred avidemux dropbox f-lux google-chrome google-chrome-canary instacast keka mplayerx path-finder processing skype spectacle steam u-torrent xscope
+appsToInstall="air-server alfred avidemux dropbox f-lux google-chrome google-chrome-canary instacast keka macvim mplayerx path-finder processing skype spectacle steam u-torrent xscope"
+
+brew cask "${appsToInstall}"
+
+# Copy apps to /Applications/
+for app in $(readlink ${HOME}/Applications/*); do
+	mv "${app}" "/Applications/"
+done
+
+# Remove them from homebrew-cask's directory
+brew cask uninstall ${appsToInstall}
+rm -r "/opt/homebrew-cask/Caskroom/*"
 
 ##############################
 ### Cleanup cache          ###
