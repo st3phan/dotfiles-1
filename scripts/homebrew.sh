@@ -17,6 +17,7 @@ brew install zsh --disable-etcdir
 ### Brew cask              ###
 ##############################
 # Install brew cask
+caskroom="/opt/homebrew-cask/Caskroom"
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
@@ -30,9 +31,12 @@ for app in $(readlink ${HOME}/Applications/*); do
 	mv "${app}" "/Applications/"
 done
 
+# Get mvim
+cp "${caskroom}/macvim/*/*/mvim" "/usr/local/bin/"
+
 # Remove them from homebrew-cask's directory
 brew cask uninstall ${appsToInstall}
-rm -r "/opt/homebrew-cask/Caskroom/*"
+rm -r "${caskroom}/*"
 
 ##############################
 ### Cleanup cache          ###
