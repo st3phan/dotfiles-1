@@ -14,6 +14,8 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-surround'
 " haml and sass support
 Bundle 'tpope/vim-haml'
+" jade support
+Bundle 'digitaltoad/vim-jade'
 " markdown syntax
 Bundle 'tpope/vim-markdown'
 " some handy mappings (useful for text bubbling — see custom mappings down)
