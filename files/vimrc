@@ -105,6 +105,11 @@ nmap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
 nmap <leader>h :set hlsearch!<cr>
 " type 'N' to type normal mode commands in command mode
 nmap N :normal 
+" make ' behave like ` to prevent weird keyboard issues
+nmap ' `
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
 
 """""
 """"" set autocompletions and plugin-specific options
