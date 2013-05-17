@@ -99,6 +99,9 @@ nmap <leader>_ <C-w>t <C-w>K
 " navigate between tabs like in chrome
 map <D-A-right> gt
 map <D-A-left> gT
+" go back and forth on the jumplist
+nnoremap g<left> <C-o>
+nnoremap g<right> <C-i>
 " show and hide invisibles (tabs, EOL)
 nmap <leader>i :set list!<cr>
 " toggle spell checking on and off with '<leader>s' and set region to en_gb
