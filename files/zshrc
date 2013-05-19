@@ -10,6 +10,7 @@ plugins=(git zsh-syntax-highlighting)
 # Source other files
 source ${ZSH}/oh-my-zsh.sh
 source ${HOME}/.zsh-alias
+source ${HOME}/.rvm/scripts/rvm
 
 # Disable autocorrect
 unsetopt correct_all
@@ -18,5 +19,5 @@ unsetopt correct_all
 LSCOLORS=hxfxcxdxbxegedabagacad
 
 # Other settings
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:$PATH"
 export EDITOR="vim"
