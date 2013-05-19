@@ -49,3 +49,6 @@ rm -rf $(brew --cache)
 ##############################
 # Install rvm
 curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+
+# Install some gems
+gem install cloudapp
