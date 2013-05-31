@@ -22,7 +22,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-appsToInstall="air-server alfred avidemux dropbox f-lux google-chrome google-chrome-canary instacast keka macvim mplayerx path-finder processing skype spectacle steam u-torrent xscope"
+appsToInstall="air-server alfred avidemux codekit dropbox f-lux google-chrome google-chrome-canary instacast keka macvim mplayerx path-finder processing skype spectacle steam u-torrent xscope"
 
 brew cask "${appsToInstall}"
 
