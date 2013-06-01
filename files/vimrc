@@ -12,16 +12,16 @@ Bundle 'morhetz/gruvbox'
 Bundle 'tpope/vim-commentary'
 " surround text with pairs like (), for example by visually selecting and doing S}
 Bundle 'tpope/vim-surround'
-" haml and sass support
-Bundle 'tpope/vim-haml'
-" jade support
-Bundle 'digitaltoad/vim-jade'
-" markdown syntax
-Bundle 'tpope/vim-markdown'
 " some handy mappings (useful for text bubbling — see custom mappings down)
 Bundle 'tpope/vim-unimpaired'
 " git wrapper
 Bundle 'tpope/vim-fugitive'
+" markdown syntax
+Bundle 'tpope/vim-markdown'
+" jade syntax
+Bundle 'digitaltoad/vim-jade'
+" scss syntax
+Bundle 'cakebaker/scss-syntax.vim'
 " html5 and inline svg omnicomplete funtion, indent and syntax
 Bundle 'othree/html5.vim'
 " processing bundle
@@ -58,7 +58,7 @@ syntax enable " color code syntax
 colorscheme solarized " colorscheme
 " colorscheme for GUI
 if has ('gui_running')
-colorscheme gruvbox
+	colorscheme gruvbox
 endif
 set background=dark " background
 set number " line numbers
@@ -81,7 +81,6 @@ endif
 
 """""
 """"" mappings
-let mapleader=',' " maps '<leader>' to ','
 " map split window navigation to <leader> + arrow_direction
 nmap <leader><up> <C-w><up>
 nmap <leader><right> <C-w><right>
@@ -93,6 +92,8 @@ nmap <leader>- <C-w>-
 nmap <leader>< <C-w><
 nmap <leader>> <C-w>>
 nmap <leader>= <C-w>=
+" map exchange window with its neighbour
+nmap <leader>x <C-w>x
 " map changing split windows from vertical to horizontal and the reverse
 nmap <leader>- <C-w>t <C-w>H
 nmap <leader>_ <C-w>t <C-w>K
@@ -108,8 +109,8 @@ nmap <leader>i :set list!<cr>
 nmap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
 " toggle search highlight with <leader>h
 nmap <leader>h :set hlsearch!<cr>
-" type 'N' to type normal mode commands in command mode
-nmap N :normal 
+" type 'NO' to type normal mode commands in command mode
+nmap NO :normal 
 " make ' behave like ` to prevent weird keyboard issues
 nmap ' `
 " delete without yanking
@@ -133,3 +134,6 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" run 'Codekit' to change some settings that may trip Codekit
+command Codekit set nobackup | set nowritebackup | set noswapfile
