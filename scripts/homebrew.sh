@@ -27,8 +27,8 @@ appsToInstall="air-server alfred avidemux codekit dropbox f-lux google-chrome go
 brew cask install "${appsToInstall}"
 
 # Copy apps to /Applications/
-for app in $(readlink ${HOME}/Applications/*); do
-	mv "${app}" "/Applications/"
+for app in "$(readlink ${HOME}/Applications/*)"; do
+	cp -r "${app}" "/Applications/"
 done
 
 # Get mvim
