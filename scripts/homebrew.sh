@@ -24,7 +24,7 @@ brew install brew-cask
 # Install apps
 appsToInstall="air-server alfred avidemux codekit dropbox f-lux google-chrome google-chrome-canary instacast keka macvim mplayerx path-finder processing skype spectacle steam u-torrent xscope"
 
-brew cask "${appsToInstall}"
+brew cask install "${appsToInstall}"
 
 # Copy apps to /Applications/
 for app in $(readlink ${HOME}/Applications/*); do
