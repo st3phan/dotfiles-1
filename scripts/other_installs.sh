@@ -9,6 +9,15 @@ chmod +x "/tmp/tiny-scripts/*"
 mv "/tmp/tiny-scripts/" "/usr/local/bin/"
 
 ##############################
+### RVM                    ###
+##############################
+# Install rvm
+curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+
+# Install some gems
+gem install cloudapp
+
+##############################
 ### Source Code Pro (font) ###
 ##############################
 curl -L "http://sourceforge.net/projects/sourcecodepro.adobe/files/latest/download?source=dlp" -o "/tmp/SourceCodePro.zip"

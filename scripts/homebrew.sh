@@ -41,12 +41,3 @@ rm -r "${caskroom}/*"
 ##############################
 brew cleanup --force -s
 rm -rf $(brew --cache)
-
-##############################
-### RVM                    ###
-##############################
-# Install rvm
-curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
-
-# Install some gems
-gem install cloudapp
