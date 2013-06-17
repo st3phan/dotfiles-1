@@ -6,7 +6,7 @@
 git clone "https://github.com/vitorgalvao/tiny-scripts.git" "/tmp/tiny-scripts/"
 rm "/tmp/tiny-scripts/README.md"
 chmod +x "/tmp/tiny-scripts/*"
-mv "/tmp/tiny-scripts/*" "/usr/local/bin/"
+mv /tmp/tiny-scripts/* /usr/local/bin/
 
 ##############################
 ### RVM                    ###
