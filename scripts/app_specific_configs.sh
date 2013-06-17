@@ -1,6 +1,12 @@
 #!/bin/bash
 
 #############################
+### Git                   ###
+#############################
+# Tell git to use osxkeychain
+git config --global credential.helper osxkeychain
+
+#############################
 ### Mplayerx              ###
 #############################
 # Time in seconds to navigate when pressing left/right arrows
