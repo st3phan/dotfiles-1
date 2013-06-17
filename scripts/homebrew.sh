@@ -27,12 +27,10 @@ appsToInstall="air-server alfred avidemux codekit dropbox f-lux google-chrome go
 brew cask install ${appsToInstall}
 
 # Copy apps to /Applications/
-for app in "$(readlink ${HOME}/Applications/*)"; do
-	cp -r "${app}" "/Applications/"
-done
+readlink ${HOME}/Applications/* | xargs -I {} cp -R {} /Applications/
 
 # Get mvim
-cp "${caskroom}/macvim/*/*/mvim" "/usr/local/bin/"
+find ${caskroom} -iname 'mvim' -exec cp {} "/usr/local/bin/" \;
 
 # Remove them from homebrew-cask's directory
 brew cask uninstall ${appsToInstall}
