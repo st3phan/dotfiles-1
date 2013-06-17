@@ -34,7 +34,7 @@ find ${caskroom} -iname 'mvim' -exec cp {} "/usr/local/bin/" \;
 
 # Remove them from homebrew-cask's directory
 brew cask uninstall ${appsToInstall}
-rm -r "${caskroom}/*"
+rm -r ${caskroom}/*
 
 ##############################
 ### Cleanup cache          ###
