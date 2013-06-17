@@ -1,0 +1,1 @@
+{"www.youtube.com":{"_enabled":true,"_rules":{"#all-comments, #comments-view div h4, #comments-view hr, .comments-post-alert, .comments-pagination, .live-comments-setting":{"display":"none"}}}}
