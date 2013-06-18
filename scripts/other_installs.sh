@@ -16,6 +16,7 @@ curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
 
 # Install some gems
 gem install cloudapp
+gem install sass bourbon neat
 
 ##############################
 ### Source Code Pro (font) ###
