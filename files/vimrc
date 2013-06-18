@@ -5,7 +5,6 @@ Bundle 'gmarik/vundle'
 
 " my bundles
 " themes
-Bundle 'chriskempson/tomorrow-theme', { 'rtp': 'vim/' }
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'morhetz/gruvbox'
 " toggle comments by typing 'gc'
