@@ -59,13 +59,13 @@ colorscheme solarized " colorscheme
 if has ('gui_running')
 	colorscheme gruvbox
 endif
+set guioptions-=T " remove toolbar on GUI
+set guioptions-=r " remove right-hand scroll bar on GUI
+set guifont=Source\ Code\ Pro:h11 " font on GUI (macvim)
 set background=dark " background
 set number " line numbers
 set ruler " show the line number on the bar
 set autoread " watch for file changes
-set guioptions-=T " remove toolbar on GUI
-set guioptions-=r " remove right-hand scroll bar on GUI
-set guifont=Source\ Code\ Pro:h11 " font on GUI (macvim)
 set autoindent " auto indent code
 set tabstop=4 " how many columns (spaces) a tab counts for
 set softtabstop=4 " how many columns (spaces) a tab will convert to
@@ -75,7 +75,7 @@ set nofoldenable " disables code folding
 set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
 " source the vimrc file after saving it
 if has("autocmd")
-autocmd bufwritepost .vimrc source $MYVIMRC
+	autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
 """""
@@ -117,10 +117,7 @@ nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
 """""
-""""" set autocompletions and plugin-specific options
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
+""""" set plugin-specific options
 " sophacles/vim-processing
 let g:use_processing_java=1 " uses processing_java to run skectches
 " map <leader> + b to run skectches
