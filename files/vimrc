@@ -25,8 +25,10 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'othree/html5.vim'
 " processing bundle
 Bundle 'sophacles/vim-processing'
-" textmate-style snippets
-Bundle 'msanders/snipmate.vim'
+" textmate-style snippets (first two are dependencies)
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
 " visually select text and press '*' and '#' to search for it
 Bundle 'nelstrom/vim-visual-star-search'
 " auto-close pairs like () and []
@@ -37,8 +39,8 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kien/ctrlp.vim'
 " directory tree explorer
 Bundle 'scrooloose/nerdtree'
-" insert mode completions with <tab>
-Bundle 'ervandew/supertab'
+" automatically open popup menu for completions
+Bundle 'vim-scripts/AutoComplPop'
 " more intuitive interface for the undo tree, call with :GundoToggle
 Bundle 'sjl/gundo.vim'
 " syntax checker
