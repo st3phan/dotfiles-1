@@ -83,21 +83,21 @@ endif
 """""
 """"" mappings
 " map split window navigation to <leader> + arrow_direction
-nmap <leader><up> <C-w><up>
-nmap <leader><right> <C-w><right>
-nmap <leader><down> <C-w><down>
-nmap <leader><left> <C-w><left>
+nnoremap <leader><up> <C-w><up>
+nnoremap <leader><right> <C-w><right>
+nnoremap <leader><down> <C-w><down>
+nnoremap <leader><left> <C-w><left>
 " map split window resizing options
-nmap <leader>+ <C-w>+
-nmap <leader>- <C-w>-
-nmap <leader>< <C-w><
-nmap <leader>> <C-w>>
-nmap <leader>= <C-w>=
+nnoremap <leader>+ <C-w>+
+nnoremap <leader>- <C-w>-
+nnoremap <leader>< <C-w><
+nnoremap <leader>> <C-w>>
+nnoremap <leader>= <C-w>=
 " map exchange window with its neighbour
-nmap <leader>x <C-w>x
+nnoremap <leader>x <C-w>x
 " map changing split windows from vertical to horizontal and the reverse
-nmap <leader>- <C-w>t <C-w>H
-nmap <leader>_ <C-w>t <C-w>K
+nnoremap <leader>- <C-w>t <C-w>H
+nnoremap <leader>_ <C-w>t <C-w>K
 " navigate between tabs like in chrome
 map <D-A-right> gt
 map <D-A-left> gT
@@ -105,18 +105,24 @@ map <D-A-left> gT
 nnoremap g<left> <C-o>
 nnoremap g<right> <C-i>
 " show and hide invisibles (tabs, EOL)
-nmap <leader>i :set list!<cr>
+nnoremap <leader>i :set list!<cr>
 " toggle spell checking on and off with '<leader>s' and set region to en_gb
-nmap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
+nnoremap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
 " toggle search highlight with <leader>h
-nmap <leader>h :set hlsearch!<cr>
+nnoremap <leader>h :set hlsearch!<cr>
 " type 'NO' to type normal mode commands in command mode
-nmap NO :normal 
+nnoremap NO :normal 
 " make ' behave like ` to prevent weird keyboard issues
-nmap ' `
+nnoremap ' `
+" prevent issues with ~ when using it to toggle case
+nnoremap ~ ~<space>
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
+" with the cursor over a class name, press <leader>c to go to the class on the css/sass
+nnoremap <leader>c :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cnext<CR>
+" then press <leader>n to step through the quick-fix list results
+nnoremap <leader>n :cn<CR>
 
 """""
 """"" set plugin-specific options
