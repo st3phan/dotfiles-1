@@ -127,6 +127,7 @@ map <leader>b :call RunProcessing()<CR>
 
 " Shougo/neocomplcache.vim
 let g:neocomplcache_enable_at_startup=1 " executes it at startup
+let g:neocomplcache_enable_auto_select=1 " highlights the first match by default
 
 " tpope/unimpaired
 " Bubble single lines
