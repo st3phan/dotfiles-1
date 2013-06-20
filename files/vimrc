@@ -32,7 +32,7 @@ Bundle "garbas/vim-snipmate"
 " visually select text and press '*' and '#' to search for it
 Bundle 'nelstrom/vim-visual-star-search'
 " auto-close pairs like () and []
-Bundle 'Townk/vim-autoclose'
+Bundle 'vim-scripts/AutoClose'
 " multiple cursors
 Bundle 'terryma/vim-multiple-cursors'
 " fuzzy file finder
