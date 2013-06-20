@@ -40,7 +40,7 @@ Bundle 'kien/ctrlp.vim'
 " directory tree explorer
 Bundle 'scrooloose/nerdtree'
 " automatically open popup menu for completions
-Bundle 'vim-scripts/AutoComplPop'
+Bundle 'Shougo/neocomplcache.vim'
 " more intuitive interface for the undo tree, call with :GundoToggle
 Bundle 'sjl/gundo.vim'
 " syntax checker
@@ -124,6 +124,9 @@ vnoremap <leader>d "_d
 let g:use_processing_java=1 " uses processing_java to run skectches
 " map <leader> + b to run skectches
 map <leader>b :call RunProcessing()<CR>
+
+" Shougo/neocomplcache.vim
+let g:neocomplcache_enable_at_startup=1 " executes it at startup
 
 " tpope/unimpaired
 " Bubble single lines
