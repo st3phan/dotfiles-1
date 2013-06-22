@@ -143,5 +143,5 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-" run 'Codekit' to change some settings that may trip Codekit
-command Codekit set nobackup | set nowritebackup | set noswapfile
+" Change some settings that may trip Codekit
+autocmd FileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
