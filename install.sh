@@ -1,7 +1,7 @@
 #!/bin/bash
 
 open "http://developer.apple.com/downloads"
-read -p "Homebrew needs Xcode's CLI tools. Download them and press return to continue"
+read -p "Homebrew needs Xcode's CLI tools. Download and install them and press return to continue"
 
 git clone https://github.com/vitorgalvao/dotfiles.git /tmp/dotfiles/
 
