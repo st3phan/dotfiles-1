@@ -11,8 +11,8 @@ map s toggleViewSource
 
 map j scrollPageDown
 map k scrollPageUp
-map gg scrollFullPageUp
-map G scrollFullPageDown
+map gg scrollToTop
+map G scrollToBottom
 
 map o Vomnibar.activate
 map O Vomnibar.activateTabSelection
@@ -32,3 +32,5 @@ map t createTab
 map T duplicateTab
 map x removeTab
 map X restoreTab
+
+map ? showHelp
