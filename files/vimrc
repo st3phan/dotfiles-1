@@ -68,7 +68,7 @@ set background=dark " background
 set number " line numbers
 set ruler " show the line number on the bar
 set autoread " watch for file changes
-set autoindent " auto indent code
+set autoindent " auto-indent code
 set tabstop=4 " how many columns (spaces) a tab counts for
 set softtabstop=4 " how many columns (spaces) a tab will convert to
 set shiftwidth=4 " how many columns (spaces) text is reindented
@@ -99,8 +99,8 @@ nnoremap <leader>x <C-w>x
 nnoremap <leader>- <C-w>t <C-w>H
 nnoremap <leader>_ <C-w>t <C-w>K
 " navigate between tabs like in chrome
-map <D-A-right> gt
-map <D-A-left> gT
+noremap <D-A-right> gt
+noremap <D-A-left> gT
 " go back and forth on the jumplist
 nnoremap g<left> <C-o>
 nnoremap g<right> <C-i>
@@ -119,6 +119,8 @@ nnoremap ~ ~<space>
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
+" press <leader>p to paste from the clipboard, ignoring auto-indent
+nnoremap <leader>p :set paste<cr>"+p:set nopaste<cr>
 " with the cursor over a class name, press <leader>c to go to the class on the css/sass
 nnoremap <leader>c :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cnext<CR>
 " then press <leader>n to step through the quick-fix list results
