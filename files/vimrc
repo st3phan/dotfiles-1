@@ -128,12 +128,8 @@ nnoremap <leader>n :cn<CR>
 """"" set plugin-specific options
 " sophacles/vim-processing
 let g:use_processing_java=1 " uses processing_java to run skectches
-" map <leader> + b to run skectches
-map <leader>b :call RunProcessing()<CR>
-
-" Shougo/neocomplcache.vim
-let g:neocomplcache_enable_at_startup=1 " executes it at startup
-let g:neocomplcache_enable_auto_select=1 " highlights the first match by default
+" map Cmd + 0 to run skectches
+nnoremap <D-0> :RunProcessing<CR>
 
 " tpope/unimpaired
 " Bubble single lines
