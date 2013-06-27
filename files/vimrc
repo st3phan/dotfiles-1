@@ -40,7 +40,7 @@ Bundle 'kien/ctrlp.vim'
 " directory tree explorer
 Bundle 'scrooloose/nerdtree'
 " automatically open popup menu for completions
-Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Valloric/YouCompleteMe'
 " more intuitive interface for the undo tree, call with :GundoToggle
 Bundle 'sjl/gundo.vim'
 " syntax checker
@@ -114,8 +114,6 @@ nnoremap <leader>h :set hlsearch!<cr>
 nnoremap NO :normal 
 " make ' behave like ` to prevent weird keyboard issues
 nnoremap ' `
-" prevent issues with ~ when using it to toggle case
-nnoremap ~ ~<space>
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
