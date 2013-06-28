@@ -133,11 +133,11 @@ nnoremap <D-0> :w<cr>:RunProcessing<cr>
 
 " tpope/unimpaired
 " Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
+nnoremap <C-Up> [e
+nnoremap <C-Down> ]e
 " Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+vnoremap <C-Up> [egv
+vnoremap <C-Down> ]egv
 
 " Change some settings that may trip Codekit
 autocmd FileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
