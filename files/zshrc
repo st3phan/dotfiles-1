@@ -21,3 +21,6 @@ LSCOLORS=hxfxcxdxbxegedabagacad
 # Other settings
 export PATH="/usr/local/bin:$PATH"
 export EDITOR="vim"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/usr/local/share/npm/bin
