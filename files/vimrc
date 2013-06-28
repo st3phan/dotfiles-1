@@ -120,16 +120,16 @@ vnoremap <leader>d "_d
 " press <leader>p to paste from the clipboard, ignoring auto-indent
 nnoremap <leader>p :set paste<cr>"+p:set nopaste<cr>
 " with the cursor over a class name, press <leader>c to go to the class on the css/sass
-nnoremap <leader>c :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cnext<CR>
+nnoremap <leader>c :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cnext<cr>
 " then press <leader>n to step through the quick-fix list results
-nnoremap <leader>n :cn<CR>
+nnoremap <leader>n :cn<cr>
 
 """""
 """"" set plugin-specific options
 " sophacles/vim-processing
 let g:use_processing_java=1 " uses processing_java to run skectches
 " map Cmd + 0 to run skectches
-nnoremap <D-0> :RunProcessing<CR>
+nnoremap <D-0> :w<cr>:RunProcessing<cr>
 
 " tpope/unimpaired
 " Bubble single lines
