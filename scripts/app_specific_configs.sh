@@ -59,3 +59,9 @@ defaults write org.m0k.transmission WarningLegal -bool false
 ### iTerm2                ###
 #############################
 mv "/tmp/dotfiles/files/iTerm2.plist" "${HOME}/Library/Preferences/com.googlecode.iterm2.plist"
+
+#############################
+### Mplayer               ###
+#############################
+mkdir "${HOME}/.mplayer/"
+mv "/tmp/dotfiles/files/mplayer-shortcuts" "${HOME}/.mplayer/input.conf"

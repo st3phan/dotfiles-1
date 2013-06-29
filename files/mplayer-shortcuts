@@ -1,0 +1,19 @@
+LEFT seek -3
+RIGHT seek +3
+DOWN seek -60
+UP seek +60
+SPACE pause
+q quit
+s sub_select
+a switch_audio
+m mute
+f vo_fullscreen
+t vo_ontop
+i osd_show_property_text "${filename}"
+o osd_show_progression
+. frame_step
+< pt_step -1
+> pt_step +1
++ speed_incr 0.1
+- speed_incr -0.1
+0 speed_set 1
