@@ -65,3 +65,4 @@ mv "/tmp/dotfiles/files/iTerm2.plist" "${HOME}/Library/Preferences/com.googlecod
 #############################
 mkdir "${HOME}/.mplayer/"
 mv "/tmp/dotfiles/files/mplayer-shortcuts" "${HOME}/.mplayer/input.conf"
+mv "/tmp/dotfiles/files/mplayer-config" "${HOME}/.mplayer/config"

@@ -1,0 +1,2 @@
+# play pitch-correct audio at non-standard speed
+af=scaletempo
