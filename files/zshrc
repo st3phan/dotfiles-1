@@ -19,8 +19,8 @@ unsetopt correct_all
 LSCOLORS=hxfxcxdxbxegedabagacad
 
 # Other settings
-export PATH="/usr/local/bin:$PATH"
-export EDITOR="vim"
+PATH="/usr/local/bin:$PATH"
+EDITOR="vim"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:/usr/local/share/npm/bin
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
+PATH=$PATH:/usr/local/share/npm/bin # Add NPM to PATH
