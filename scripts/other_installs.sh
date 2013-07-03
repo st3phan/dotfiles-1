@@ -17,6 +17,9 @@ ruby-install ruby # Install latest ruby
 # Make ruby 2.0 the default
 echo "ruby-2.0" > "${HOME}/.ruby-version"
 
+# Install some gems
+# gem install bundler
+
 ##############################
 ### Source Code Pro (font) ###
 ##############################
