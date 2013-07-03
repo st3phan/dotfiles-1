@@ -10,7 +10,9 @@ plugins=(git zsh-syntax-highlighting)
 # Source other files
 source ${ZSH}/oh-my-zsh.sh
 source ${HOME}/.zsh-alias
-source ${HOME}/.rvm/scripts/rvm
+# Configure chruby and let it auto-switch based on .ruby-version files
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
 # Disable autocorrect
 unsetopt correct_all
@@ -22,5 +24,4 @@ LSCOLORS=hxfxcxdxbxegedabagacad
 PATH="/usr/local/bin:$PATH"
 EDITOR="vim"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
 PATH=$PATH:/usr/local/share/npm/bin # Add NPM to PATH

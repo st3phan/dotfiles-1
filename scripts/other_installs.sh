@@ -9,14 +9,13 @@ chmod +x "/tmp/tiny-scripts/*"
 mv /tmp/tiny-scripts/* /usr/local/bin/
 
 ##############################
-### RVM                    ###
+### ruby versioning        ###
 ##############################
-# Install rvm
-curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+brew install chruby ruby-install # Install chruby and ruby-install
+ruby-install ruby # Install latest ruby
 
-# Install some gems
-gem install cloudapp
-gem install sass bourbon neat
+# Make ruby 2.0 the default
+echo "ruby-2.0" > "${HOME}/.ruby-version"
 
 ##############################
 ### Source Code Pro (font) ###
