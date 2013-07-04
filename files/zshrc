@@ -18,10 +18,8 @@ source /usr/local/share/chruby/auto.sh
 unsetopt correct_all
 
 # Set colors
-LSCOLORS=hxfxcxdxbxegedabagacad
+export LSCOLORS=hxfxcxdxbxegedabagacad
 
 # Other settings
-PATH="/usr/local/bin:$PATH"
-EDITOR="vim"
-
-PATH=$PATH:/usr/local/share/npm/bin # Add NPM to PATH
+export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
+export EDITOR="vim"
