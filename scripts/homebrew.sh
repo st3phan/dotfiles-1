@@ -8,6 +8,7 @@ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # Install apps
 brew install atool cpulimit elinks lftp mediainfo mkvtoolnix mplayer nodejs trash tree vim
+brew install avidemux --with-qt
 brew install git --without-completions
 brew install imagemagick --with-libtiff --with-librsvg
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
@@ -22,7 +23,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-appsToInstall="air-server alfred avidemux codekit dropbox f-lux google-chrome google-chrome-canary instacast instashare iterm2 keka key-codes macvim mplayerx node-webkit pokerstars processing rest-client skype spectacle steam textexpander u-torrent xscope"
+appsToInstall="air-server alfred codekit dropbox f-lux google-chrome google-chrome-canary instacast instashare iterm2 keka key-codes macvim mplayerx node-webkit pokerstars processing rest-client skype spectacle steam textexpander u-torrent xscope"
 
 brew cask install ${appsToInstall}
 
