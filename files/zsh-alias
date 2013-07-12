@@ -1,9 +1,6 @@
 # update homebrew
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf $(brew --cache)'
 
-# fix homebrew-cask importing errors
-alias brewfix='ls -l /usr/local/Library/Formula | grep phinze-cask | awk '\''{print $9}'\'' | for evil_symlink in $(cat -); do rm -v /usr/local/Library/Formula/$evil_symlink; done'
-
 # Fix duplicates in “open with”
 alias openwithfix='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
