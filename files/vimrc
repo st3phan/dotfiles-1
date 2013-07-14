@@ -65,13 +65,20 @@ set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
 set guifont=Source\ Code\ Pro:h11 " font on GUI (macvim)
 set background=dark " background
-set number " line numbers
+set cursorline " highlights the line the cursor is in
+"set number " line numbers
+set relativenumber " line numbers relative to the current line
 set ruler " show the line number on the bar
+set showcmd " show exta information on the bar, like the number of selected lines
+set wildmenu " show completions in command mode
+set wildmode=list:longest,full " in command mode, press <tab> once to show alternatives, and again to cycle
 set autoread " watch for file changes
 set autoindent " auto-indent code
+set scrolloff=5 " allows show at least 3 extra lines before/after the cursor
 set tabstop=4 " how many columns (spaces) a tab counts for
 set softtabstop=4 " how many columns (spaces) a tab will convert to
 set shiftwidth=4 " how many columns (spaces) text is reindented
+set expandtab " convert tabs to spaces
 set incsearch " highlights search matches as they are typed
 set nofoldenable " disables code folding
 set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
