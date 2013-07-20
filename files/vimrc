@@ -76,7 +76,7 @@ set scrolloff=5 " allows show at least 3 extra lines before/after the cursor
 set tabstop=4 " how many columns (spaces) a tab counts for
 set softtabstop=4 " how many columns (spaces) a tab will convert to
 set shiftwidth=4 " how many columns (spaces) text is reindented
-set expandtab " convert tabs to spaces
+"set expandtab " convert tabs to spaces
 set incsearch " highlights search matches as they are typed
 set nofoldenable " disables code folding
 set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
@@ -136,17 +136,21 @@ let g:use_processing_java=1 " uses processing_java to run skectches
 " map Cmd + 0 to run skectches
 nnoremap <D-0> :w<cr>:RunProcessing<cr>
 
-" tpope/unimpaired
-" Bubble single lines
+" tpope/vim-unimpaired
+" bubble single lines
 nnoremap <C-Up> [e
 nnoremap <C-Down> ]e
-" Bubble multiple lines
+" bubble multiple lines
 vnoremap <C-Up> [egv
 vnoremap <C-Down> ]egv
+
+" tpope/ vim-fugitive
+" use gc to quicly prepare the file for commiting
+nmap gc :Gwrite<cr>:Gcommit -m '
 
 " Valloric/YouCompleteMe 
 " use only <down> (not also <tab>) to select the next autocomplete suggestion
 let g:ycm_key_list_select_completion = ['<Down>']
 
-" Change some settings that may trip Codekit
-autocmd FileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
+" " Change some settings that may trip Codekit
+" autocmd iileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
