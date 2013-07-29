@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=${HOME}/.oh-my-zsh
 
+# AUto-update oh-my-zsh without prompting
+DISABLE_UPDATE_PROMPT=true
+
 # Set name of the theme to load (in ~/.oh-my-zsh/themes/)
 ZSH_THEME="oneend"
 
