@@ -45,8 +45,6 @@ Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
 " extend motions (eg <leader><leader>w)
 Bundle 'Lokaltog/vim-easymotion'
-" list, select and switch between buffers
-Bundle 'jeetsukumaran/vim-buffergator'
 
 """""
 """"" general options
