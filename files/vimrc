@@ -109,9 +109,12 @@ nnoremap <leader>x <C-w>x
 " map changing split windows from vertical to horizontal and the reverse
 nnoremap <leader>- <C-w>t <C-w>H
 nnoremap <leader>_ <C-w>t <C-w>K
-" navigate between tabs like in chrome
-noremap <D-A-right> gt
-noremap <D-A-left> gT
+" navigate between tabs with Cmd+Opt+[left, right]
+noremap <D-A-right> :tabprevious<CR>
+noremap <D-A-left> :tabnext<CR>
+" cycle tab position with Opt+[left, right]
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 " go back and forth on the jumplist
 nnoremap g<left> <C-o>
 nnoremap g<right> <C-i>
@@ -181,8 +184,6 @@ inoremap <silent><CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
 	return neocomplete#smart_close_popup() . "\<CR>"
 endfunction
-" make <tab> do a <tab>, instead of completing
-inoremap <expr><tab> neocomplete#close_popup()."\<tab>"
 " use <up> and <down> to select completions
 inoremap <expr><down> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><up> pumvisible() ? "\<C-p>" : "\<TAB>"
@@ -192,4 +193,4 @@ inoremap <expr><up> pumvisible() ? "\<C-p>" : "\<TAB>"
 nnoremap <C-p> :lcd %:p:h<cr>:Unite -start-insert file<cr>
 
 " " Change some settings that may trip Codekit
-" autocmd iileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
+autocmd FileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
