@@ -201,6 +201,3 @@ inoremap <expr><up> pumvisible() ? "\<C-p>" : "\<TAB>"
 " Shougo/unite.vim
 " run a fuzzy file finder
 nnoremap <C-p> :Unite file<cr>
-
-" " Change some settings that may trip Codekit
-autocmd FileType jade,scss,sass set nobackup | set nowritebackup | set noswapfile
