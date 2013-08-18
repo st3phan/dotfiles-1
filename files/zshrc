@@ -26,3 +26,6 @@ export LSCOLORS=hxfxcxdxbxegedabagacad
 # Other settings
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
 export EDITOR="vim"
+
+# source z
+source "$(brew --prefix)/etc/profile.d/z.sh"
