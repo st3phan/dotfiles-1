@@ -16,6 +16,8 @@ brew install macvim --with-lua
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
+brew install https://raw.github.com/gist/3875486/asciiio.rb --HEAD
+
 # Move MacVim to /Applications/
 mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
 
