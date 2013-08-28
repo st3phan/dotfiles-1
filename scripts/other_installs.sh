@@ -14,11 +14,8 @@ mv /tmp/tiny-scripts/* /usr/local/bin/
 brew install chruby ruby-install # Install chruby and ruby-install
 ruby-install ruby # Install latest ruby
 
-# Make ruby 2.0 the default
-echo "ruby-2.0" > "${HOME}/.ruby-version"
-
 # Install some gems
-# gem install bundler
+gem install bundler
 
 ##############################
 ### Source Code Pro (font) ###

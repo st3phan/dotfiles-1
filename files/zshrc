@@ -13,9 +13,10 @@ plugins=(git zsh-syntax-highlighting)
 # Source other files
 source ${ZSH}/oh-my-zsh.sh
 source ${HOME}/.zsh-alias
-# Configure chruby and let it auto-switch based on .ruby-version files
+# Configure chruby, make 2.0 the default, but let it auto-switch based on .ruby-version files
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+chruby ruby-2.0
 
 # Disable autocorrect
 unsetopt correct_all
