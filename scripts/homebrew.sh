@@ -18,8 +18,9 @@ brew install zsh --disable-etcdir
 
 brew install https://raw.github.com/gist/3875486/asciiio.rb --HEAD
 
-# Move MacVim to /Applications/
+# Move GUI apps to /Applications/
 mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
+mv /usr/local/opt/avidemux/Avidemux2.6.app /Applications/
 
 ##############################
 ### Brew cask              ###
