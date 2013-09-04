@@ -27,6 +27,8 @@ export LSCOLORS=hxfxcxdxbxegedabagacad
 # Other settings
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
 export EDITOR="vim"
+# do not save commands preceded by a space, to history
+export HISTCONTROL=ignorespace
 
 # source z
 source "$(brew --prefix)/etc/profile.d/z.sh"
