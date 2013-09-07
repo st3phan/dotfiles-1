@@ -10,9 +10,6 @@ alias cdc='cd ~/Dropbox/Work/personal/code'
 # cd to default Processing directory
 alias cdp='cd ~/Dropbox/Work/personal/processing'
 
-# get high-quality version from videos on youtube
-alias cchigh='cclive -f fmt22_720p'
-
 # delete .DS_Store files
 alias dsd='find . -iname ".DS_Store" -delete'
 
