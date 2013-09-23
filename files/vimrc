@@ -151,9 +151,8 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 """""
 """"" set plugin-specific options
 " sophacles/vim-processing
-let g:use_processing_java=1 " uses processing_java to run skectches
-" map Cmd + 0 to run skectches
-nnoremap <D-0> :w<cr>:RunProcessing<cr>
+" map Cmd + 0 to 'make', to run skectches ('redraw!' is a fix for terminal vim)
+nnoremap <D-0> :silent make<cr>:redraw!<cr>
 
 " tpope/vim-unimpaired
 " bubble single lines
