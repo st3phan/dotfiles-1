@@ -40,7 +40,7 @@ NeoBundle 'honza/vim-snippets'
 " visually select text and press '*' and '#' to search for it
 NeoBundle 'nelstrom/vim-visual-star-search'
 " auto-close pairs like () and []
-NeoBundle 'vim-scripts/AutoClose'
+NeoBundle 'Raimondi/delimitMate'
 " multiple cursors
 NeoBundle 'terryma/vim-multiple-cursors'
 " file explorer (use <space> to mark files, and 'a' to act on them)
