@@ -18,6 +18,11 @@ ruby-install ruby # Install latest ruby
 gem install bundler
 
 ##############################
+### nodejs packages        ###
+##############################
+npm install -g bower
+
+##############################
 ### Source Code Pro (font) ###
 ##############################
 curl -L "http://sourceforge.net/projects/sourcecodepro.adobe/files/latest/download?source=dlp" -o "/tmp/SourceCodePro.zip"
