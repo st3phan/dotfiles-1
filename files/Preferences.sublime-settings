@@ -11,6 +11,8 @@
 	"word_wrap": "true",
 	// change caret style
 	"caret_style": "wide",
+	// show invisible characters
+	"draw_white_space": "all",
 	// use ctrl-key bindings (such as ctrl+r, for redo), with the vintageous package
 	"vintageous_use_ctrl_keys": true
 }
