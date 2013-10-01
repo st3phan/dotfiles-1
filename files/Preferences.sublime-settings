@@ -1,12 +1,14 @@
 {
 	// color scheme
-	"color_scheme": "Packages/Dayle Rees Color Schemes/Peacock.tmTheme",
+	//"color_scheme": "Packages/Dayle Rees Color Schemes/Peacock.tmTheme",
 	// don't ignore "Vintage" (makes it act like vim)
-	"ignored_packages": [],
+	"ignored_packages": ["Vintage"],
 	// ask before closing if there are unsaved changes
 	"hot_exit": false,
 	// don't remember last opened files on start
 	"remember_open_files": false,
 	// wrap lines by default
-	"word_wrap": "true"
+	"word_wrap": "true",
+	// change caret style
+	"caret_style": "wide"
 }
