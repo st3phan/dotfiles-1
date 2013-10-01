@@ -16,7 +16,9 @@ brew install macvim --with-lua
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
-brew install https://raw.github.com/gist/3875486/asciiio.rb --HEAD
+brew install https://gist.github.com/rogeriopradoj/6672302/raw/4cb8e7054ea01b29f67a7e2e2475a4028c553071/asciinema.rb --HEAD
+# symlink python to python2, so asciinema works correctly
+sudo ln -s /usr/bin/python /usr/bin/python2
 
 # Move GUI apps to /Applications/
 mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
