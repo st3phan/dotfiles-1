@@ -10,5 +10,7 @@
 	// wrap lines by default
 	"word_wrap": "true",
 	// change caret style
-	"caret_style": "wide"
+	"caret_style": "wide",
+	// use ctrl-key bindings (such as ctrl+r, for redo), with the vintageous package
+	"vintageous_use_ctrl_keys": true
 }
