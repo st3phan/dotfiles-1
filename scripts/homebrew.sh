@@ -12,6 +12,7 @@ brew install git --without-completions
 brew install imagemagick --with-libtiff --with-librsvg
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
 brew install macvim --with-lua
+brew install --HEAD mplayer2
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
