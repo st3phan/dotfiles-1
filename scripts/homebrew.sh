@@ -22,7 +22,7 @@ sudo ln -s /usr/bin/python /usr/bin/python2
 
 # Move GUI apps to /Applications/
 mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
-mv /usr/local/opt/avidemux/Avidemux2.6.app /Applications/
+mv /usr/local/Cellar/mplayer2/HEAD/mplayer2.app /Applications/MPlayer2.app
 
 ##############################
 ### Brew cask              ###
