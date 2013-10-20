@@ -7,19 +7,6 @@
 git config --global credential.helper osxkeychain
 
 #############################
-### Mplayerx              ###
-#############################
-# Time in seconds to navigate when pressing left/right arrows
-defaults write org.niltsh.MPlayerX SeekStepTimeL -float -3
-defaults write org.niltsh.MPlayerX SeekStepTimeR -float +3
-
-# Menu key in Apple Remote toggles elapse/remaining time
-defaults write org.niltsh.MPlayerX ARMenuKeyTogTimeDisp -bool true
-
-# Show current time when paused
-defaults write org.niltsh.MPlayerX PauseShowTime -bool true
-
-#############################
 ### Transmission          ###
 #############################
 
@@ -61,8 +48,8 @@ defaults write org.m0k.transmission WarningLegal -bool false
 mv "/tmp/dotfiles/files/iTerm2.plist" "${HOME}/Library/Preferences/com.googlecode.iterm2.plist"
 
 #############################
-### Mplayer               ###
+### mpv                   ###
 #############################
-mkdir "${HOME}/.mplayer/"
-mv "/tmp/dotfiles/files/mplayer-shortcuts" "${HOME}/.mplayer/input.conf"
-mv "/tmp/dotfiles/files/mplayer-config" "${HOME}/.mplayer/config"
+mkdir "${HOME}/.mpv/"
+mv "/tmp/dotfiles/files/mpv-shortcuts" "${HOME}/.mpv/input.conf"
+mv "/tmp/dotfiles/files/mpv-config" "${HOME}/.mpv/config"
