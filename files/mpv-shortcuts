@@ -8,7 +8,7 @@ REWIND playlist_prev
 FORWARD playlist_next force
 q quit_watch_later # save playback position
 Q quit
-s cycle sub_select
+s cycle sub
 S screenshot video
 Alt+S screenshot # screenshot with subtitles
 a cycle switch_audio
