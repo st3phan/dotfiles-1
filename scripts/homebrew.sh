@@ -7,7 +7,7 @@
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # Install apps
-brew install atool cpulimit elinks lftp mediainfo mkvtoolnix node terminal-notifier trash tree z
+brew install asciinema atool cpulimit elinks lftp mediainfo mkvtoolnix node terminal-notifier trash tree z
 brew install git --without-completions
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
@@ -21,9 +21,8 @@ sudo pip install docutils
 brew tap mpv-player/mpv
 brew install --HEAD mpv --with-dist-bundle
 
-brew install https://gist.github.com/rogeriopradoj/6672302/raw/4cb8e7054ea01b29f67a7e2e2475a4028c553071/asciinema.rb --HEAD
 # symlink python to python2, so asciinema works correctly
-sudo ln -s /usr/bin/python /usr/bin/python2
+#sudo ln -s /usr/bin/python /usr/bin/python2
 
 # Move GUI apps to /Applications/
 #mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
