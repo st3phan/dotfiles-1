@@ -15,6 +15,9 @@ brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
+# docutils is requeired for mpv
+sudo easy_install pip
+sudo pip install docutils
 brew tap mpv-player/mpv
 brew install --HEAD mpv --with-dist-bundle
 
