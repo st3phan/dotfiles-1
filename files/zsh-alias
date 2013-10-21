@@ -24,7 +24,7 @@ permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f 
 
 # Aliases for git
 alias g='git'
-alias ga='git add'
+alias ga='git add --all'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
