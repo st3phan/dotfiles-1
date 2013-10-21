@@ -3,10 +3,16 @@
 ##############################
 ### my personal scripts    ###
 ##############################
-git clone "https://github.com/vitorgalvao/tiny-scripts.git" "/tmp/tiny-scripts/"
-rm "/tmp/tiny-scripts/README.md"
-chmod +x "/tmp/tiny-scripts/*"
-mv /tmp/tiny-scripts/* /usr/local/bin/
+getScripts() {
+	mkdir -p "/tmp/personal-scripts"
+	git clone "https://github.com/vitorgalvao/$1.git" "/tmp/personal-scripts/$1"
+	rm "/tmp/personal-scripts/$1/README.md"
+	chmod +x /tmp/personal-scripts/$1/*
+	mv /tmp/personal-scripts/$1/* /usr/local/bin/
+}
+
+getScripts tiny-scripts
+getScripts tiny-watir-scripts
 
 ##############################
 ### ruby versioning        ###
@@ -20,7 +26,7 @@ gem install bundler
 ##############################
 ### nodejs packages        ###
 ##############################
-npm install -g bower
+npm install -g bower harp
 
 ##############################
 ### Source Code Pro (font) ###
