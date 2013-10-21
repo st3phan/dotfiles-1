@@ -7,11 +7,11 @@
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # Install apps
-brew install atool cpulimit elinks lftp mediainfo mkvtoolnix mplayer node terminal-notifier trash tree z
+brew install atool cpulimit elinks lftp mediainfo mkvtoolnix node terminal-notifier trash tree z
 brew install git --without-completions
-brew install imagemagick --with-libtiff --with-librsvg
+brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
-brew install macvim --with-lua
+#brew install macvim --with-lua
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
@@ -23,7 +23,7 @@ brew install https://gist.github.com/rogeriopradoj/6672302/raw/4cb8e7054ea01b29f
 sudo ln -s /usr/bin/python /usr/bin/python2
 
 # Move GUI apps to /Applications/
-mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
+#mv /usr/local/Cellar/macvim/*/MacVim.app /Applications/
 mv /usr/local/Cellar/mpv/HEAD/mpv.app /Applications/
 
 ##############################
