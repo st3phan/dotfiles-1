@@ -13,11 +13,6 @@ plugins=(git zsh-syntax-highlighting)
 # source other files
 source ${ZSH}/oh-my-zsh.sh
 source ${HOME}/.zsh-alias
-# configure chruby, make 2.0 the default, but let it auto-switch based on .ruby-version files
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.0
-
 # disable autocorrect
 unsetopt correct_all
 
@@ -27,8 +22,14 @@ export LSCOLORS=hxfxcxdxbxegedabagacad
 # other settings
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
 export EDITOR="vim"
-# do not save commands preceded by a space, to history
-export HISTCONTROL=ignorespace
+
+# configure chruby, make 2.0 the default, but let it auto-switch based on .ruby-version files
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-2.0
+
+# configure pyenv (it alters PATH, so it needs to be set after it)
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # source z
 source "$(brew --prefix)/etc/profile.d/z.sh"

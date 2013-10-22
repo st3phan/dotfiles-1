@@ -2,15 +2,21 @@
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # python environment
-curl -s https://raw.github.com/brainsik/virtualenv-burrito/master/virtualenv-burrito.sh | exclude_profile=1 $SHELL
+brew install pyenv
+pythonVersion=$(pyenv install --list | sed 's/^  //' | grep '^2' | grep --invert-match 'dev' | tail -1)
+pyenv install ${pythonVersion}
+# sets the version to use, to install packages now
+pyenv global ${pythonVersion}
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # install docutils (will be needed for mpv)
-source "${HOME}/.venvburrito/startup.sh"
-mkvirtualenv default
 pip install docutils
 
 # ruby environment
 brew install chruby ruby-install
 ruby-install ruby # install latest ruby
+# sets the version to use, to install packages now
+source /usr/local/share/chruby/chruby.sh
+chruby ruby-2.0
 # install some gems
 gem install bundler
 
