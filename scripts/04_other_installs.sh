@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # my personal scripts
 getScripts() {
 	mkdir -p "/tmp/personal-scripts"

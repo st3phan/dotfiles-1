@@ -1,9 +1,5 @@
-#!/bin/bash
-
-#############################
-### Git                   ###
-#############################
-# Tell git to use osxkeychain
+# git
+# tell git to use osxkeychain
 git config --global credential.helper osxkeychain
 
 #############################
@@ -42,14 +38,10 @@ defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
 
-#############################
-### iTerm2                ###
-#############################
+# iTerm2
 mv "/tmp/dotfiles/files/iTerm2.plist" "${HOME}/Library/Preferences/com.googlecode.iterm2.plist"
 
-#############################
-### mpv                   ###
-#############################
+# mpv
 mkdir "${HOME}/.mpv/"
 mv "/tmp/dotfiles/files/mpv-shortcuts" "${HOME}/.mpv/input.conf"
 mv "/tmp/dotfiles/files/mpv-config" "${HOME}/.mpv/config"

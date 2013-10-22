@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # homebrew apps
 brew install asciinema atool cpulimit elinks lftp mediainfo mkvtoolnix terminal-notifier trash tree z
 brew install git --without-completions

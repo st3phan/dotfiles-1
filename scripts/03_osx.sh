@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ###########
 ###
 ###   Script to configure OSX

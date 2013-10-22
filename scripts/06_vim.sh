@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # dotfile
 mv "/tmp/dotfiles/files/vimrc" "${HOME}/.vimrc"
 

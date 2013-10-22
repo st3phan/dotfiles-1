@@ -1,16 +1,11 @@
 #!/bin/bash
 
 open "http://developer.apple.com/downloads"
-read -p "Homebrew needs Xcode's CLI tools. Download and install them and press return to continue"
+read -p "Homebrew needs Xcode's CLI tools. Download and install them and press RETURN to continue"
 
 git clone https://github.com/vitorgalvao/dotfiles.git /tmp/dotfiles/
 
-cat /tmp/dotfiles/scripts/environments.sh | sh
-cat /tmp/dotfiles/scripts/osx.sh | sh
-cat /tmp/dotfiles/scripts/apps.sh | sh
-cat /tmp/dotfiles/scripts/zsh.sh | sh
-cat /tmp/dotfiles/scripts/vim.sh | sh
-cat /tmp/dotfiles/scripts/other_installs.sh | sh
-cat /tmp/dotfiles/scripts/app_specific_configs.sh | sh
+# concatenate all parts together, so things like variables can be reused
+cat /tmp/dotfiles/scripts/* | sh
 
 mv "/tmp/dotfiles/manual/" "${HOME}/Desktop/"
