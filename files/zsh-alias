@@ -19,6 +19,9 @@ alias zerod='find . -type f -empty -delete'
 # quicklook
 alias ql='qlmanage -p &>/dev/null'
 
+# search in history
+alias h='history | grep'
+
 # fix file and directory permissions
 permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f -exec chmod 644 {} \; }
 
