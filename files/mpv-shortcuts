@@ -31,17 +31,17 @@ AXIS_LEFT ignore
 AXIS_RIGHT ignore
 
 # Apple Remote section
-#AR_PLAY cycle pause
-#AR_PLAY_HOLD quit
-#AR_CENTER cycle pause
-#AR_CENTER_HOLD quit
-#AR_NEXT seek 10
-#AR_NEXT_HOLD seek 120
-#AR_PREV seek -10
-#AR_PREV_HOLD seek -120
-#AR_MENU show_progress
-#AR_MENU_HOLD cycle mute
-#AR_VUP add volume 1
-#AR_VUP_HOLD add chapter 1
-#AR_VDOWN add volume -1
-#AR_VDOWN_HOLD add chapter -1
+AR_PLAY cycle pause
+AR_PLAY_HOLD cycle fullscreen
+AR_CENTER cycle pause
+AR_CENTER_HOLD cycle fullscreen
+AR_NEXT seek 10
+AR_NEXT_HOLD seek 120
+AR_PREV seek -10
+AR_PREV_HOLD seek -120
+AR_MENU show_progress
+AR_MENU_HOLD quit
+AR_VUP add speed 0.1
+AR_VUP_HOLD playlist_next
+AR_VDOWN add speed -0.1
+AR_VDOWN_HOLD playlist_prev
