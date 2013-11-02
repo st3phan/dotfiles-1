@@ -18,7 +18,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-appsToInstall="air-server alfred dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam textexpander transmission xscope"
+appsToInstall="air-server alfred dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope"
 
 brew cask install ${appsToInstall}
 
@@ -29,7 +29,9 @@ readlink ${HOME}/Applications/* | xargs -I {} cp -R {} /Applications/
 brew cask uninstall ${appsToInstall}
 rm -r ${caskroom}/*
 
-
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
+
+# sublime-text's subl command
+cp "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin
