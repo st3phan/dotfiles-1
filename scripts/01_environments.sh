@@ -23,4 +23,4 @@ gem install bundler
 # nodejs environment
 brew install node
 # install some packages
-npm install -g bower harp imageoptim-cli
+npm install -g bower grunt-cli harp imageoptim-cli
