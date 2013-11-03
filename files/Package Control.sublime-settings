@@ -1,0 +1,33 @@
+{
+	"installed_packages":
+	[
+		"Autoprefixer",
+		"CSS Snippets",
+		"CSScomb",
+		"Dayle Rees Color Schemes",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Git",
+		"HTML Snippets",
+		"HTML5",
+		"Jade",
+		"Jade Snippets",
+		"LESS",
+		"LiveStyle",
+		"Processing",
+		"SnippetMaker",
+		"sublimelint",
+		"TernJS",
+		"VintageLines",
+		"Vintageous",
+		"Vintageous-Origami",
+		"Vintageous_Plugin_Surround",
+		"VintageousOrigami"
+	],
+	"repositories":
+	[
+		"https://github.com/tmanderson/VintageLines"
+		"https://github.com/rodcloutier/Vintageous-Origami",
+		"https://github.com/guillermooo/Vintageous_Plugin_Surround",
+	]
+}
