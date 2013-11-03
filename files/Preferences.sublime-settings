@@ -16,5 +16,9 @@
 	// trim trailing whitespace when saving the file
 	"trim_trailing_white_space_on_save": true,
 	// use ctrl-key bindings (such as ctrl+r, for redo), with the vintageous package
-	"vintageous_use_ctrl_keys": true
+	"vintageous_use_ctrl_keys": true,
+
+	// package-specific options
+	// VintageLines
+	"vintage_lines.force_mode": true // show relative line numbers
 }
