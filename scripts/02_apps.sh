@@ -1,5 +1,5 @@
 # homebrew apps
-brew install asciinema atool cpulimit elinks lftp mediainfo mkvtoolnix trash tree z
+brew install asciinema atool cpulimit elinks lftp mediainfo mkvtoolnix phantomjs trash tree z
 brew install git --without-completions
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
