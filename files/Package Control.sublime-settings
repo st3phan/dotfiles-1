@@ -4,7 +4,6 @@
 		"Autoprefixer",
 		"CSS Snippets",
 		"CSScomb",
-		"Dayle Rees Color Schemes",
 		"Emmet",
 		"Emmet Css Snippets",
 		"Git",
@@ -20,14 +19,12 @@
 		"TernJS",
 		"VintageLines",
 		"Vintageous",
-		"Vintageous-Origami",
 		"Vintageous_Plugin_Surround",
 		"VintageousOrigami"
 	],
 	"repositories":
 	[
-		"https://github.com/tmanderson/VintageLines"
-		"https://github.com/rodcloutier/Vintageous-Origami",
 		"https://github.com/guillermooo/Vintageous_Plugin_Surround",
+		"https://github.com/tmanderson/VintageLines"
 	]
 }
