@@ -19,7 +19,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-appsToInstall="air-server alfred dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope"
+appsToInstall="air-server alfred dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 join-me keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope"
 
 brew cask install ${appsToInstall}
 
