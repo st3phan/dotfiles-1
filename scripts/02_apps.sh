@@ -8,7 +8,8 @@ brew install zsh --disable-etcdir
 
 # install mpv
 brew tap mpv-player/mpv
-brew install --HEAD mpv --with-dist-bundle
+brew install --HEAD mpv-player/mpv/libass-ct
+brew install mpv --with-dist-bundle
 mv /usr/local/Cellar/mpv/HEAD/mpv.app /Applications/ # Move GUI to /Applications/
 
 # brew-cask apps
