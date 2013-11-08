@@ -10,6 +10,8 @@ pyenv global ${pythonVersion}
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # install docutils (will be needed for mpv)
 pip install docutils
+# install some eggs
+pip install --upgrade asciinema
 
 # ruby environment
 brew install chruby ruby-install
