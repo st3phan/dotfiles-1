@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"Autoprefixer",
+		"Bash Build System",
 		"CSS Snippets",
 		"CSScomb",
 		"Emmet",
@@ -17,14 +18,13 @@
 		"SnippetMaker",
 		"sublimelint",
 		"TernJS",
-		"VintageLines",
 		"Vintageous",
-		"Vintageous_Plugin_Surround",
-		"VintageousOrigami"
+		"Vintageous_Plugin_Surround"
 	],
 	"repositories":
 	[
 		"https://github.com/guillermooo/Vintageous_Plugin_Surround",
-		"https://github.com/tmanderson/VintageLines"
+		"https://github.com/tmanderson/VintageLines",
+		"https://github.com/lunixbochs/actualvim.git"
 	]
 }
