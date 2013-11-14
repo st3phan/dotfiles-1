@@ -20,7 +20,7 @@ ruby-install ruby # install latest ruby
 source /usr/local/share/chruby/chruby.sh
 chruby ruby-2.0
 # install some gems
-gem install bundler watir-webdriver
+gem install bundler watir-webdriver chromedriver2-helper
 
 # nodejs environment
 brew install node
