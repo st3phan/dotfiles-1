@@ -1,6 +1,6 @@
 # homebrew apps
-brew install atool bartender cpulimit elinks lftp mediainfo mkvtoolnix phantomjs trash tree z
-brew install git --without-completions
+brew install atool cpulimit elinks lftp mediainfo mkvtoolnix phantomjs trash tree z
+install git --without-completions
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
 brew install vim --with-lua
@@ -19,7 +19,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-appsToInstall="air-server alfred dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 join-me keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope"
+appsToInstall="air-server alfred bartender dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 join-me keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope"
 
 brew cask install ${appsToInstall}
 
