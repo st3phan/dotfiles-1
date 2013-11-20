@@ -16,25 +16,12 @@ brew linkapps
 
 # brew-cask apps
 # install brew cask
-caskroom="/opt/homebrew-cask/Caskroom"
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
 # Install apps
-appsToInstall="air-server alfred bartender dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 join-me keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope"
-
-brew cask install ${appsToInstall}
-
-# Copy apps to /Applications/
-readlink ${HOME}/Applications/* | xargs -I {} cp -R {} /Applications/
-
-# Remove them from homebrew-cask's directory
-brew cask uninstall ${appsToInstall}
-rm -r ${caskroom}/*
+brew cask install air-server alfred bartender dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 join-me keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope
 
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
-
-# sublime-text's subl command
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "/usr/local/bin/"

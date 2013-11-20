@@ -20,12 +20,11 @@ source ${HOME}/.zsh-alias
 # disable autocorrect
 unsetopt correct_all
 
-# set colors
-export LSCOLORS=hxfxcxdxbxegedabagacad
-
 # other settings
+export LSCOLORS=hxfxcxdxbxegedabagacad
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
 export EDITOR="vim"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # configure chruby, make 2.0 the default, but let it auto-switch based on .ruby-version files
 source /usr/local/share/chruby/chruby.sh
