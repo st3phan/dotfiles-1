@@ -1,7 +1,7 @@
 # vi mode
 set -o vi
 
-# path to your oh-my-zsh configuration.
+# path to oh-my-zsh configuration.
 ZSH=${HOME}/.oh-my-zsh
 
 # auto-update oh-my-zsh without prompting
@@ -16,6 +16,7 @@ plugins=(git zsh-syntax-highlighting)
 # source other files
 source ${ZSH}/oh-my-zsh.sh
 source ${HOME}/.zsh-alias
+
 # disable autocorrect
 unsetopt correct_all
 
