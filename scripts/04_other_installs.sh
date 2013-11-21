@@ -14,8 +14,3 @@ getScripts tiny-watir-scripts
 curl -L "http://sourceforge.net/projects/sourcecodepro.adobe/files/latest/download?source=dlp" -o "/tmp/SourceCodePro.zip"
 unzip /tmp/SourceCodePro.zip -d /tmp/
 mv /tmp/SourceCodePro_FontsOnly*/OTF/SourceCodePro-Regular.otf /Library/Fonts/
-
-# qlImageSize
-curl "http://repo.whine.fr/qlImageSize.qlgenerator-10.8.zip" -o "/tmp/qlImageSize.qlgenerator.zip"
-unzip /tmp/qlImageSize.qlgenerator.zip -d /tmp/
-mv /tmp/qlImageSize.qlgenerator ${HOME}/Library/QuickLook/
