@@ -16,9 +16,10 @@ pip install --upgrade asciinema
 # ruby environment
 brew install chruby ruby-install
 ruby-install ruby # install latest ruby
+rubyVersion=$(ruby-install | grep 'stable' | head -1 | sed 's/.*: //')
 # sets the version to use, to install packages now
 source /usr/local/share/chruby/chruby.sh
-chruby ruby-2.0
+chruby ruby-${rubyVersion}
 # install some gems
 gem install bundler watir-webdriver chromedriver2-helper
 
