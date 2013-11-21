@@ -24,7 +24,7 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # Install apps
-brew cask install airserver alfred bartender dropbox f-lux google-chrome google-hangouts imageoptim instacast iterm2 join-me keka key-codes node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission
+brew cask install --appdir="/Applications" airserver alfred bartender dropbox f-lux google-chrome google-hangouts imageoptim instacast iterm2 join-me keka key-codes node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission
 
 # Prefpanes and qlplugins
 #brew cask install betterzipql jsonlook qlcolorcode qlmarkdown qlstephen scriptql suspicious-package
