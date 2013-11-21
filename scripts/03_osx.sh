@@ -82,6 +82,11 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
+# Finder: new window location set to $HOME. Same as Finder > Preferences > New Finder Windows show
+# For other path use "PfLo" and "file:///foo/bar/"
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
 # Show icons for external hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
