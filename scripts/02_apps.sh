@@ -22,6 +22,9 @@ brew install brew-cask
 # Install apps
 brew cask install air-server alfred bartender dropbox f-lux google-chrome google-chrome-canary google-hangouts imageoptim instacast iterm2 join-me keka key-codes licecap node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission xscope
 
+# Prefpanes and qlplugins
+#brew cask install betterzipql jsonlook qlcolorcode qlmarkdown qlstephen scriptql suspicious-package
+
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
