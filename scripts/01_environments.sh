@@ -1,5 +1,5 @@
 # install homebrew
-ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 # python environment
 brew install pyenv
