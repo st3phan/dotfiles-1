@@ -17,17 +17,11 @@ sudo scutil --set HostName "MacBook Pro 15"
 sudo scutil --set LocalHostName "MacBook-Pro-15"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook-Pro-15"
 
-# Enable access for assistive devices
-sudo touch /private/var/db/.AccessibilityAPIEnabled
-
 # Hide Time Machine and Bluetooth icons from the menu bar
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-
-# Expand print panel by default
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
@@ -35,15 +29,30 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Disable Resume system-wide
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
+# Set Help Viewer windows to non-floating mode
+defaults write com.apple.helpviewer DevMode -bool true
+
 # Restart automatically if the computer freezes
 systemsetup -setrestartfreeze on
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+###############################################################################
+
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -56,8 +65,8 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Set the timezone; see `systemsetup -listtimezones` for other values
 systemsetup -settimezone "Europe/Lisbon" > /dev/null
 
-# Enable spell checking by default
-defaults write -g WebContinuousSpellCheckingEnabled -bool true
+# Stop iTunes from responding to the keyboard media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 ###############################################################################
 # Screen                                                                      #
@@ -112,7 +121,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Four-letter codes for the other view modes: `icnv`, `Nlsv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
-# Show the ~/Library folder, and hide Applications, Documents, Movies, Music, Pictures and Public
+# Show the ~/Library folder, and hide Applications, Documents, Music, Pictures and Public
 chflags nohidden ~/Library
 chflags hidden ~/Applications
 chflags hidden ~/Documents
@@ -133,9 +142,6 @@ defaults write com.apple.dock orientation -string left
 
 # Disable Dock icon magnification
 defaults write com.apple.dock magnification -bool false
-
-# Enable the 2D Dock
-defaults write com.apple.dock no-glass -bool true
 
 # Disable the Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
@@ -208,6 +214,9 @@ hash tmutil &> /dev/null && sudo tmutil disablelocal
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool false
 defaults write com.apple.DiskUtility advanced-image-options -bool false
 
+# Enable the WebKit Developer Tools in the Mac App Store
+defaults write com.apple.appstore WebKitDeveloperExtras -bool true
+
 # Enable Debug Menu in the Mac App Store
 defaults write com.apple.appstore ShowDebugMenu -bool true
 
@@ -215,5 +224,6 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 # Kill (to restart) the needed applications                                   #
 ###############################################################################
 
-killall Dock
-killall SystemUIServer
+for app in "Finder" "Dock" "SystemUIServer"; do
+	killall "${app}" > /dev/null 2>&1
+done
