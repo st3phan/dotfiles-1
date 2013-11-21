@@ -11,9 +11,9 @@ getScripts tiny-scripts
 getScripts tiny-watir-scripts
 
 # Source Code Pro (font)
-curl -L "http://sourceforge.net/projects/sourcecodepro.adobe/files/latest/download?source=dlp" -o "/tmp/SourceCodePro.zip"
+curl -L "https://github.com/adobe/source-code-pro/releases/download/v1.017_medium_fix/SourceCodePro-Medium_v1020.zip" -o "/tmp/SourceCodePro.zip"
 unzip /tmp/SourceCodePro.zip -d /tmp/
-mv /tmp/SourceCodePro_FontsOnly*/OTF/SourceCodePro-Regular.otf /Library/Fonts/
+mv /tmp/SourceCodePro-Medium.otf /Library/Fonts/
 
 # app preferences (via mackup)
 PATH="/usr/local/bin:$PATH"
