@@ -9,58 +9,70 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " themes
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'morhetz/gruvbox'
+" markdown syntax
+NeoBundleLazy 'tpope/vim-markdown'
+" jade syntax
+NeoBundleLazy 'digitaltoad/vim-jade'
+" scss syntax
+NeoBundleLazy 'cakebaker/scss-syntax.vim'
+" less syntax
+NeoBundleLazy 'groenewege/vim-less'
+" html5 and inline svg omnicomplete funtion, indent and syntax
+NeoBundleLazy 'othree/html5.vim'
+" close html tags by typing '</'
+NeoBundleLazy 'vim-scripts/closetag.vim'
+" css3 syntax
+NeoBundleLazy 'hail2u/vim-css3-syntax'
+" csscomb
+NeoBundleLazy 'csscomb/csscomb-for-vim'
+" processing bundle
+NeoBundle 'sophacles/vim-processing'
 " toggle comments by typing 'gc'
 NeoBundle 'tpope/vim-commentary'
 " surround text with pairs like (), for example by visually selecting and doing S}
 NeoBundle 'tpope/vim-surround'
-" some handy mappings (useful for text bubbling — see custom mappings down)
-NeoBundle 'tpope/vim-unimpaired'
 " git wrapper
 NeoBundle 'tpope/vim-fugitive'
-" markdown syntax
-NeoBundle 'tpope/vim-markdown'
-" jade syntax
-NeoBundle 'digitaltoad/vim-jade'
-" scss syntax
-NeoBundle 'cakebaker/scss-syntax.vim'
-" less syntax
-NeoBundle 'groenewege/vim-less'
-" html5 and inline svg omnicomplete funtion, indent and syntax
-NeoBundle 'othree/html5.vim'
-" css3 syntax
-NeoBundle 'hail2u/vim-css3-syntax'
-" csscomb
-NeoBundle 'csscomb/CSScomb-for-Vim'
-" close html tags by typing '</'
-NeoBundle 'vim-scripts/closetag.vim'
-" processing bundle
-NeoBundle 'sophacles/vim-processing'
+" move visual selections
+NeoBundle 'marcelbeumer/dragvisuals.vim'
 " textmate-style snippets
 NeoBundle 'Shougo/neosnippet.vim'
 " collection of snippets
 NeoBundle 'honza/vim-snippets'
 " visually select text and press '*' and '#' to search for it
-NeoBundle 'nelstrom/vim-visual-star-search'
+"NeoBundle 'nelstrom/vim-visual-star-search'
 " auto-close pairs like () and []
 NeoBundle 'Raimondi/delimitMate'
 " multiple cursors
-NeoBundle 'terryma/vim-multiple-cursors'
+"NeoBundle 'terryma/vim-multiple-cursors'
 " file explorer (use <space> to mark files, and 'a' to act on them)
-NeoBundle 'Shougo/vimfiler.vim'
+"NeoBundle 'Shougo/vimfiler.vim'
 " automatically open popup menu for completions
 NeoBundle 'Shougo/neocomplete.vim'
 " more intuitive interface for the undo tree, call with :GundoToggle
-NeoBundle 'sjl/gundo.vim'
+"NeoBundle 'sjl/gundo.vim'
 " syntax checker
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 " extend motions (eg <leader><leader>w)
 NeoBundle 'Lokaltog/vim-easymotion'
 " interactive command execution in vim
-NeoBundle 'Shougo/vimproc', { 'build' : { 'mac' : 'make -f make_mac.mak', }, }
+"NeoBundle 'Shougo/vimproc', { 'build' : { 'mac' : 'make -f make_mac.mak', }, }
 " shell implemented by vim (requires vimproc)
-NeoBundle 'Shougo/vimshell.vim'
-" unite and create user interfaces
-NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'Shougo/vimshell.vim'
+" better handling of annoyances around swapfiles
+NeoBundle 'vitorgalvao/autoswap_mac'
+" fuzzy file, buffer, mru, tag, etc finder
+NeoBundle 'kien/ctrlp.vim'
+" command palette similar to the one in Sublime Text (requires ctrlp)
+NeoBundle 'fisadev/vim-ctrlp-cmdpalette'
+" bundles to load only on specific file types
+autocmd FileType markdown,mdown,mkdn,mkd,md NeoBundleSource vim-markdown
+autocmd FileType jade NeoBundleSource vim-jade
+autocmd FileType scss NeoBundleSource scss-syntax
+autocmd FileType less NeoBundleSource less
+autocmd FileType html NeoBundleSource html5 closetag
+autocmd FileType css NeoBundleSource vim-css3-syntax csscomb-for-vim
+autocmd FileType pde NeoBundleSource vim-processing
 
 """""
 """"" general options
@@ -75,7 +87,7 @@ if has ('gui_running')
 endif
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
-set guifont=Source\ Code\ Pro:h11 " font on GUI (macvim)
+set guifont=Source\ Code\ Pro:h12 " font on GUI (macvim)
 set background=dark " background
 set cursorline " highlights the line the cursor is in
 set relativenumber " line numbers relative to the current line
@@ -93,15 +105,18 @@ set shiftwidth=4 " how many columns (spaces) text is reindented
 "set expandtab " convert tabs to spaces
 set incsearch " highlights search matches as they are typed
 "set nofoldenable " disables code folding
-set listchars=tab:▸\ ,eol:¬ " use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,trail:· " use the same symbols as TextMate for tabstops and EOLs
 " source the vimrc file after saving it
-if has("autocmd")
-	autocmd bufwritepost .vimrc source $MYVIMRC
-endif
+" if has("autocmd")
+" 	autocmd bufwritepost .vimrc source $MYVIMRC
+" endif
 
 """""
 """"" mappings
-" map split window navigation to <leader> + arrow_direction
+" map R to redo and move its action to <C-r>
+nnoremap R <C-r>
+nnoremap <C-r> R
+" map split window navigation to <leader> + arrow direction
 nnoremap <leader><up> <C-w><up>
 nnoremap <leader><right> <C-w><right>
 nnoremap <leader><down> <C-w><down>
@@ -128,7 +143,7 @@ nnoremap g<left> <C-o>
 nnoremap g<right> <C-i>
 " show and hide invisibles (tabs, EOL)
 nnoremap <leader>i :set list!<cr>
-" toggle spell checking on and off with '<leader>s' and set region to en_gb
+" toggle spell checking on and off with <leader>s and set region to en_gb
 nnoremap <silent> <leader>s :set spell!<cr>:set spelllang=en_gb<cr>
 " toggle search highlight with <leader>h
 nnoremap <leader>h :set hlsearch!<cr>
@@ -136,13 +151,17 @@ nnoremap <leader>h :set hlsearch!<cr>
 nnoremap <leader>n :execute "normal "<left>
 " make ' behave like ` to prevent weird keyboard issues
 nnoremap ' `
-" delete without yanking
+" remove without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
+nnoremap <leader>c "_c
+nnoremap <leader>c "_c
+vnoremap <leader>x "_x
+vnoremap <leader>x "_x
 " press <leader>p to paste from the clipboard, ignoring auto-indent
-nnoremap <leader>p :set paste<cr>"+p:set nopaste<cr>
-" with the cursor over a class name, press <leader>c to go to the class on the css/sass
-nnoremap <leader>c :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cnext<cr>
+nnoremap <leader>p :put +<cr>
+" with the cursor over a class name, press <leader>. to go to the class on the css/sass
+nnoremap <leader>. :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cnext<cr>
 " then press <leader>n to step through the quick-fix list results
 nnoremap <leader>n :cn<cr>
 " change the working directory of the current window to the one of the current file
@@ -156,30 +175,29 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " map Cmd + 0 to 'make', to run skectches ('redraw!' is a fix for terminal vim)
 nnoremap <D-0> :silent make<cr>:redraw!<cr>
 
-" tpope/vim-unimpaired
-" bubble single lines
-nnoremap <C-Up> [e
-nnoremap <C-Down> ]e
-" bubble multiple lines
-vnoremap <C-Up> [egv
-vnoremap <C-Down> ]egv
-
 " tpope/vim-fugitive
 " use <leader>gc to quicly prepare the file for commiting
 nnoremap <leader>gc :Gwrite<cr>:Gcommit -m ""<left>
 
+" marcelbeumer/dragvisuals.vim
+vnoremap <expr>h DVB_Drag('left')
+vnoremap <expr>l DVB_Drag('right')
+vnoremap <expr>j DVB_Drag('down')
+vnoremap <expr>k DVB_Drag('up')
+vnoremap <expr>D DVB_Duplicate()
+
 " Shougo/neosnippet.vim
 " enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
+"let g:neosnippet#enable_snipmate_compatibility = 1
 " tell neosnippet about the vim-snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 " SuperTab-like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
+"imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+"\ "\<Plug>(neosnippet_expand_or_jump)"
+"\: pumvisible() ? "\<C-n>" : "\<TAB>"
+"smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+"\ "\<Plug>(neosnippet_expand_or_jump)"
+"\: "\<TAB>"
 
 " Shougo/vimfiler.vim
 " make it the default file explorer
@@ -201,6 +219,6 @@ endfunction
 inoremap <expr><down> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><up> pumvisible() ? "\<C-p>" : "\<TAB>"
 
-" Shougo/unite.vim
-" run a fuzzy file finder
-nnoremap <C-p> :Unite file<cr>
+" kien/ctrlp.vim
+" bind :CtrlPCmdPalette to <c-a-p>
+nnoremap <D-A-p> :CtrlPCmdPalette<cr>
