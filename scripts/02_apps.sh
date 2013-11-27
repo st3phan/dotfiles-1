@@ -14,7 +14,7 @@ brew install mpv --with-dist-bundle
 # link GUI apps
 brew linkapps
 
-# brew-cask apps
+# homebrew-cask apps
 # install brew cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
