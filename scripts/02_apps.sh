@@ -30,7 +30,7 @@ brew cask install --appdir="/Applications" airserver alfred bartender dropbox f-
 brew cask install xbox360-controller-driver
 
 # prefpanes and qlplugins
-#brew cask install betterzipql jsonlook qlcolorcode qlmarkdown qlstephen scriptql suspicious-package
+brew cask install betterzipql jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql suspicious-package
 
 # cleanup homebrew's cache
 brew cleanup --force -s
