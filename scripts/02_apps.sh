@@ -23,13 +23,13 @@ brew install brew-cask
 mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
-# Install apps
+# install apps
 brew cask install --appdir="/Applications" airserver alfred bartender dropbox f-lux google-chrome google-hangouts imageoptim instacast iterm2 join-me keka key-codes node-webkit platypus pokerstars processing shotcut skype spectacle steam sublime-text textexpander transmission
 
 # drivers
 brew cask install xbox360-controller-driver
 
-# Prefpanes and qlplugins
+# prefpanes and qlplugins
 #brew cask install betterzipql jsonlook qlcolorcode qlmarkdown qlstephen scriptql suspicious-package
 
 # cleanup homebrew's cache
