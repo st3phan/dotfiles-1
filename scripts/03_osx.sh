@@ -117,7 +117,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 chflags nohidden ~/Library
 chflags hidden ~/Applications
 chflags hidden ~/Documents
-chflags hidden ~/Movies
 chflags hidden ~/Music
 chflags hidden ~/Pictures
 chflags hidden ~/Public
