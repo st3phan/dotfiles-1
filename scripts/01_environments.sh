@@ -26,4 +26,4 @@ gem install bundler watir-webdriver chromedriver2-helper
 # nodejs environment
 brew install node
 # install some packages
-npm install -g bower grunt-cli harp imageoptim-cli
+npm install -g browser-sync bower grunt-cli harp imageoptim-cli
