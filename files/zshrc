@@ -1,20 +1,17 @@
+############
+# settings #
+############
+
 # vi mode
 set -o vi
 
-# path to oh-my-zsh configuration.
-ZSH=${HOME}/.oh-my-zsh
+# oh-my-zsh
+DISABLE_UPDATE_PROMPT=true # auto-update without prompting
+ZSH_THEME="oneend" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
+plugins=(git zsh-syntax-highlighting) # plugins to load
+source ${HOME}/.oh-my-zsh/oh-my-zsh.sh # load it
 
-# auto-update oh-my-zsh without prompting
-DISABLE_UPDATE_PROMPT=true
-
-# set name of the theme to load (in ~/.oh-my-zsh/themes/)
-ZSH_THEME="oneend"
-
-# plugins to load (from oh-my-zsh)
-plugins=(git zsh-syntax-highlighting)
-
-# source other files
-source ${ZSH}/oh-my-zsh.sh
+# source alias and functions
 source ${HOME}/.zsh-alias
 
 # disable autocorrect
@@ -23,7 +20,7 @@ unsetopt correct_all
 # other settings
 export LSCOLORS=hxfxcxdxbxegedabagacad
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
-export EDITOR="vim"
+export EDITOR="subl"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # configure chruby, make 2.0 the default, but let it auto-switch based on .ruby-version files
