@@ -1,7 +1,3 @@
-############
-# settings #
-############
-
 # vi mode
 set -o vi
 
@@ -12,25 +8,15 @@ ZSH_THEME="oneend" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 plugins=(git zsh-syntax-highlighting) # plugins to load
 source ${ZSH}/oh-my-zsh.sh # load it
 
-# source alias and functions
+# source aliases and functions
 source ${HOME}/.zsh-alias
 
-# disable autocorrect
-unsetopt correct_all
-
 # other settings
+unsetopt correct_all # disable autocorrect
 export LSCOLORS=hxfxcxdxbxegedabagacad
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
 export EDITOR="subl"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-# configure chruby, make 2.0 the default, but let it auto-switch based on .ruby-version files
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.0
-
-# configure pyenv (it alters PATH, so it needs to be set after it)
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # source z
 source "$(brew --prefix)/etc/profile.d/z.sh"
