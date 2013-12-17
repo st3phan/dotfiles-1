@@ -9,7 +9,7 @@ brew install zsh --disable-etcdir
 # install mpv
 brew tap mpv-player/mpv
 brew install --HEAD mpv-player/mpv/libass-ct
-brew install mpv --with-dist-bundle
+brew install mpv --with-bundle
 
 # link GUI apps
 brew linkapps
@@ -31,6 +31,10 @@ brew cask install xbox360-controller-driver
 
 # prefpanes and qlplugins
 brew cask install betterzipql jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql suspicious-package
+
+# fonts
+brew tap caskroom/homebrew-fonts
+brew cask install font-source-code-pro
 
 # cleanup homebrew's cache
 brew cleanup --force -s
