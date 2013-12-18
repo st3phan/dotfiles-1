@@ -14,7 +14,7 @@ alias cdp='cd ~/Dropbox/Work/personal/processing'
 alias dsd='find . -iname ".DS_Store" -delete'
 
 # delete empty files and dirs
-alias zerod='find . -empty -delete'
+alias zerod='find . -empty -delete 2>/dev/null'
 
 # quicklook
 alias ql='qlmanage -p &>/dev/null'
