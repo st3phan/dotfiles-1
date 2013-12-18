@@ -25,7 +25,8 @@ alias h='history | grep'
 # fix file and directory permissions
 permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f -exec chmod 644 {} \; }
 
-# Aliases for git
+# aliases for git
+unalias gm # to not conflict with graphicsmagick
 alias g='git'
 alias ga='git add --all'
 alias gap='git add --patch'
@@ -63,3 +64,6 @@ alias gst='git status'
 alias gss='git status -s'
 alias gclean='git clean -ndx'
 alias gcleanf='git clean -dxf'
+
+# other aliases
+alias convert='gm convert' # imagemagick command with graphicsmagick
