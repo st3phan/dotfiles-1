@@ -12,7 +12,7 @@ source ${HOME}/.zsh-alias
 unsetopt correct_all # disable autocorrect
 export LSCOLORS=hxfxcxdxbxegedabagacad
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
-export EDITOR="subl"
+export EDITOR="vim"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # source z
