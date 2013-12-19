@@ -36,6 +36,9 @@ brew cask install betterzipql jsonlook qlcolorcode qlimagesize qlmarkdown qlstep
 brew tap caskroom/homebrew-fonts
 brew cask install font-source-code-pro
 
+# games
+#brew cask install gridwars noiz2sa rootage torus-trooper
+
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
