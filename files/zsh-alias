@@ -25,6 +25,9 @@ alias h='history | grep'
 # fix file and directory permissions
 permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f -exec chmod 644 {} \; }
 
+# get shasum fast
+shacurl() { curl -L "$1" | shasum | sed 's/ .*//' | pbcopy }
+
 # aliases for git
 unalias gm # to not conflict with graphicsmagick
 alias g='git'
