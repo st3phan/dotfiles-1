@@ -39,6 +39,15 @@ brew cask install font-source-code-pro
 # games
 #brew cask install gridwars noiz2sa rootage torus-trooper
 
+# my personal taps
+# tiny-scripts
+brew tap vitorgalvao/homebrew-tinyscripts
+brew install --HEAD customise-terminal-notifier dropboxtimer gfv gifmaker labelcolor lovecolor seren unsplashdownload
+
+# tiny-watir-scripts
+brew tap vitorgalvao/homebrew-tinywatirscripts
+brew install --HEAD olx-post olx-prolongar readability-delete-archives
+
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
