@@ -2,7 +2,7 @@
 ZSH=${HOME}/.oh-my-zsh # config dir
 DISABLE_UPDATE_PROMPT=true # auto-update without prompting
 ZSH_THEME="oneend" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
-plugins=(brew git git-extras vi-mode zsh-syntax-highlighting) # plugins to load
+plugins=(brew git git-extras zsh-syntax-highlighting) # plugins to load
 source ${ZSH}/oh-my-zsh.sh # load it
 
 # source aliases and functions
