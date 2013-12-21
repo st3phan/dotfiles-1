@@ -1,3 +1,6 @@
+# PATH
+export PATH="/usr/local/bin:$PATH"
+
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
@@ -16,6 +19,3 @@ gem install bundler watir-webdriver chromedriver2-helper
 brew install node
 # install some packages
 npm install -g browser-sync bower grunt-cli harp imageoptim-cli
-
-# make sure python and ruby are in the PATH
-export PATH="/usr/local/bin:$PATH"
