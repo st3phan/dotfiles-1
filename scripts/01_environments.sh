@@ -11,7 +11,7 @@ pip install asciinema docutils
 
 # ruby environment
 brew install ruby
-echo "gem: -n/usr/local/bin" >> ~/.gemrc
+echo "gem: --bindir /usr/local/bin" >> ~/.gemrc
 # install some gems
 gem install bundler watir-webdriver chromedriver2-helper
 
