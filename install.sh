@@ -9,3 +9,5 @@ git clone https://github.com/vitorgalvao/dotfiles.git /tmp/dotfiles/
 cat /tmp/dotfiles/scripts/* | sh
 
 mv "/tmp/dotfiles/files/" "${HOME}/Desktop/"
+
+echo 'After dropbox finishes syncing, run `mackup restore` to get your backed up settings'
