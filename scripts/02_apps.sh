@@ -39,6 +39,9 @@ brew cask install font-source-code-pro
 # games
 #brew cask install gridwars noiz2sa rootage torus-trooper
 
+# colorpickers
+brew cask install colorpicker-antetype
+
 # my personal taps
 # tiny-scripts
 brew tap vitorgalvao/homebrew-tinyscripts
