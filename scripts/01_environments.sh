@@ -10,8 +10,11 @@ brew install python
 pip install asciinema docutils
 
 # ruby environment
-brew install ruby
-echo "gem: --bindir /usr/local/bin" >> ~/.gemrc
+brew install chruby ruby-install
+ruby-install ruby
+# use the version installed now, to install some packages
+source /usr/local/share/chruby/chruby.sh
+chruby ruby
 # install some gems
 gem install bundler watir-webdriver chromedriver2-helper
 

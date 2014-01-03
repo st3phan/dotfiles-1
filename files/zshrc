@@ -8,6 +8,10 @@ source ${ZSH}/oh-my-zsh.sh # load it
 # source aliases and functions
 source ${HOME}/.zsh-alias
 
+# set default ruby to use, via chruby
+source /usr/local/share/chruby/chruby.sh
+chruby ruby
+
 # other settings
 unsetopt correct_all # disable autocorrect
 export LSCOLORS=hxfxcxdxbxegedabagacad
