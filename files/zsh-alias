@@ -5,10 +5,10 @@ alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force 
 alias openwithfix='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
 # cd to default Code directory
-alias cdc='cd ~/Dropbox/Work/personal/code'
+alias cdc='cd ~/Dropbox/work/personal/code'
 
 # cd to default Processing directory
-alias cdp='cd ~/Dropbox/Work/personal/processing'
+alias cdp='cd ~/Dropbox/work/personal/processing'
 
 # delete .DS_Store files
 alias dsd='find . -iname ".DS_Store" -delete'
