@@ -67,6 +67,3 @@ alias gst='git status'
 alias gss='git status -s'
 alias gclean='git clean -ndx'
 alias gcleanf='git clean -dxf'
-
-# other aliases
-alias convert='gm convert' # imagemagick command with graphicsmagick
