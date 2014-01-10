@@ -2,7 +2,7 @@
 brew install atool cpulimit elinks git-extras git-ftp lftp mackup mediainfo mkvtoolnix namebench phantomjs trash tree z
 brew install git --without-completions
 brew install imagemagick --with-libtiff
-brew install ffmpeg --with-libvpx --with-libvorbins --with-theora
+brew install ffmpeg --with-libvpx --with-libvorbis --with-theora
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
