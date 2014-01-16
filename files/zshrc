@@ -23,7 +23,7 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 
 # aliases and functions
 # update homebrew
-alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf $(brew --cache)'
+alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
 # Fix duplicates in “open with”
 alias openwithfix='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
