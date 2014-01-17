@@ -16,7 +16,7 @@ ruby-install ruby
 source /usr/local/share/chruby/chruby.sh
 chruby ruby
 # install some gems
-gem install bundler watir-webdriver chromedriver2-helper unsavory
+gem install bundler chromedriver2-helper unsavory watir-webdriver
 
 # nodejs environment
 brew install node
