@@ -7,7 +7,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 # python environment
 brew install python
 # install some eggs (docutils will be needed for mpv)
-pip install asciinema docutils
+pip install asciinema docutils livestreamer
 
 # ruby environment
 brew install chruby ruby-install
