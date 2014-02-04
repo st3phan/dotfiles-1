@@ -21,4 +21,4 @@ gem install bundler chromedriver2-helper redcarpet unsavory watir-webdriver
 # nodejs environment
 brew install node
 # install some packages
-npm install -g browser-sync bower grunt-cli harp html2jade imageoptim-cli
+npm install -g browser-sync bower grunt-cli harp html2jade imageoptim-cli tldr
