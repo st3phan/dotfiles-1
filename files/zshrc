@@ -18,8 +18,9 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
-# source z
+# source z and crafts
 source "$(brew --prefix)/etc/profile.d/z.sh"
+source "$(brew --prefix)/etc/profile.d/crafts"
 
 ############################################
 
