@@ -1,5 +1,5 @@
 # homebrew apps
-brew install atool cpulimit elinks git-extras git-ftp lftp mackup mediainfo mkvtoolnix mp4box namebench phantomjs trash tree z
+brew install atool cpulimit elinks git-extras git-ftp hr lftp mackup mediainfo mkvtoolnix mp4box namebench phantomjs trash tree z
 brew install git --without-completions
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbis --with-theora
