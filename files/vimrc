@@ -21,6 +21,8 @@ NeoBundleLazy 'groenewege/vim-less'
 NeoBundleLazy 'othree/html5.vim'
 " close html tags by typing '</'
 NeoBundleLazy 'vim-scripts/closetag.vim'
+" emmet
+NeoBundleLazy 'mattn/emmet-vim'
 " css3 syntax
 NeoBundleLazy 'hail2u/vim-css3-syntax'
 " csscomb
@@ -70,8 +72,8 @@ autocmd FileType markdown,mdown,mkdn,mkd,md NeoBundleSource vim-markdown
 autocmd FileType jade NeoBundleSource vim-jade
 autocmd FileType scss NeoBundleSource scss-syntax
 autocmd FileType less NeoBundleSource less
-autocmd FileType html NeoBundleSource html5 closetag
-autocmd FileType css NeoBundleSource vim-css3-syntax csscomb-for-vim
+autocmd FileType html NeoBundleSource html5 closetag emmet-vim
+autocmd FileType css NeoBundleSource vim-css3-syntax csscomb-for-vim emmet-vim
 autocmd FileType pde NeoBundleSource vim-processing
 
 """""
@@ -171,6 +173,10 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 """""
 """"" set plugin-specific options
+" mattn/emmet-vim
+" map emmet's trigger (you'll have to add ',' to the following combination)
+let g:user_emmet_leader_key='<leader>'
+
 " sophacles/vim-processing
 " map Cmd + 0 to 'make', to run skectches ('redraw!' is a fix for terminal vim)
 nnoremap <D-0> :silent make<cr>:redraw!<cr>
