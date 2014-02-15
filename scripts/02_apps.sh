@@ -30,7 +30,7 @@ brew cask install --appdir="/Applications" airserver alfred apikitchen bartender
 brew cask install xbox360-controller-driver
 
 # prefpanes and qlplugins
-brew cask install betterzipql jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql suspicious-package vox-preference-pane
+brew cask install betterzipql jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package vox-preference-pane
 
 # fonts
 brew tap caskroom/homebrew-fonts
