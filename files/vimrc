@@ -8,7 +8,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " my bundles
 " themes
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'morhetz/gruvbox'
+NeoBundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 " markdown syntax
 NeoBundleLazy 'tpope/vim-markdown'
 " jade syntax
@@ -85,7 +85,7 @@ syntax enable " color code syntax
 colorscheme solarized " colorscheme
 " colorscheme for GUI
 if has ('gui_running')
-	colorscheme gruvbox
+	colorscheme peacocks-in-space
 endif
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
