@@ -8,7 +8,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " my bundles
 " themes
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
+NeoBundle 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " markdown syntax
 NeoBundleLazy 'tpope/vim-markdown'
 " jade syntax
