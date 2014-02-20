@@ -3,6 +3,7 @@ brew install atool cpulimit elinks git-extras git-ftp hr lftp mackup mediainfo m
 brew install git --without-completions
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbis --with-theora
+brew install macvim --with-lua --custom-icons
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
