@@ -25,7 +25,7 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool dropbox enjoyable f-lux google-chrome haroopad imageoptim instacast iterm2 join-me keka key-codes node-webkit openemu platypus pokerstars processing shiori shotcut skype spectacle steam sublime-text textexpander transmission
+brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool dropbox enjoyable f-lux google-chrome haroopad imageoptim instacast iterm2 join-me keka key-codes node-webkit openemu pashua platypus pokerstars processing shiori shotcut skype spectacle steam sublime-text textexpander transmission
 
 # drivers
 brew cask install xbox360-controller-driver
