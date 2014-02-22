@@ -205,6 +205,11 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 "\ "\<Plug>(neosnippet_expand_or_jump)"
 "\: "\<TAB>"
 
+" Raimondi/delimitMate
+" place cursor where expected after pressing <space> or <cr>
+let g:delimitMate_expand_cr=1
+let g:delimitMate_expand_space=1
+
 " Shougo/vimfiler.vim
 " make it the default file explorer
 let g:vimfiler_as_default_explorer=1
