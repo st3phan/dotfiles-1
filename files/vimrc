@@ -216,15 +216,16 @@ let g:vimfiler_edit_action='tabopen'
 let g:neocomplete#enable_at_startup=1
 " set minimum syntax keyword length
 let g:neocomplete#sources#syntax#min_keyword_length=3
-" make <cr> do a carriage return normally
-inoremap <silent><CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-	return neocomplete#smart_close_popup() . "\<CR>"
-endfunction
+" auto-select first result
+let g:neocomplete#enable_auto_select=1
 " use <up> and <down> to select completions
 inoremap <expr><down> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><up> pumvisible() ? "\<C-p>" : "\<TAB>"
 
 " kien/ctrlp.vim
-" bind :CtrlPCmdPalette to <c-a-p>
-nnoremap <D-A-p> :CtrlPCmdPalette<cr>
+" set default keyboard to <c-o>
+let g:ctrlp_map='<c-o>'
+
+" fisadev/vim-ctrlp-cmdpalette
+" bind :CtrlPCmdPalette to <c-s-p>
+nnoremap <c-s-p> :CtrlPCmdPalette<cr>
