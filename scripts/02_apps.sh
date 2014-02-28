@@ -12,9 +12,6 @@ brew tap mpv-player/mpv
 brew install --HEAD mpv-player/mpv/libass-ct
 brew install mpv --with-bundle
 
-# link GUI apps
-brew linkapps
-
 # homebrew-cask apps
 # install brew cask
 brew tap phinze/homebrew-cask
