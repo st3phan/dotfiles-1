@@ -25,7 +25,7 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool dropbox enjoyable f-lux google-chrome haroopad imageoptim instacast iterm2 join-me keka key-codes node-webkit openemu pashua platypus pokerstars processing shiori shotcut skype spectacle steam sublime-text textexpander transmission
+brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool dropbox enjoyable f-lux google-chrome haroopad imageoptim instacast iterm2 joinme keka key-codes node-webkit openemu pashua platypus pokerstars processing shiori shotcut skype spectacle steam sublime-text textexpander transmission
 
 # drivers
 brew cask install xbox360-controller-driver
@@ -38,7 +38,7 @@ brew tap caskroom/homebrew-fonts
 brew cask install font-source-code-pro
 
 # games
-#brew cask install gridwars noiz2sa rootage torus-trooper
+#brew cask install gridwars noiz2sa rootage torustrooper
 
 # colorpickers
 brew cask install colorpicker-antetype
