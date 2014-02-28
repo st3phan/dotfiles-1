@@ -12,6 +12,10 @@ brew tap mpv-player/mpv
 brew install --HEAD mpv-player/mpv/libass-ct
 brew install mpv --with-bundle
 
+# install massren
+brew tap laurent22/massren
+brew install massren
+
 # homebrew-cask apps
 # install brew cask
 brew tap phinze/homebrew-cask
