@@ -85,7 +85,7 @@ syntax enable " color code syntax
 colorscheme solarized " colorscheme
 " colorscheme for GUI
 if has ('gui_running')
-	colorscheme peacocks-in-space
+	colorscheme halflife
 endif
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
@@ -100,11 +100,11 @@ set wildmenu " show completions in command mode
 set wildmode=list:longest,full " in command mode, press tab once to show alternatives, and again to cycle
 set autoread " watch for file changes
 set autoindent " auto-indent code
-set scrolloff=5 " allows show at least 3 extra lines before/after the cursor
-set tabstop=4 " how many columns (spaces) a tab counts for
-set softtabstop=4 " how many columns (spaces) a tab will convert to
-set shiftwidth=4 " how many columns (spaces) text is reindented
-"set expandtab " convert tabs to spaces
+set scrolloff=5 " allows show at least 5 extra lines before/after the cursor
+set tabstop=2 " how many columns (spaces) a tab counts for
+set softtabstop=2 " how many columns (spaces) a tab will convert to
+set shiftwidth=2 " how many columns (spaces) text is reindented
+set expandtab " convert tabs to spaces
 set incsearch " highlights search matches as they are typed
 "set nofoldenable " disables code folding
 set listchars=tab:▸\ ,trail:· " use the same symbols as TextMate for tabstops and EOLs
@@ -198,12 +198,12 @@ vnoremap <expr>D DVB_Duplicate()
 " tell neosnippet about the vim-snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 " SuperTab-like snippets behavior.
-"imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-"\ "\<Plug>(neosnippet_expand_or_jump)"
-"\: pumvisible() ? "\<C-n>" : "\<TAB>"
-"smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-"\ "\<Plug>(neosnippet_expand_or_jump)"
-"\: "\<TAB>"
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
 
 " Raimondi/delimitMate
 " place cursor where expected after pressing <space> or <cr>
