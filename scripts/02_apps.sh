@@ -47,7 +47,7 @@ brew cask install colorpicker-antetype
 # my personal taps
 # tiny-scripts
 brew tap vitorgalvao/homebrew-tinyscripts
-brew install --HEAD casks-audit crafts customise-terminal-notifier dropboxtimer gfv gifmaker labelcolor lovecolor olx-post olx-prolongar pedir-gas pinboardlinkcheck seren unsplashdownload
+brew install casks-audit crafts customise-terminal-notifier dropboxtimer gfv gifmaker labelcolor lovecolor olx-post olx-prolongar pedir-gas pinboardlinkcheck seren unsplashdownload
 
 # cleanup homebrew's cache
 brew cleanup --force -s
