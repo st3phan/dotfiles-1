@@ -53,7 +53,11 @@ alias h='history | grep'
 permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f -exec chmod 644 {} \; }
 
 # get shasum fast
-shacurl() { curl -#L "$1" | shasum -a 256 | sed 's/ .*//' | tr -d '\n' }
+shacurl() {
+  sha256=$(curl -#L "$1" | shasum -a 256 | sed 's/ .*//' | tr -d '\n')
+  echo "${sha256}"
+  echo "${sha256}" | pbcopy
+}
 
 # aliases for git
 unalias gm # to not conflict with graphicsmagick
