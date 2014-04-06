@@ -56,7 +56,7 @@ permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f 
 shacurl() {
   sha256=$(curl -#L "$1" | shasum -a 256 | sed 's/ .*//' | tr -d '\n')
   echo "${sha256}"
-  echo "${sha256}" | pbcopy
+  echo -n "${sha256}" | pbcopy
 }
 
 # aliases for git
