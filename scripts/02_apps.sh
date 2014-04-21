@@ -41,7 +41,7 @@ brew cask install font-source-code-pro
 #brew cask install gridwars noiz2sa rootage torustrooper
 
 # colorpickers
-brew cask install colorpicker-antetype
+brew cask install colorpicker-antetype colorpicker-skalacolor
 
 # my personal taps
 # tiny-scripts
