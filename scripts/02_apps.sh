@@ -17,7 +17,7 @@ brew install massren
 
 # homebrew-cask apps
 # install brew cask
-brew tap phinze/homebrew-cask
+brew tap caskroom/cask
 brew install brew-cask
 
 # set caskroom permissions
