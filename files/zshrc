@@ -49,6 +49,15 @@ alias ql='qlmanage -p &>/dev/null'
 # search in history
 alias h='history | grep'
 
+# ISS live stream with audio
+iss() {
+  livestreamer "http://www.ustream.tv/channel/iss-hdev-payload" best &
+  while true; do
+    livestreamer "http://www.youtube.com/watch?v=UwAzXBCCQrQ" best
+    sleep 3
+  done
+}
+
 # fix file and directory permissions
 permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f -exec chmod 644 {} \; }
 
