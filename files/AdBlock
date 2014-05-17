@@ -1,3 +1,5 @@
 Disable EasyList (to prevent duplicates) and add this list
-
 http://www.fanboy.co.nz/r/fanboy-ultimate.txt
+
+Add this manually to filters, to prevent youtube video annotations
+||youtube.com/annotations_
