@@ -7,7 +7,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " my bundles
 " themes
-NeoBundle 'altercation/vim-colors-solarized'
+"NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " markdown syntax
 NeoBundleLazy 'tpope/vim-markdown'
@@ -51,8 +52,6 @@ NeoBundle 'Raimondi/delimitMate'
 "NeoBundle 'Shougo/vimfiler.vim'
 " automatically open popup menu for completions
 NeoBundle 'Shougo/neocomplete.vim'
-" more intuitive interface for the undo tree, call with :GundoToggle
-"NeoBundle 'sjl/gundo.vim'
 " syntax checker
 "NeoBundle 'scrooloose/syntastic'
 " extend motions (eg <leader><leader>w)
@@ -82,10 +81,12 @@ set backspace=indent,eol,start " fixes backspace behaviour
 filetype plugin indent on " respects commands and indents from plugins and filetypes
 set nocompatible " stops from behaving in a vi compatible way
 syntax enable " color code syntax
-colorscheme solarized " colorscheme
-" colorscheme for GUI
+" colorscheme
 if has ('gui_running')
-	colorscheme halflife
+  colorscheme halflife
+else
+  colorscheme hybrid
+  "colorscheme solarized
 endif
 set guioptions-=T " remove toolbar on GUI
 set guioptions-=r " remove right-hand scroll bar on GUI
