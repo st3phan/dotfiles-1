@@ -38,6 +38,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-fugitive'
 " move visual selections
 NeoBundle 'marcelbeumer/dragvisuals.vim'
+" search in Dash app
+NeoBundle 'rizzatti/dash.vim'
 " textmate-style snippets
 NeoBundle 'Shougo/neosnippet.vim'
 " collection of snippets
