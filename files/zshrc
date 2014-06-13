@@ -27,6 +27,13 @@ source "$(brew --prefix)/etc/profile.d/crafts"
 ############################################
 
 # aliases and functions
+# vm-specific
+vmmachine="${HOME}/Documents/Virtual Machines.localized/Mac OS X 10.9.vmwarevm/Mac OS X 10.9.vmx"
+alias vmstart='vmrun start "${vmmachine}"'
+alias vmstop='vmrun stop "${vmmachine}" && killall "VMware Fusion"'
+alias vmdesign='vmrun revertToSnapshot "${vmmachine}" design && vmrun start "${vmmachine}"'
+alias vmdev='vmrun revertToSnapshot "${vmmachine}" brew+cask && vmrun start "${vmmachine}"'
+
 # update homebrew
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
 
@@ -49,7 +56,7 @@ alias zerod='find . -empty -delete 2>/dev/null'
 alias ql='qlmanage -p &>/dev/null'
 
 # search in history
-alias h='history | grep'
+alias h='history | grep -i'
 
 # ISS live stream with audio
 iss() {
