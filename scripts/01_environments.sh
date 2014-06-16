@@ -1,6 +1,9 @@
 # PATH
 export PATH="/usr/local/bin:$PATH"
 
+# make sure system is up-to-date
+sudo softwareupdate --install --all
+
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
