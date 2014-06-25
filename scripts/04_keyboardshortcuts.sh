@@ -8,3 +8,8 @@ defaults write com.vemedio.osx.Instacast NSUserKeyEquivalents '{
   "Mark as Unplayed"="~u";
   "Download"="~d";
 }'
+
+# Pixelmator
+defaults write com.pixelmatorteam.pixelmator NSUserKeyEquivalents '{
+  "Export…"="@e";
+}'
