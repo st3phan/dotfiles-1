@@ -14,3 +14,8 @@ defaults write com.vemedio.osx.Instacast NSUserKeyEquivalents '{
 defaults write com.pixelmatorteam.pixelmator NSUserKeyEquivalents '{
   "Export…"="@e";
 }'
+
+defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
+  "Open Links"="l";
+  "Read Later"="~l";
+}'
