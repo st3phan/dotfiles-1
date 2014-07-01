@@ -17,5 +17,5 @@ defaults write com.pixelmatorteam.pixelmator NSUserKeyEquivalents '{
 
 defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
   "Open Links"="l";
-  "Read Later"="~l";
+  "Send to Pinboard"="$l";
 }'
