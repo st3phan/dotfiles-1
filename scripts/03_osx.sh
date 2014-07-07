@@ -94,6 +94,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
+# use 'defaults write -g QLEnableTextSelection -bool true' to make it work in all applications
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
