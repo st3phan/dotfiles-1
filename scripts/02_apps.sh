@@ -16,6 +16,10 @@ brew install mpv --with-bundle
 brew tap laurent22/massren
 brew install massren
 
+# install peco
+brew tap peco/peco
+brew install peco
+
 # homebrew-cask apps
 # install brew cask
 brew tap caskroom/cask
