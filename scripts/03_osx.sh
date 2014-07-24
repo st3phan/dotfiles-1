@@ -140,9 +140,6 @@ defaults write com.apple.dock orientation -string left
 # Disable Dock icon magnification
 defaults write com.apple.dock magnification -bool false
 
-# Disable the Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
