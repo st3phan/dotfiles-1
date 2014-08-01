@@ -221,6 +221,13 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 defaults write com.apple.appstore ShowDebugMenu -bool true
 
 ###############################################################################
+# Other                                                                       #
+###############################################################################
+
+# Use OpenDNS servers
+sudo networksetup -setdnsservers Wi-Fi 208.67.220.220 208.67.222.222
+
+###############################################################################
 # Kill (to restart) the needed applications                                   #
 ###############################################################################
 
