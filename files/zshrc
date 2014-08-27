@@ -2,7 +2,7 @@
 ZSH=${HOME}/.oh-my-zsh # config dir
 DISABLE_UPDATE_PROMPT=true # auto-update without prompting
 ZSH_THEME="oneend" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
-plugins=(brew git git-extras zsh-syntax-highlighting) # plugins to load
+plugins=(brew git git-extras history-substring-search web-search zsh-syntax-highlighting) # plugins to load
 source ${ZSH}/oh-my-zsh.sh # load it
 
 # set default ruby to use, via chruby
@@ -17,7 +17,7 @@ export EDITOR="vim"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
-bindkey -v # use vi mode
+setopt interactivecomments
 bindkey '√' edit-command-line # press ⌥+v to edit command in text editor
 
 # source z and crafts
@@ -29,13 +29,19 @@ source "$(brew --prefix)/etc/profile.d/crafts"
 # aliases and functions
 # vm-specific
 vmmachine="${HOME}/Documents/Virtual Machines.localized/Mac OS X 10.9.vmwarevm/Mac OS X 10.9.vmx"
+vmusername="vm"
+vmpassword="m"
 alias vmstart='vmrun start "${vmmachine}"'
-alias vmstop='vmrun stop "${vmmachine}" && killall "VMware Fusion"'
-alias vmdesign='vmrun revertToSnapshot "${vmmachine}" design && vmrun start "${vmmachine}"'
+alias vmstop='osascript -e "tell application \"VMware Fusion\" to quit"'
 alias vmdev='vmrun revertToSnapshot "${vmmachine}" brew+cask && vmrun start "${vmmachine}"'
+alias vmdevupdate='vmrun revertToSnapshot "${vmmachine}" brew+cask && vmrun start "${vmmachine}" && vmrun deleteSnapshot "${vmmachine}" brew+cask && sleep 5 && vmrun -gu "${vmusername}" -gp "${vmpassword}" runScriptInGuest "${vmmachine}" "/bin/bash" "echo \"${vmpassword}\" | sudo -S softwareupdate -ia" && vmrun -gu "${vmusername}" -gp "${vmpassword}" runScriptInGuest "${vmmachine}" "/bin/bash" "/usr/local/bin/brew update && /usr/local/bin/brew upgrade" && vmrun suspend "${vmmachine}" && vmrun snapshot "${vmmachine}" brew+cask && killall "VMware Fusion"'
+alias vmdesign='vmrun revertToSnapshot "${vmmachine}" design && vmrun start "${vmmachine}"'
 
 # update homebrew
 alias brewu='brew update && brew upgrade && brew doctor && brew cleanup --force -s && rm -rf "$(brew --cache)"'
+
+# brew cask alias
+alias cask='brew cask'
 
 # Fix duplicates in “open with”
 alias openwithfix='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
@@ -52,11 +58,16 @@ alias dsd='find . -iname ".DS_Store" -delete'
 # delete empty files and dirs
 alias zerod='find . -empty -delete 2>/dev/null'
 
+# search in history
+alias h='history | grep -i'
+
 # quicklook
 alias ql='qlmanage -p &>/dev/null'
 
-# search in history
-alias h='history | grep -i'
+# quickly stream from video sites
+qs() {
+  mpv "$(youtube-dl -g ${1})"
+}
 
 # ISS live stream with audio
 iss() {
@@ -72,18 +83,17 @@ permissionsfix() { find "$@" -type d -exec chmod 755 {} \; && find "$@" -type f 
 
 # get shasum fast
 shacurl() {
-  sha256=$(curl -#L "$1" | shasum -a 256 | sed 's/ .*//' | tr -d '\n')
+  sha256=$(noglob curl -#L "$1" | shasum -a 256 | sed 's/ .*//' | tr -d '\n')
   echo "${sha256}"
   echo -n "${sha256}" | pbcopy
 }
 
 # aliases for git
-unalias gm # to not conflict with graphicsmagick
 alias g='git'
 alias ga='git add --all'
 alias gap='git add --patch'
 alias gb='git branch'
-alias gbd='git branch -d'
+alias gbd='currentBranch="$(git rev-parse --abbrev-ref HEAD)" && git checkout master && git branch -D "${currentBranch}" && unset currentBranch'
 alias gbD='git branch -D'
 alias gc='git commit -v'
 alias gco='git checkout'
