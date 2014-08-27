@@ -7,5 +7,3 @@ cat /tmp/dotfiles/scripts/* > /tmp/script
 bash /tmp/script
 
 mv "/tmp/dotfiles/files/" "${HOME}/Desktop/"
-
-echo 'After dropbox finishes syncing, run `mackup restore` to get your backed up settings'
