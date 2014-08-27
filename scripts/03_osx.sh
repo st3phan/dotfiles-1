@@ -227,6 +227,9 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 # Use OpenDNS servers
 sudo networksetup -setdnsservers Wi-Fi 208.67.220.220 208.67.222.222
 
+# Set contact information in lock screen
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}"
+
 ###############################################################################
 # Kill (to restart) the needed applications                                   #
 ###############################################################################
