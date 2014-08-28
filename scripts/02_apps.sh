@@ -1,7 +1,7 @@
 # homebrew apps
 brew install ack atool cpulimit duff exiftool eye-d3 git git-extras git-ftp hr lftp mackup mediainfo mkvtoolnix mp4box namebench peerflix phantomjs shellcheck trash tree watchman youtube-dl z
 brew install imagemagick --with-libtiff
-brew install ffmpeg --with-libvpx --with-libvorbis --with-theora --with-x265
+brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
 brew install macvim --with-lua --custom-icons
 brew install sox --with-flac --with-lame --with-libvorbis
 brew install vim --with-lua
