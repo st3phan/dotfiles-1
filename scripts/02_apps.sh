@@ -22,8 +22,7 @@ brew install peco
 
 # homebrew-cask apps
 # install brew cask
-brew tap caskroom/cask
-brew install brew-cask
+brew install caskroom/cask/brew-cask
 
 # set caskroom permissions
 mkdir -p /opt/homebrew-cask/Caskroom
