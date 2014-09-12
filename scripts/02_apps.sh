@@ -7,18 +7,10 @@ brew install sox --with-flac --with-lame --with-libvorbis
 brew install vim --with-lua
 brew install zsh --disable-etcdir
 
-# install mpv
-brew tap mpv-player/mpv
-brew install --HEAD mpv-player/mpv/libass-ct
-brew install mpv
-
-# install massren
-brew tap laurent22/massren
-brew install massren
-
-# install peco
-brew tap peco/peco
-brew install peco
+# install apps from other taps
+brew install mpv-player/mpv/mpv
+brew install laurent22/massren/massren
+brew install peco/peco/peco
 
 # homebrew-cask apps
 # install brew cask
