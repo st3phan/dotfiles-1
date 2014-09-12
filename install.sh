@@ -7,7 +7,7 @@ cat /tmp/dotfiles/scripts/*.sh > /tmp/script
 bash /tmp/script
 
 # run ruby scripts
-ruby /tmp/dotfiles/scripts/chrome_extensions.rb
+ruby /tmp/dotfiles/scripts/07_chrome_extensions.rb
 
 # move files that'll need manual action
 mv "/tmp/dotfiles/files/" "${HOME}/Desktop/"
