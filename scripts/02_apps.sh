@@ -10,7 +10,7 @@ brew install zsh --disable-etcdir
 # install mpv
 brew tap mpv-player/mpv
 brew install --HEAD mpv-player/mpv/libass-ct
-brew install mpv --with-bundle
+brew install mpv
 
 # install massren
 brew tap laurent22/massren
