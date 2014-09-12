@@ -31,6 +31,9 @@ sudo chown -R ${USER}:staff /opt/homebrew-cask
 # install apps
 brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool cocoadialog dropbox enjoyable flux fontprep google-chrome hex-fiend hexels hydra imageoptim instacast iterm2 joinme keka key-codes leap-motion macaw macdown node-webkit openemu p5 platypus pokerstars processing screenflow shotcut spectacle steam sublime-text subtitles textexpander transmission
 
+# install google-chrome-canary
+brew cask install caskroom/versions/google-chrome-canary
+
 # drivers
 brew cask install xbox360-controller-driver wacom-bamboo-tablet
 
