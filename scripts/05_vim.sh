@@ -1,6 +1,7 @@
 # dotfile
 mv "/tmp/dotfiles/files/vimrc" "${HOME}/.vimrc"
 
-# download and configure neobundle
-git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-vim +NeoBundleInstall +qall
+# download and configure vim-plug
+mkdir -p ~/.vim/autoload
+curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
