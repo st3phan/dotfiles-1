@@ -19,7 +19,7 @@ ruby-install ruby
 source /usr/local/share/chruby/chruby.sh
 chruby ruby
 # install some gems
-gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss jekyll pry redcarpet site_validator watir-webdriver
+gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss jekyll pry redcarpet ronn site_validator watir-webdriver
 
 # nodejs environment
 brew install node
