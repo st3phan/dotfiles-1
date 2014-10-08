@@ -11,7 +11,6 @@ chrome_extensions = {
 canary_extensions = {
   :chromeextensionsdeveloper => 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc',
   :emmetlivestyle => 'diebikgmpmeppiilkaijjbdgciafajmg',
-  :kimono => 'deoaddaobnieaecelinfdllcgdehimih',
   :livereload => 'jnihajbhpnppcggbcgedagnkighmdlei',
   :snappysnippet => 'blfngdefapoapkcdibbdkigpeaffgcil',
   :tincr => 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
