@@ -24,4 +24,4 @@ gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss jekyll pry red
 # nodejs environment
 brew install node
 # install some packages
-npm install --global browser-sync bower divshot-cli grunt-cli harp html2jade imageoptim-cli pageres tldr
+npm install --global browser-sync bower divshot-cli grunt-cli harp html2jade imageoptim-cli nightmare pageres tldr
