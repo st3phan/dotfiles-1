@@ -27,7 +27,7 @@ brew cask install --appdir="/Applications" airserver alfred apikitchen bartender
 brew cask install caskroom/versions/google-chrome-canary
 
 # drivers
-brew cask install xbox360-controller-driver wacom-bamboo-tablet
+brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
 
 # prefpanes and qlplugins
 brew cask install betterzipql epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package
