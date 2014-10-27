@@ -5,14 +5,10 @@ ZSH_THEME="oneend" # set name of the theme to load (in ~/.oh-my-zsh/themes/)
 plugins=(brew git git-extras history-substring-search web-search zsh-syntax-highlighting) # plugins to load
 source ${ZSH}/oh-my-zsh.sh # load it
 
-# set default ruby to use, via chruby
-source /usr/local/share/chruby/chruby.sh
-chruby ruby
-
 # other settings
 unsetopt correct_all # disable autocorrect
 export LSCOLORS=hxfxcxdxbxegedabagacad
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin"
 export EDITOR="vim"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export LANG=en_GB.UTF-8

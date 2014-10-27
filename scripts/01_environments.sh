@@ -13,11 +13,7 @@ brew install python
 pip install asciinema livestreamer subliminal
 
 # ruby environment
-brew install chruby ruby-install
-ruby-install ruby
-# use the version installed now, to install some packages
-source /usr/local/share/chruby/chruby.sh
-chruby ruby
+brew install ruby
 # install some gems
 gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss did_you_mean jekyll pry redcarpet ronn site_validator watir-webdriver
 
