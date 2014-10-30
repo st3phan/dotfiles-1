@@ -4,6 +4,7 @@ chrome_extensions = {
   :onepassword => 'aomjjhallfgjeglblehebfpbcfeobpgk',
   :adblockplus => 'cfhdojbkjhnklbpkdaibdccddilifddb',
   :buffer => 'noojglkidnpfjbincgijbaiedldjfbhh',
+  :mediakeysforovercast => 'iomjboggdipkbeddinniaoiffjibdach',
   # :momentum => 'laookkfknpbbblfpciffpaejjkokdgca',
   :palettab => 'bidckpnndigbjhmojikkhmejkfkpgoih',
   :vimium => 'dbepggeogbaibhgnhhndojpepiihcmeb'
