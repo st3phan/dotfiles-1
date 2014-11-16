@@ -15,6 +15,7 @@ pip install asciinema livestreamer subliminal
 # ruby environment
 brew install ruby
 # install some gems
+export GEM_HOME="$(brew --prefix)"
 gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss did_you_mean jekyll pry redcarpet ronn site_validator watir-webdriver
 
 # nodejs environment
