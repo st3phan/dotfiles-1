@@ -5,7 +5,7 @@ export PATH="/usr/local/bin:$PATH"
 sudo softwareupdate --install --all
 
 # install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # python environment
 brew install python
