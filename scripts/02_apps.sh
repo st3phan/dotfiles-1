@@ -1,5 +1,5 @@
 # homebrew apps
-brew install ack atool cpulimit duff exiftool eye-d3 git git-extras git-ftp hr jq lftp mackup mediainfo mkvtoolnix mp4box namebench peerflix phantomjs pup ranger shellcheck trash tree watchman youtube-dl z
+brew install ack atool cpulimit duff exiftool eye-d3 gifify git git-extras git-ftp hr jq lftp mackup mediainfo mkvtoolnix mp4box namebench peerflix phantomjs pup ranger shellcheck trash tree watchman youtube-dl z
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
 brew install macvim --with-lua --custom-icons
