@@ -1,13 +1,15 @@
-#!/bin/bash
+get_everything() {
+  git clone https://github.com/vitorgalvao/dotfiles.git /tmp/dotfiles/
 
-git clone https://github.com/vitorgalvao/dotfiles.git /tmp/dotfiles/
+  # concatenate all shell scripts together, so things like variables can be reused
+  cat /tmp/dotfiles/scripts/*.sh > /tmp/script
+  bash /tmp/script
 
-# concatenate all shell scripts together, so things like variables can be reused
-cat /tmp/dotfiles/scripts/*.sh > /tmp/script
-bash /tmp/script
+  # run ruby scripts
+  ruby /tmp/dotfiles/scripts/07_chrome_extensions.rb
 
-# run ruby scripts
-ruby /tmp/dotfiles/scripts/07_chrome_extensions.rb
+  # move files that'll need manual action
+  mv "/tmp/dotfiles/files/" "${HOME}/Desktop/"
+}
 
-# move files that'll need manual action
-mv "/tmp/dotfiles/files/" "${HOME}/Desktop/"
+get_everything
