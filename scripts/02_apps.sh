@@ -35,8 +35,7 @@ brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
 brew cask install betterzipql epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package
 
 # fonts
-brew tap caskroom/homebrew-fonts
-brew cask install font-source-code-pro
+brew cask install caskroom/homebrew-fonts/font-source-code-pro
 
 # games
 #brew cask install gridwars noiz2sa rootage torustrooper
