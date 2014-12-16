@@ -4,9 +4,9 @@
 
 # Instacast
 defaults write com.vemedio.osx.Instacast NSUserKeyEquivalents '{
-  "Mark as Played"="~p";
-  "Mark as Unplayed"="~u";
-  "Download"="~d";
+  "Mark as Played"="@p";
+  "Mark as Unplayed"="@u";
+  "Download"="@d";
   "Play Now"="\r";
 }'
 
