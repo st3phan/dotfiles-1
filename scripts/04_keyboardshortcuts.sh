@@ -4,10 +4,12 @@
 
 # Instacast
 defaults write com.vemedio.osx.Instacast NSUserKeyEquivalents '{
-  "Mark as Played"="@p";
+  "Mark as Played"="\b";
   "Mark as Unplayed"="@u";
   "Download"="@d";
   "Play Now"="\r";
+  "Play Next"="@\r";
+  "Add to Up Next"="$@\r";
 }'
 
 # Pixelmator
