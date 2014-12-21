@@ -11,6 +11,7 @@ defaults write com.vemedio.osx.Instacast NSUserKeyEquivalents '{
   "Play Now"="\r";
   "Play Next"="@\r";
   "Add to Up Next"="$@\r";
+  "Show in Browser"="@b";
 }'
 
 # Pixelmator
