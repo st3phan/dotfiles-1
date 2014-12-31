@@ -2,11 +2,12 @@
 
 chrome_extensions = {
   :onepassword => 'aomjjhallfgjeglblehebfpbcfeobpgk',
-  :adblockplus => 'cfhdojbkjhnklbpkdaibdccddilifddb',
+  # :adblockplus => 'cfhdojbkjhnklbpkdaibdccddilifddb',
   :buffer => 'noojglkidnpfjbincgijbaiedldjfbhh',
   :mediakeysforovercast => 'iomjboggdipkbeddinniaoiffjibdach',
   # :momentum => 'laookkfknpbbblfpciffpaejjkokdgca',
   :palettab => 'bidckpnndigbjhmojikkhmejkfkpgoih',
+  :ublock => 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
   :vimium => 'dbepggeogbaibhgnhhndojpepiihcmeb'
 }
 
