@@ -48,6 +48,8 @@ brew cask install font-abril-fatface font-gentium-book-basic font-playfair-displ
 brew cask install font-bitter font-kreon
 # script
 brew cask install font-pacifico
+# other
+brew cask install font-redacted
 
 # games
 #brew cask install gridwars noiz2sa rootage torustrooper
