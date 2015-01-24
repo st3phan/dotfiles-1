@@ -36,7 +36,20 @@ brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
 brew cask install betterzipql epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package
 
 # fonts
-brew cask install caskroom/homebrew-fonts/font-source-code-pro
+brew tap caskroom/fonts
+# multiple
+brew cask install font-alegreya font-alegreya-sans font-alegreya-sans-sc font-alegreya-sc
+brew cask install font-source-code-pro font-source-sans-pro font-source-serif-pro
+brew cask install font-pt-mono font-pt-sans font-pt-serif
+brew cask install font-merriweather font-merriweather-sans
+# sans
+brew cask install font-exo2 font-fira-sans font-lato font-open-sans font-open-sans-condensed font-signika
+# serif
+brew cask install font-abril-fatface font-gentium-book-basic font-playfair-display font-playfair-display-sc
+# slab
+brew cask install font-bitter font-kreon
+# script
+brew cask install font-pacifico
 
 # games
 #brew cask install gridwars noiz2sa rootage torustrooper
