@@ -32,8 +32,8 @@ brew cask install caskroom/versions/vmware-fusion6
 # drivers
 brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
 
-# prefpanes and qlplugins
-brew cask install betterzipql epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package
+# prefpanes, qlplugins, colorpickers
+brew cask install betterzipql colorpicker-antetype colorpicker-skalacolor epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package
 
 # fonts
 brew tap caskroom/fonts
@@ -53,9 +53,6 @@ brew cask install font-pacifico
 
 # games
 #brew cask install gridwars noiz2sa rootage torustrooper
-
-# colorpickers
-brew cask install colorpicker-antetype colorpicker-skalacolor
 
 # my personal taps
 # tiny-scripts
