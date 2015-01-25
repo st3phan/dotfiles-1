@@ -11,6 +11,7 @@ brew install zsh --disable-etcdir
 brew install mpv-player/mpv/mpv
 brew install laurent22/massren/massren
 brew install peco/peco/peco
+brew install --HEAD neovim/neovim/neovim
 
 # homebrew-cask apps
 # install brew cask
