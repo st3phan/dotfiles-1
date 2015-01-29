@@ -8,9 +8,10 @@
 ###########
 
 ###############################################################################
-# Update everything                                                           #
+# Update everything and turn off automatic checking                           #
 ###############################################################################
 softwareupdate -ia
+sudo softwareupdate --schedule off
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -36,9 +37,6 @@ defaults write com.apple.helpviewer DevMode -bool true
 
 # Restart automatically if the computer freezes
 systemsetup -setrestartfreeze on
-
-# Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 ###############################################################################
 # Keyboard and input                                                          #
