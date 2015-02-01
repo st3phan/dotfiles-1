@@ -10,7 +10,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # python environment
 brew install python
 # install some eggs
-pip install asciinema livestreamer subliminal
+pip install livestreamer subliminal
 
 # ruby environment
 brew install ruby
