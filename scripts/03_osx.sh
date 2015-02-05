@@ -18,10 +18,10 @@ sudo softwareupdate --schedule off
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "MacBook Pro 15"
-sudo scutil --set HostName "MacBook Pro 15"
-sudo scutil --set LocalHostName "MacBook-Pro-15"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook-Pro-15"
+sudo scutil --set ComputerName 'MBPr15'
+sudo scutil --set HostName 'MBPr15'
+sudo scutil --set LocalHostName 'MBPr15'
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'MBPr15'
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
