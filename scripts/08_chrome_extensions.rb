@@ -16,6 +16,7 @@ canary_extensions = {
   :emmetlivestyle => 'diebikgmpmeppiilkaijjbdgciafajmg',
   :holabetterinternet => 'gkojfkhlekighikafcpjkiklfbnlmeio',
   :livereload => 'jnihajbhpnppcggbcgedagnkighmdlei',
+  :selectorgadget => 'mhjhnkcfbdhnjickkkdbjoemdmbfginb',
   :snappysnippet => 'blfngdefapoapkcdibbdkigpeaffgcil',
   :tincr => 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
 }
