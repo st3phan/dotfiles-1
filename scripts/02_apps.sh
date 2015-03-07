@@ -22,11 +22,11 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool cocoadialog codekit couleurs dropbox enjoyable flashlight flux fontprep google-chrome hex-fiend hexels hydra imageoptim instacast iterm2 joinme keka key-codes leap-motion macaw node-webkit nsregextester openemu p5 platypus pokerstars processing screenflow shotcut spectacle steam sublime-text subtitles textexpander transmission whiskey yacreader
+brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool cocoadialog codekit couleurs dropbox enjoyable flashlight flux fontprep google-chrome hex-fiend hexels hydra imageoptim instacast iterm2 joinme keka key-codes leap-motion macaw node-webkit nsregextester openemu p5 platypus processing screenflow shotcut spectacle steam sublime-text subtitles textexpander transmission whiskey yacreader
 
 # install alternative versions
 brew tap caskroom/versions
-brew cask install firefoxdeveloperedition google-chrome-canary screenflow4 vmware-fusion6
+brew cask install firefoxdeveloperedition google-chrome-canary pokerstars-eu screenflow4 vmware-fusion6
 
 # drivers
 brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
