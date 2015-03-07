@@ -58,7 +58,7 @@ brew cask install font-redacted
 # my personal taps
 # tiny-scripts
 brew tap vitorgalvao/tinyscripts
-brew install cask-repair contagem-edp crafts customise-terminal-notifier dropboxtimer gfv gifmaker labelcolor lovecolor olx-post pedir-gas pinboardlinkcheck podbook prfix seren unsplashdownload
+brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier dropboxtimer gfv gifmaker labelcolor lovecolor olx-post pedir-gas pinboardlinkcheck podbook prfix seren unsplashdownload
 
 # cleanup homebrew's cache
 brew cleanup --force -s
