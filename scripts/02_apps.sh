@@ -26,7 +26,7 @@ brew cask install --appdir="/Applications" airserver alfred apikitchen bartender
 
 # install alternative versions
 brew tap caskroom/versions
-brew cask install firefoxdeveloperedition google-chrome-canary pokerstars-eu screenflow4 vmware-fusion6
+brew cask install firefoxdeveloperedition google-chrome-canary pokerstarseu screenflow4 vmware-fusion6
 
 # drivers
 brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
