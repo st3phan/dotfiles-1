@@ -2,11 +2,11 @@
 
 chrome_extensions = {
   :onepassword => 'aomjjhallfgjeglblehebfpbcfeobpgk',
-  # :adblockplus => 'cfhdojbkjhnklbpkdaibdccddilifddb',
   :buffer => 'noojglkidnpfjbincgijbaiedldjfbhh',
+  :earthviewfromgooglemaps => 'bhloflhklmhfpedakmangadcdofhnnoh',
+  # :googleartproject => 'akimgimeeoiognljlfchpbkpfbmeapkh',
   :mediakeysforovercast => 'iomjboggdipkbeddinniaoiffjibdach',
-  # :momentum => 'laookkfknpbbblfpciffpaejjkokdgca',
-  :palettab => 'bidckpnndigbjhmojikkhmejkfkpgoih',
+  # :palettab => 'bidckpnndigbjhmojikkhmejkfkpgoih',
   :ublock => 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
   :vimium => 'dbepggeogbaibhgnhhndojpepiihcmeb'
 }
