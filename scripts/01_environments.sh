@@ -16,7 +16,7 @@ pip install livestreamer subliminal
 brew install ruby
 # install some gems
 export GEM_HOME="$(brew --prefix)"
-gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss did_you_mean jekyll pry redcarpet ronn scss-lint site_validator watir-webdriver
+gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss did_you_mean jekyll pry redcarpet ronn rubocop scss-lint site_validator watir-webdriver
 
 # nodejs environment
 brew install node
