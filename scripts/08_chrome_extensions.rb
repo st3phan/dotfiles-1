@@ -18,6 +18,7 @@ canary_extensions = {
   :livereload => 'jnihajbhpnppcggbcgedagnkighmdlei',
   :selectorgadget => 'mhjhnkcfbdhnjickkkdbjoemdmbfginb',
   :snappysnippet => 'blfngdefapoapkcdibbdkigpeaffgcil',
+  :tape => 'jmfleijdbicilompnnombcbkcgidbefb',
   :tincr => 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
 }
 
