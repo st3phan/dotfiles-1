@@ -21,4 +21,4 @@ gem install --no-ri --no-rdoc bundler chromedriver2-helper csscss did_you_mean j
 # nodejs environment
 brew install node
 # install some packages
-npm install --global browser-sync bower divshot-cli gitignore grunt-cli harp html2jade imageoptim-cli jshint nightmare pageres puer tldr
+npm install --global browser-sync bower divshot-cli gitignore grunt-cli harp html2jade imageoptim-cli jshint markdown-live nightmare pageres puer tldr
