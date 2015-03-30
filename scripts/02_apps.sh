@@ -32,7 +32,7 @@ brew cask install firefoxdeveloperedition google-chrome-canary pokerstarseu scre
 brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
 
 # prefpanes, qlplugins, colorpickers
-brew cask install betterzipql colorpicker-antetype colorpicker-skalacolor epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen scriptql secrets suspicious-package
+brew cask install betterzipql colorpicker-antetype colorpicker-skalacolor epubquicklook jsonlook qlcolorcode qlimagesize qlmarkdown qlstephen secrets suspicious-package
 
 # fonts
 brew tap caskroom/fonts
