@@ -22,7 +22,7 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" airserver alfred apikitchen bartender bettertouchtool cocoadialog codekit couleurs dropbox enjoyable flashlight flux fontprep google-chrome hex-fiend hexels hydra imageoptim instacast iterm2 joinme keka key-codes leap-motion macaw node-webkit nsregextester openemu p5 platypus processing screenflow shotcut spectacle steam sublime-text subtitles textexpander torbrowser transmission whiskey yacreader
+brew cask install --appdir="/Applications" airserver alfred apikitchen awareness bartender bettertouchtool cocoadialog codekit couleurs dropbox enjoyable flashlight flux fontprep google-chrome hex-fiend hexels hydra imageoptim instacast iterm2 joinme keka key-codes leap-motion macaw node-webkit nsregextester openemu p5 platypus processing screenflow shotcut spectacle steam sublime-text subtitles textexpander torbrowser transmission whiskey yacreader
 
 # install alternative versions
 brew tap caskroom/versions
