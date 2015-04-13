@@ -1,8 +1,7 @@
 # homebrew apps
-brew install aria2 asciinema atool cpulimit duff exiftool eye-d3 fswatch gifify git git-extras git-ftp hr jq lftp lunchy mediainfo mkvtoolnix mp4box namebench peerflix phantomjs pup ranger shellcheck the_silver_searcher trash tree watchman youtube-dl z
+brew install aria2 asciinema atool cpulimit duff exiftool eye-d3 gifify git git-extras git-ftp hr jq lftp mediainfo mkvtoolnix mp4box peerflix phantomjs pup shellcheck the_silver_searcher trash tree watchman youtube-dl z
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
-brew install macvim --with-lua --custom-icons
 brew install sox --with-flac --with-lame --with-libvorbis
 brew install vim --with-lua
 brew install zsh --disable-etcdir
@@ -22,17 +21,17 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" airserver alfred apikitchen awareness bartender bettertouchtool cocoadialog codekit couleurs dropbox enjoyable flashlight flux fontprep google-chrome hex-fiend hexels hydra imageoptim instacast iterm2 joinme keka key-codes leap-motion macaw node-webkit nsregextester openemu p5 platypus processing screenflow shotcut spectacle steam sublime-text subtitles textexpander torbrowser transmission whiskey yacreader
+brew cask install --appdir="/Applications" alfred awareness bartender bettertouchtool dropbox enjoyable flux google-chrome hexels imageoptim iterm2 keka key-codes lunchy macaw nw openemu p5 processing shotcut spectacle steam textexpander torbrowser transmission whiskey yacreader
 
 # install alternative versions
 brew tap caskroom/versions
 brew cask install firefoxdeveloperedition google-chrome-canary pokerstarseu screenflow4 vmware-fusion6
 
 # drivers
-brew cask install d235j-xbox360-controller-driver wacom-bamboo-tablet
+brew cask install d235j-xbox360-controller-driver
 
 # prefpanes, qlplugins, colorpickers
-brew cask install betterzipql colorpicker-antetype colorpicker-skalacolor qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-json secrets suspicious-package
+brew cask install betterzipql colorpicker-skalacolor qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-json suspicious-package
 
 # fonts
 brew tap caskroom/fonts
@@ -59,8 +58,7 @@ brew cask install font-redacted
 # my personal taps
 # tiny-scripts
 brew tap vitorgalvao/tinyscripts
-brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier dropboxtimer gfv gifmaker labelcolor lovecolor olx-post pedir-gas pinboardlinkcheck podbook prfix seren unsplashdownload
-
+brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier gifmaker labelcolor lovecolor olx-post pedir-gas pinboardlinkcheck podbook prfix seren
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
