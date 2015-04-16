@@ -18,7 +18,10 @@ brew install ruby
 export GEM_HOME="$(brew --prefix)"
 gem install --no-ri --no-rdoc bundler chromedriver2-helper pry redcarpet ronn rubocop scss-lint site_validator watir-webdriver
 
-# nodejs environment
-brew install node
+# node/iojs environment
+brew install nvm
+export NVM_DIR=~/.nvm
+source "$(brew --prefix nvm)/nvm.sh"
+nvm install iojs
 # install some packages
 npm install --global browser-sync bower divshot-cli gitignore harp html2jade imageoptim-cli jshint markdown-live nightmare pageres
