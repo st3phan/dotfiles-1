@@ -31,6 +31,7 @@ brew install nvm
 export NVM_DIR="${HOME}/.nvm"
 source "$(brew --prefix nvm)/nvm.sh"
 nvm install iojs
-nvm alias default iojs
+nvm install node
+nvm alias default node
 # install some packages
 npm install --global browser-sync bower divshot-cli gitignore harp html2jade imageoptim-cli jshint markdown-live nightmare pageres
