@@ -9,7 +9,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # python environment
 brew install pyenv
-python_version=$(pyenv install --list | tr -d ' ' | grep '^\d' | grep --invert-match 'dev\|a' | tail -1)
+python_version=$(pyenv install --list | tr -d ' ' | grep '^2' | grep --invert-match 'dev\|a' | tail -1)
 pyenv install "${python_version}"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 pyenv global "${python_version}"
