@@ -24,7 +24,7 @@ ruby-install ruby
 source "/usr/local/share/chruby/chruby.sh"
 chruby ruby
 # install some gems
-gem install --no-ri --no-rdoc bundler chromedriver2-helper pry redcarpet ronn rubocop scss-lint site_validator watir-webdriver
+gem install --no-ri --no-rdoc bundler chromedriver2-helper pry redcarpet ronn rubocop scss-lint seeing_is_believing site_validator watir-webdriver
 
 # node/iojs environment
 brew install nvm
