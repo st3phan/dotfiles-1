@@ -34,4 +34,4 @@ nvm install iojs
 nvm install node
 nvm alias default node
 # install some packages
-npm install --global browser-sync bower divshot-cli gitignore harp html2jade imageoptim-cli jshint markdown-live nightmare pageres
+npm install --global browser-sync bower divshot-cli electron-prebuilt gitignore harp html2jade imageoptim-cli jshint markdown-live nightmare pageres
