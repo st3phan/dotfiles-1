@@ -7,7 +7,7 @@ chrome_extensions = {
   # :googleartproject => 'akimgimeeoiognljlfchpbkpfbmeapkh',
   :mediakeysforovercast => 'iomjboggdipkbeddinniaoiffjibdach',
   # :palettab => 'bidckpnndigbjhmojikkhmejkfkpgoih',
-  :ublock => 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
+  :ublockorigin => 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
   :vimium => 'dbepggeogbaibhgnhhndojpepiihcmeb'
 }
 
