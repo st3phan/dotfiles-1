@@ -25,7 +25,7 @@ brew cask install --appdir="/Applications" alfred awareness bartender bettertouc
 
 # install alternative versions
 brew tap caskroom/versions
-brew cask install firefoxdeveloperedition google-chrome-canary pokerstarseu screenflow4 vmware-fusion6
+brew cask install affinity-designer-beta affinity-photo-beta firefoxdeveloperedition google-chrome-canary pokerstarseu screenflow4 vmware-fusion6
 
 # drivers
 brew cask install d235j-xbox360-controller-driver
