@@ -12,7 +12,8 @@ defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
 }'
 
 # Custom keyboard shortcuts for input fields
-echo '{
+cat << EOF > "${HOME}/Library/KeyBindings/DefaultKeyBinding.dict"
+{
   // new paragraph from anywhere (⌘↩)
   "@\U000D" = (moveToEndOfParagraph:, insertNewline:, insertNewline:);
   // new paragraph above (⌘⇧↩)
@@ -45,4 +46,5 @@ echo '{
 
   // titlecase word
   "~t" = (capitalizeWord:, moveWordForward:, moveWordBackward:);
-}' > "${HOME}/Library/KeyBindings/DefaultKeyBinding.dict"
+}
+EOF
