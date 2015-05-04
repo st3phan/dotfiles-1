@@ -12,6 +12,7 @@ defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
 }'
 
 # Custom keyboard shortcuts for input fields
+# read more at http://www.hcs.harvard.edu/~jrus/site/selectors.html and https://github.com/ttscoff/KeyBindings/blob/master/DefaultKeyBinding.dict
 cat << EOF > "${HOME}/Library/KeyBindings/DefaultKeyBinding.dict"
 {
   // new paragraph from anywhere (⌘↩)
