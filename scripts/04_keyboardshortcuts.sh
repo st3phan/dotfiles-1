@@ -3,9 +3,7 @@
 # read more at https://web.archive.org/web/20140810142907/http://hints.macworld.com/article.php?story=20131123074223584
 
 # Global
-defaults write -g NSUserKeyEquivalents '{
-  "Paste"="@~$v";
-}'
+# defaults write -g NSUserKeyEquivalents '{}'
 
 defaults write com.metaclassy.byword NSUserKeyEquivalents '{
   "Enter Full Screen"="@^f";
@@ -26,9 +24,6 @@ cat << EOF > "${HOME}/Library/KeyBindings/DefaultKeyBinding.dict"
   "@\U000D" = (moveToEndOfParagraph:, insertNewline:, insertNewline:);
   // new paragraph above (⌘⇧↩)
   "@$\U000D" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:, moveLeft:, insertNewline:);
-
-  // paste without formatting
-  "@v" = (pasteAsPlainText:);
 
   // select entire line/paragraph
   "^S" = (selectParagraph:);
