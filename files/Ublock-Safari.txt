@@ -1,0 +1,98 @@
+{
+  "timeStamp": 1430874230205,
+  "version": "0.9.4.0",
+  "userSettings": {
+    "advancedUserEnabled": false,
+    "autoUpdate": true,
+    "collapseBlocked": true,
+    "contextMenuEnabled": true,
+    "dynamicFilteringEnabled": false,
+    "experimentalEnabled": false,
+    "externalLists": "! Examples:\n! https://easylist-downloads.adblockplus.org/antiadblockfilters.txt\n! https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt\n! https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt\n! https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt\nhttp://mute.bradconte.com/mute.txt",
+    "firewallPaneMinimized": true,
+    "parseAllABPHideFilters": true,
+    "requestLogMaxEntries": 1000,
+    "showIconBadge": false
+  },
+  "filterLists": {
+    "assets/user/filters.txt": {
+      "group": "default",
+      "off": false,
+      "entryCount": 0,
+      "entryUsedCount": 0
+    },
+    "assets/ublock/filters.txt": {
+      "title": "uBlock filters",
+      "group": "default",
+      "off": false,
+      "entryCount": 135,
+      "entryUsedCount": 135
+    },
+    "assets/ublock/privacy.txt": {
+      "title": "uBlock filters – Privacy",
+      "group": "default",
+      "off": false,
+      "entryCount": 3,
+      "entryUsedCount": 2
+    },
+    "http://mute.bradconte.com/mute.txt": {
+      "title": "Mute",
+      "group": "custom",
+      "external": true,
+      "off": false,
+      "entryCount": 169,
+      "entryUsedCount": 169
+    },
+    "assets/thirdparties/easylist-downloads.adblockplus.org/easylist.txt": {
+      "title": "EasyList",
+      "group": "ads",
+      "homeURL": "https://easylist-downloads.adblockplus.org/easylist.txt",
+      "off": true,
+      "entryCount": 56886,
+      "entryUsedCount": 56856
+    },
+    "assets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt": {
+      "title": "EasyPrivacy",
+      "group": "privacy",
+      "homeURL": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
+      "off": true,
+      "entryCount": 10450,
+      "entryUsedCount": 10413
+    },
+    "assets/thirdparties/mirror1.malwaredomains.com/files/justdomains": {
+      "title": "Malware domains",
+      "group": "malware",
+      "homeURL": "",
+      "off": true,
+      "entryCount": 19533,
+      "entryUsedCount": 19303
+    },
+    "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
+      "title": "Peter Lowe’s Ad server list",
+      "group": "ads",
+      "homeURL": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+      "off": true,
+      "entryCount": 2428,
+      "entryUsedCount": 2428
+    },
+    "assets/thirdparties/www.fanboy.co.nz/fanboy-ultimate.txt": {
+      "off": false,
+      "title": "Fanboy+Easylist-Merged Ultimate List",
+      "group": "multipurpose",
+      "homeURL": "https://www.fanboy.co.nz/r/fanboy-ultimate.txt",
+      "entryCount": 88168,
+      "entryUsedCount": 88118
+    },
+    "assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt": {
+      "title": "Malware Domain List",
+      "group": "malware",
+      "homeURL": "http://www.malwaredomainlist.com/hostslist/hosts.txt",
+      "off": true,
+      "entryCount": 1422,
+      "entryUsedCount": 1422
+    }
+  },
+  "netWhitelist": "\nabout-scheme\nbehind-the-scene\nchrome-extension-scheme\nchrome-scheme\nloopconversation.about-scheme\nopera-scheme",
+  "dynamicFilteringString": "",
+  "userFilters": ""
+}
