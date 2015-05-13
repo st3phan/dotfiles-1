@@ -26,26 +26,24 @@ cat << EOF > "${HOME}/Library/KeyBindings/DefaultKeyBinding.dict"
   "@$\U000D" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:, moveLeft:, insertNewline:);
 
   // select entire line/paragraph
-  "^S" = (selectParagraph:);
-  // select from beginning of paragraph to last character
-  "^s" = (moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:);
+  "~S" = (selectParagraph:);
   // select paragraph excluding leading/trailing whitespace (same as ^$@\UF701)
-  "^~S" = (moveToEndOfParagraph:, insertText:, " ", selectWord:, moveBackward:, moveToBeginningOfParagraphAndModifySelection:, moveWordForwardAndModifySelection:, moveWordBackwardAndModifySelection:);
+  "~s" = (moveToEndOfParagraph:, insertText:, " ", selectWord:, moveBackward:, moveToBeginningOfParagraphAndModifySelection:, moveWordForwardAndModifySelection:, moveWordBackwardAndModifySelection:);
   // delete line/paragraph
-  "^d" = (selectParagraph:, delete:, insertNewline, moveLeft:);
+  "~d" = (selectParagraph:, delete:, insertNewline, moveLeft:);
   // copy paragraph
-  "^y" = (setMark:, moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
+  "~y" = (setMark:, moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
   // cut paragraph
-  "^x" = (moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, cut:);
+  "~x" = (moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, cut:);
   // paste paragraph below
-  "^p" = (moveToEndOfParagraph:,moveRight:,insertNewline:,moveLeft:, paste:);
+  "~p" = (moveToEndOfParagraph:,moveRight:,insertNewline:,moveLeft:, paste:);
   // paste paragraph above
-  "^P" = (moveToBeginningOfParagraph:, moveLeft:, paste:);
+  "~P" = (moveToBeginningOfParagraph:, moveLeft:, paste:);
 
   // set mark
-  "^m" = (setMark:);
+  "~m" = (setMark:);
   // jump to mark
-  "^'" = (swapWithMark:, centerSelectionInVisibleArea:);
+  "~'" = (swapWithMark:, centerSelectionInVisibleArea:);
 
   // titlecase word
   "~t" = (capitalizeWord:, moveWordForward:, moveWordBackward:);
