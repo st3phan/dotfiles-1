@@ -26,11 +26,10 @@ chruby ruby
 # install some gems
 gem install --no-ri --no-rdoc bundler chromedriver2-helper pry redcarpet ronn rubocop scss_lint seeing_is_believing site_validator video_transcoding watir-webdriver
 
-# node/iojs environment
+# node environment
 brew install nvm
 export NVM_DIR="${HOME}/.nvm"
 source "$(brew --prefix nvm)/nvm.sh"
-nvm install iojs
 nvm install node
 nvm alias default node
 # install some packages
