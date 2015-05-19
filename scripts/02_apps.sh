@@ -31,7 +31,7 @@ brew cask install affinity-designer-beta affinity-photo-beta firefoxdeveloperedi
 brew cask install d235j-xbox360-controller-driver
 
 # prefpanes, qlplugins, colorpickers
-brew cask install betterzipql colorpicker-skalacolor qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-json suspicious-package
+brew cask install betterzipql colorpicker-skalacolor epubquicklook qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-json suspicious-package
 
 # fonts
 brew tap caskroom/fonts
