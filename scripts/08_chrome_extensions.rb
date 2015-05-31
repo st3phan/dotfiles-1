@@ -6,7 +6,6 @@ chrome_extensions = {
   :earthviewfromgooglemaps => 'bhloflhklmhfpedakmangadcdofhnnoh',
   # :googleartproject => 'akimgimeeoiognljlfchpbkpfbmeapkh',
   :mediakeysforovercast => 'iomjboggdipkbeddinniaoiffjibdach',
-  # :palettab => 'bidckpnndigbjhmojikkhmejkfkpgoih',
   :ublockorigin => 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
   :vimium => 'dbepggeogbaibhgnhhndojpepiihcmeb'
 }
