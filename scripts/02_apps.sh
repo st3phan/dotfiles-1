@@ -1,5 +1,5 @@
 # homebrew apps
-brew install aria2 asciinema atool ccat cpulimit duff exiftool eye-d3 gifify git git-extras git-ftp hr jq lftp mediainfo mkvtoolnix mp4box onepass peerflix phantomjs pup shellcheck the_silver_searcher trash tree watchman youtube-dl z
+brew install aria2 asciinema atool ccat cpulimit duff exiftool eye-d3 gifify git git-extras git-ftp hr jq lftp mediainfo mkvtoolnix onepass peerflix phantomjs pup shellcheck the_silver_searcher trash tree watchman youtube-dl z
 brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
 brew install sox --with-flac --with-lame --with-libvorbis
