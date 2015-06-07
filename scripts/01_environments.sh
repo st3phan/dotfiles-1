@@ -33,4 +33,4 @@ source "$(brew --prefix nvm)/nvm.sh"
 nvm install node
 nvm alias default node
 # install some packages
-npm install --global browser-sync bower divshot-cli electron-prebuilt eslint gitignore harp html2jade imageoptim-cli markdown-live nightmare pageres
+npm install --global browser-sync bower divshot-cli electron-prebuilt eslint gitignore gulp harp html2jade imageoptim-cli markdown-live nightmare pageres
