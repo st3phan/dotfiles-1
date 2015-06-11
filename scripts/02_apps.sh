@@ -21,7 +21,7 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" alfred awareness bartender bettertouchtool dropbox enjoyable flux google-chrome hexels imageoptim iterm2 jadengeller-helium keka key-codes lunchy macaw openemu p5 processing shotcut spectacle steam textexpander torbrowser transmission whiskey yacreader
+brew cask install --appdir="/Applications" alfred awareness bartender bettertouchtool dropbox enjoyable flux google-chrome imageoptim iterm2 jadengeller-helium keka key-codes lunchy macaw openemu p5 processing shotcut spectacle steam textexpander torbrowser transmission whiskey yacreader
 
 # install alternative versions
 brew tap caskroom/versions
