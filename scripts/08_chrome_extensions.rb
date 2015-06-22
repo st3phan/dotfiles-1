@@ -1,24 +1,24 @@
 #!/usr/bin/env ruby
 
 chrome_extensions = {
-  :onepassword => 'aomjjhallfgjeglblehebfpbcfeobpgk',
-  :buffer => 'noojglkidnpfjbincgijbaiedldjfbhh',
-  :earthviewfromgooglemaps => 'bhloflhklmhfpedakmangadcdofhnnoh',
-  :mediakeysforovercast => 'iomjboggdipkbeddinniaoiffjibdach',
-  :ublockorigin => 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
-  :vimium => 'dbepggeogbaibhgnhhndojpepiihcmeb'
+  onepassword: 'aomjjhallfgjeglblehebfpbcfeobpgk',
+  buffer: 'noojglkidnpfjbincgijbaiedldjfbhh',
+  earthviewfromgooglemaps: 'bhloflhklmhfpedakmangadcdofhnnoh',
+  mediakeysforovercast: 'iomjboggdipkbeddinniaoiffjibdach',
+  ublockorigin: 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
+  vimium: 'dbepggeogbaibhgnhhndojpepiihcmeb'
 }
 
 canary_extensions = {
-  :chromeextensionsdeveloper => 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc',
-  :emmetlivestyle => 'diebikgmpmeppiilkaijjbdgciafajmg',
-  :honey => 'bmnlcjabgnpnenekpadlanbbkooimhnj',
-  :pesticide => 'bblbgcheenepgnnajgfpiicnbbdmmooh',
-  :selectorgadget => 'mhjhnkcfbdhnjickkkdbjoemdmbfginb',
-  :snappysnippet => 'blfngdefapoapkcdibbdkigpeaffgcil',
-  :tape => 'jmfleijdbicilompnnombcbkcgidbefb',
-  :thecamelizer => 'ghnomdcacenbmilgjigehppbamfndblo',
-  :tincr => 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
+  chromeextensionsdeveloper: 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc',
+  emmetlivestyle: 'diebikgmpmeppiilkaijjbdgciafajmg',
+  honey: 'bmnlcjabgnpnenekpadlanbbkooimhnj',
+  pesticide: 'bblbgcheenepgnnajgfpiicnbbdmmooh',
+  selectorgadget: 'mhjhnkcfbdhnjickkkdbjoemdmbfginb',
+  snappysnippet: 'blfngdefapoapkcdibbdkigpeaffgcil',
+  tape: 'jmfleijdbicilompnnombcbkcgidbefb',
+  thecamelizer: 'ghnomdcacenbmilgjigehppbamfndblo',
+  tincr: 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
 }
 
 chrome_executable = %x(mdfind kMDItemCFBundleIdentifier = com.google.Chrome).strip + '/Contents/MacOS/Google Chrome'
