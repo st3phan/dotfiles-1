@@ -13,6 +13,7 @@ chrome_extensions = {
 canary_extensions = {
   :chromeextensionsdeveloper => 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc',
   :emmetlivestyle => 'diebikgmpmeppiilkaijjbdgciafajmg',
+  :honey => 'bmnlcjabgnpnenekpadlanbbkooimhnj',
   :pesticide => 'bblbgcheenepgnnajgfpiicnbbdmmooh',
   :selectorgadget => 'mhjhnkcfbdhnjickkkdbjoemdmbfginb',
   :snappysnippet => 'blfngdefapoapkcdibbdkigpeaffgcil',
