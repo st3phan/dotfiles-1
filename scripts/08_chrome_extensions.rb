@@ -18,6 +18,7 @@ canary_extensions = {
   :selectorgadget => 'mhjhnkcfbdhnjickkkdbjoemdmbfginb',
   :snappysnippet => 'blfngdefapoapkcdibbdkigpeaffgcil',
   :tape => 'jmfleijdbicilompnnombcbkcgidbefb',
+  :thecamelizer => 'ghnomdcacenbmilgjigehppbamfndblo',
   :tincr => 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
 }
 
