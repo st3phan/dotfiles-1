@@ -33,4 +33,4 @@ source "$(brew --prefix nvm)/nvm.sh"
 nvm install node
 nvm alias default node
 # install some packages
-npm install --global divshot-cli electron-prebuilt eslint gitignore html2jade imagemin-cli markdown-live nightmare pageres watch
+npm install --global divshot-cli electron-prebuilt eslint gitignore html2jade imagemin-cli markdown-live nightmare pageres-cli watch
