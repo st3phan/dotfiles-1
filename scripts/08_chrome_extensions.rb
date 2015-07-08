@@ -4,6 +4,7 @@ chrome_extensions = {
   onepassword: 'aomjjhallfgjeglblehebfpbcfeobpgk',
   buffer: 'noojglkidnpfjbincgijbaiedldjfbhh',
   earthviewfromgooglemaps: 'bhloflhklmhfpedakmangadcdofhnnoh',
+  httpseverywhere: 'gcbommkclmclpchllfjekcdonpmejbdp',
   mediakeysforovercast: 'iomjboggdipkbeddinniaoiffjibdach',
   ublockorigin: 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
   vimium: 'dbepggeogbaibhgnhhndojpepiihcmeb'
