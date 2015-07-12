@@ -6,6 +6,7 @@ chrome_extensions = {
   earthviewfromgooglemaps: 'bhloflhklmhfpedakmangadcdofhnnoh',
   httpseverywhere: 'gcbommkclmclpchllfjekcdonpmejbdp',
   mediakeysforovercast: 'iomjboggdipkbeddinniaoiffjibdach',
+  thegreatsuspender: 'klbibkeccnjlkjkiokjodocebajanakg',
   ublockorigin: 'cjpalhdlnbpafiamejdnhcphjbkeiagm',
   vimium: 'dbepggeogbaibhgnhhndojpepiihcmeb'
 }
