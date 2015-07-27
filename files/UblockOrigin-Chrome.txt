@@ -1,80 +1,13 @@
-{
-  "timeStamp": 1430873973583,
-  "version": "0.9.6.0",
-  "userSettings": {
-    "advancedUserEnabled": false,
-    "autoUpdate": true,
-    "collapseBlocked": true,
-    "colorBlindFriendly": true,
-    "contextMenuEnabled": false,
-    "dynamicFilteringEnabled": false,
-    "experimentalEnabled": false,
-    "externalLists": "! Examples:\n! https://easylist-downloads.adblockplus.org/antiadblockfilters.txt\n! https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt\n! https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt\n! https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt\n! https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt\nhttp://mute.bradconte.com/mute.txt",
-    "firewallPaneMinimized": true,
-    "parseAllABPHideFilters": true,
-    "requestLogMaxEntries": 1000,
-    "showIconBadge": false
-  },
-  "filterLists": {
-    "http://mute.bradconte.com/mute.txt": {
-      "title": "Mute",
-      "group": "custom",
-      "external": true,
-      "off": false,
-      "entryCount": 169,
-      "entryUsedCount": 169
-    },
-    "assets/thirdparties/easylist-downloads.adblockplus.org/easylist.txt": {
-      "title": "EasyList",
-      "group": "ads",
-      "homeURL": "https://easylist-downloads.adblockplus.org/easylist.txt",
-      "off": true,
-      "entryCount": 52114,
-      "entryUsedCount": 52081
-    },
-    "assets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt": {
-      "title": "EasyPrivacy",
-      "group": "privacy",
-      "homeURL": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
-      "off": true,
-      "entryCount": 9652,
-      "entryUsedCount": 9607
-    },
-    "assets/thirdparties/mirror1.malwaredomains.com/files/justdomains": {
-      "title": "Malware domains",
-      "group": "malware",
-      "homeURL": "",
-      "off": true,
-      "entryCount": 28698,
-      "entryUsedCount": 28580
-    },
-    "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
-      "title": "Peter Lowe’s Ad server list",
-      "group": "ads",
-      "homeURL": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
-      "off": true,
-      "entryCount": 2457,
-      "entryUsedCount": 2413
-    },
-    "assets/thirdparties/www.fanboy.co.nz/fanboy-ultimate.txt": {
-      "off": false,
-      "title": "Fanboy+Easylist-Merged Ultimate List",
-      "group": "multipurpose",
-      "homeURL": "https://www.fanboy.co.nz/r/fanboy-ultimate.txt",
-      "entryCount": 88328,
-      "entryUsedCount": 88278
-    },
-    "assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt": {
-      "title": "Malware Domain List",
-      "group": "malware",
-      "homeURL": "http://www.malwaredomainlist.com/hostslist/hosts.txt",
-      "off": true,
-      "entryCount": 1466,
-      "entryUsedCount": 1466
-    }
-  },
-  "netWhitelist": "about-scheme\nbehind-the-scene\nchrome-extension-scheme\nchrome-scheme\ndata-scheme\ndesigners.watch\nedx.org\nfile-scheme\nloopconversation.about-scheme\nmbpr15.local\nopera-scheme\novercast.fm\ntvshowtime.com",
-  "dynamicFilteringString": "",
-  "hostnameSwitchesString": "",
-  "userFilters": ""
-}
+about-scheme
+atp.fm
+behind-the-scene
+chrome-extension-scheme
+chrome-scheme
+data-scheme
+designers.watch
+edx.org
+file-scheme
+loopconversation.about-scheme
+opera-scheme
+overcast.fm
+tvshowtime.com
