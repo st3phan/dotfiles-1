@@ -20,7 +20,9 @@ pip install livestreamer subliminal
 
 # ruby environment
 brew install chruby ruby-install
-ruby-install ruby
+latest_ruby=$(curl --silent 'https://raw.githubusercontent.com/postmodern/ruby-versions/master/ruby/stable.txt' | tail -1)
+ruby-install --cleanup ruby "${latest_ruby}"
+# ruby-install --cleanup ruby # when https://github.com/postmodern/ruby-install/issues/175 is done, this line should replace the previous two
 source "/usr/local/share/chruby/chruby.sh"
 chruby ruby
 # install some gems
