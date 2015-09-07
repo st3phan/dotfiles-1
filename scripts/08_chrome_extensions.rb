@@ -3,7 +3,7 @@
 chrome_extensions = {
   onepassword: 'aomjjhallfgjeglblehebfpbcfeobpgk',
   buffer: 'noojglkidnpfjbincgijbaiedldjfbhh',
-  earthviewfromgooglemaps: 'bhloflhklmhfpedakmangadcdofhnnoh',
+  googleartproject: 'akimgimeeoiognljlfchpbkpfbmeapkh',
   httpseverywhere: 'gcbommkclmclpchllfjekcdonpmejbdp',
   mediakeysforovercast: 'iomjboggdipkbeddinniaoiffjibdach',
   thegreatsuspender: 'klbibkeccnjlkjkiokjodocebajanakg',
