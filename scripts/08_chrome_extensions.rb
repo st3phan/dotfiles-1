@@ -3,6 +3,7 @@
 chrome_extensions = {
   onepassword: 'aomjjhallfgjeglblehebfpbcfeobpgk',
   buffer: 'noojglkidnpfjbincgijbaiedldjfbhh',
+  directlinks: 'mmlodedokepmgdiakhfcbopalplppiok',
   googleartproject: 'akimgimeeoiognljlfchpbkpfbmeapkh',
   httpseverywhere: 'gcbommkclmclpchllfjekcdonpmejbdp',
   mediakeysforovercast: 'iomjboggdipkbeddinniaoiffjibdach',
