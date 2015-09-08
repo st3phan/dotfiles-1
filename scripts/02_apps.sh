@@ -62,3 +62,10 @@ brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier
 # cleanup homebrew's cache
 brew cleanup --force -s
 rm -rf $(brew --cache)
+
+# set default apps
+for ext in {mp4,mkv,avi,mpg,mpeg,avi,mp3,wav,flac,aac}; do duti -s io.mpv "${ext}" all; done # media
+
+# Affinity apps (use beta versions)
+duti -s com.seriflabs.affinitydesigner.beta afdesign all
+duti -s com.seriflabs.affinityphoto.beta afphoto all
