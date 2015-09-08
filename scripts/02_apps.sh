@@ -65,6 +65,7 @@ rm -rf $(brew --cache)
 
 # set default apps
 for ext in {mp4,mkv,avi,mpg,mpeg,avi,mp3,wav,flac,aac}; do duti -s io.mpv "${ext}" all; done # media
+for ext in {zip,rar,tar,gz,bz2,7z}; do duti -s com.aone.keka "${ext}" all; done # archives
 
 # Affinity apps (use beta versions)
 duti -s com.seriflabs.affinitydesigner.beta afdesign all
