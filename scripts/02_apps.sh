@@ -64,8 +64,8 @@ brew cleanup --force -s
 rm -rf $(brew --cache)
 
 # set default apps
-for ext in {mp4,mkv,avi,mpg,mpeg,avi,mp3,wav,flac,aac}; do duti -s io.mpv "${ext}" all; done # media
-for ext in {zip,rar,tar,gz,bz2,7z}; do duti -s com.aone.keka "${ext}" all; done # archives
+for ext in {aac,avi,flac,mkv,mp3,mp4,mpeg,mpg,wav}; do duti -s io.mpv "${ext}" all; done # media
+for ext in {7z,bz2,gz,rar,tar,zip}; do duti -s com.aone.keka "${ext}" all; done # archives
 for ext in {css,html,jade,json,php,py,rb,sh}; do duti -s com.github.atom "${ext}" all; done # code
 
 # Affinity apps (use beta versions)
