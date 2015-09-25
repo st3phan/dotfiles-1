@@ -12,6 +12,11 @@ brew install laurent22/massren/massren
 brew install peco/peco/peco
 brew install --HEAD neovim/neovim/neovim
 
+# install and configure tor
+brew install tor torsocks
+cp "$(brew --prefix)/etc/tor/torrc.sample" "$(brew --prefix)/etc/tor/torrc"
+echo 'ExitNodes {us}' >> "$(brew --prefix)/etc/tor/torrc"
+
 # homebrew-cask apps
 # install brew cask
 brew install caskroom/cask/brew-cask
