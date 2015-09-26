@@ -4,7 +4,7 @@ chrome_extensions = {
   onepassword: 'aomjjhallfgjeglblehebfpbcfeobpgk',
   buffer: 'noojglkidnpfjbincgijbaiedldjfbhh',
   directlinks: 'mmlodedokepmgdiakhfcbopalplppiok',
-  googleartproject: 'akimgimeeoiognljlfchpbkpfbmeapkh',
+  earthviewfromgoogleearth: 'bhloflhklmhfpedakmangadcdofhnnoh',
   httpseverywhere: 'gcbommkclmclpchllfjekcdonpmejbdp',
   mediakeysforovercast: 'iomjboggdipkbeddinniaoiffjibdach',
   thegreatsuspender: 'klbibkeccnjlkjkiokjodocebajanakg',
