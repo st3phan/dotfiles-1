@@ -26,11 +26,11 @@ mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
-brew cask install --appdir="/Applications" alfred awareness bartender bettertouchtool dropbox enjoyable flux google-chrome imageoptim iterm2 jadengeller-helium keka key-codes openemu p5 processing shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
+brew cask install --appdir="/Applications" alfred awareness bettertouchtool dropbox enjoyable flux google-chrome imageoptim iterm2 jadengeller-helium keka key-codes openemu p5 processing shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
 
 # install alternative versions
 brew tap caskroom/versions
-brew cask install affinity-designer-beta affinity-photo-beta firefoxdeveloperedition google-chrome-canary pokerstarseu screenflow4 vmware-fusion6
+brew cask install affinity-designer-beta affinity-photo-beta bartender1 firefoxdeveloperedition google-chrome-canary pokerstarseu screenflow4 vmware-fusion6
 
 # drivers
 brew cask install d235j-xbox360-controller-driver
