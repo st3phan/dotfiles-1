@@ -14,7 +14,7 @@ python_latest=$(pyenv install --list | tr -d ' ' | grep '^\d' | grep --invert-ma
 pyenv install "${python2}"
 pyenv install "${python_latest}"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-pyenv global "${python2}"
+pyenv global "${python_latest}"
 # install some eggs
 pip install livestreamer subliminal
 
