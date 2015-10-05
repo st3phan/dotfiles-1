@@ -65,7 +65,7 @@ brew cask install font-redacted
 brew tap vitorgalvao/tinyscripts
 brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier fastmerge gifmaker gfv labelcolor lovecolor olx-post pedir-gas pinboardlinkcheck podbook prfixmaster seren
 # cleanup homebrew's cache
-brew cleanup --force -s
+brew cleanup --force
 rm -rf $(brew --cache)
 
 # set default apps
