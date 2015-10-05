@@ -23,7 +23,7 @@ brew install chruby ruby-install
 latest_ruby=$(curl --silent 'https://raw.githubusercontent.com/postmodern/ruby-versions/master/ruby/stable.txt' | tail -1)
 ruby-install --cleanup ruby "${latest_ruby}"
 # ruby-install --cleanup ruby # when https://github.com/postmodern/ruby-install/issues/175 is done, this line should replace the previous two
-source "/usr/local/share/chruby/chruby.sh"
+source '/usr/local/share/chruby/chruby.sh'
 chruby ruby
 # install some gems
 gem install --no-ri --no-rdoc bundler chromedriver2-helper maid pry redcarpet ronn rubocop seeing_is_believing site_validator video_transcoding watir-webdriver
