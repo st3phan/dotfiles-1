@@ -26,7 +26,7 @@ ruby-install --src-dir '/tmp/ruby-src' ruby "${latest_ruby}"
 source '/usr/local/share/chruby/chruby.sh'
 chruby ruby
 # install some gems
-gem install --no-document bundler chromedriver2-helper maid pry redcarpet ronn rubocop seeing_is_believing site_validator video_transcoding watir-webdriver
+gem install --no-document bundler chromedriver2-helper maid pry redcarpet rubocop seeing_is_believing site_validator video_transcoding watir-webdriver
 
 # node environment
 brew install nvm
@@ -35,4 +35,4 @@ source "$(brew --prefix nvm)/nvm.sh"
 nvm install node
 nvm alias default node
 # install some packages
-npm install --global csslint divshot-cli electron-prebuilt eslint gitignore html2jade jsonlint markdown-live nightmare pageres-cli ttystudio watch
+npm install --global csslint divshot-cli electron-prebuilt eslint gitignore jsonlint markdown-live pageres-cli ttystudio watch
