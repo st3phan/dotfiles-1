@@ -8,9 +8,8 @@
 ###########
 
 ###############################################################################
-# Update everything and turn off automatic checking                           #
+# Turn off automatic update checking                                          #
 ###############################################################################
-softwareupdate -ia
 sudo softwareupdate --schedule off
 
 ###############################################################################
