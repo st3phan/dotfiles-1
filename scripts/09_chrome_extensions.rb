@@ -14,6 +14,7 @@ chrome_extensions = {
 
 canary_extensions = {
   chromeextensionsdeveloper: 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc',
+  daydream: 'oajnmbophdhdobfpalhkfgahchpcoali',
   emmetlivestyle: 'diebikgmpmeppiilkaijjbdgciafajmg',
   honey: 'bmnlcjabgnpnenekpadlanbbkooimhnj',
   pesticide: 'bblbgcheenepgnnajgfpiicnbbdmmooh',
