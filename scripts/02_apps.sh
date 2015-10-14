@@ -22,7 +22,7 @@ echo 'ExitNodes {us}' >> "$(brew --prefix)/etc/tor/torrc"
 brew install caskroom/cask/brew-cask
 
 # set caskroom permissions
-mkdir -p /opt/homebrew-cask/Caskroom
+sudo mkdir -p /opt/homebrew-cask/Caskroom
 sudo chown -R ${USER}:staff /opt/homebrew-cask
 
 # install apps
