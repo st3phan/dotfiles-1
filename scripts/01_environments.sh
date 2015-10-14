@@ -35,4 +35,4 @@ source "$(brew --prefix nvm)/nvm.sh"
 nvm install node
 nvm alias default node
 # install some packages
-npm install --global csslint divshot-cli electron-prebuilt eslint gitignore jsonlint markdown-live nightmare pageres-cli ttystudio watch
+npm install --global csslint divshot-cli electron-prebuilt eslint gitignore jsonlint markdown-live nightmare pageres-cli phantomjs ttystudio watch
