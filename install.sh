@@ -12,4 +12,4 @@ get_everything() {
   ruby /tmp/dotfiles/scripts/07_chrome_extensions.rb
 }
 
-get_everything
+get_everything 2> "${HOME}/install_errors.txt"
