@@ -229,5 +229,5 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "
 ###############################################################################
 
 for app in "Finder" "Dock" "SystemUIServer"; do
-	killall "${app}" > /dev/null 2>&1
+  killall "${app}" > /dev/null 2>&1
 done
