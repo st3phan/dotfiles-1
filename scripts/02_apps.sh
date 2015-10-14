@@ -4,7 +4,7 @@ brew install imagemagick --with-libtiff
 brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
 brew install sox --with-flac --with-lame --with-libvorbis
 brew install vim --with-lua
-brew install zsh --disable-etcdir
+brew install zsh --without-etcdir
 
 # install apps from other taps
 brew install mpv-player/mpv/mpv
