@@ -37,7 +37,7 @@ install_cask() {
 }
 
 install_cask_apps() {
-  brew cask install --appdir="/Applications" alfred atom awareness bartender bettertouchtool calibre dropbox duelystlauncher enjoyable flux google-chrome imageoptim imitone jadengeller-helium keka key-codes openemu p5 processing shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
+  brew cask install --appdir="/Applications" alfred atom awareness bartender bettertouchtool calibre cloudy dropbox duelystlauncher enjoyable flux google-chrome imageoptim imitone jadengeller-helium keka key-codes openemu p5 processing shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
 
   # install alternative versions
   brew tap caskroom/versions
