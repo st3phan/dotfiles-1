@@ -60,7 +60,7 @@ install_zsh_plugins() {
 install_nvim_packages() {
   # download and configure vim-plug
   # there's a chance it won't be needed in the future (https://github.com/junegunn/vim-plug/issues/249)
-  curl --progress-bar --location 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' --output "${HOME}/.nvim/autoload/plug.vim" --create-dirs
+  curl --progress-bar --location 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' --output "${HOME}/.config/nvim/autoload/plug.vim" --create-dirs
   # 'sleep' is needed now since without it '+qall' would quit before '+PlugInstall' finished (https://github.com/junegunn/vim-plug/issues/104)
   nvim +PlugInstall +"sleep 60" +qall
 }
