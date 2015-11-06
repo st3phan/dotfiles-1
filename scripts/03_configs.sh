@@ -10,6 +10,7 @@ set_default_apps() {
   # general extensions
   for ext in {aac,avi,flac,m4a,m4b,mkv,mov,mp3,mp4,mpeg,mpg,wav}; do duti -s io.mpv "${ext}" all; done # media
   for ext in {7z,bz2,gz,rar,tar,zip}; do duti -s com.aone.keka "${ext}" all; done # archives
+  for ext in {cbr,cbz}; do duti -s com.yourcompany.YACReader "${ext}" all; done # image archives
   for ext in {css,jade,js,json,php,py,rb,sh,txt}; do duti -s com.github.atom "${ext}" all; done # code
 
   # Affinity apps (use beta versions)
