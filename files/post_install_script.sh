@@ -203,7 +203,6 @@ request_chrome_extension 'Google Chrome' 'earthviewfromgoogleearth' 'bhloflhklmh
 request_chrome_extension 'Google Chrome' 'httpseverywhere' 'gcbommkclmclpchllfjekcdonpmejbdp'
 request_chrome_extension 'Google Chrome' 'thegreatsuspender' 'klbibkeccnjlkjkiokjodocebajanakg'
 request_chrome_extension 'Google Chrome' 'ublockorigin' 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
-request_chrome_extension 'Google Chrome' 'vimium' 'dbepggeogbaibhgnhhndojpepiihcmeb'
 
 request_chrome_extension 'Google Chrome Canary' 'chromeextensionsdeveloper' 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc'
 request_chrome_extension 'Google Chrome Canary' 'daydream' 'oajnmbophdhdobfpalhkfgahchpcoali'
