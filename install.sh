@@ -20,7 +20,7 @@ run_install_dotfiles() {
 
   install_brew_apps
   install_brew_head_apps
-  install_cask
+  make_caskroom
   install_cask_apps
   install_tinyscripts
 

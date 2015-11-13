@@ -28,10 +28,7 @@ install_brew_head_apps() {
   done
 }
 
-install_cask() {
-  brew install caskroom/cask/brew-cask
-
-  # set caskroom permissions
+make_caskroom() {
   sudo -S mkdir -p /opt/homebrew-cask/Caskroom <<< "${sudo_password}" 2> /dev/null
   sudo -S chown -R ${USER}:staff /opt/homebrew-cask <<< "${sudo_password}" 2> /dev/null
 }
