@@ -93,3 +93,7 @@ install_launchagents() {
 
   rmdir "${helper_files}/launchd_plists"
 }
+
+alfred_allow_dropbox() {
+  defaults write com.runningwithcrayons.Alfred-Preferences dropbox.allowappsfolder -bool TRUE
+}
