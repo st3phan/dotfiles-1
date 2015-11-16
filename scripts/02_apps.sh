@@ -42,7 +42,7 @@ install_cask_apps() {
 
   # drivers
   renew_sudo
-  brew cask install d235j-xbox360-controller-driver
+  brew cask install xbox360-controller-driver
 
   # prefpanes, qlplugins, colorpickers
   brew cask install betterzipql colorpicker-skalacolor epubquicklook qlcolorcode qlimagesize qlplayground qlstephen quicklook-json ttscoff-mmd-quicklook
