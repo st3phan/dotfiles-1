@@ -39,6 +39,11 @@ set_keyboard_shortcuts() {
   }'
 }
 
+install_verb_font() {
+  ditto -xk "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/verb_font/Verb_Desktop_Web.zip" '/tmp'
+  mv '/tmp/Verb_Desktop_Web/YDS Verb Complete/Verb'* "${HOME}/Library/Fonts"
+}
+
 configure_zsh() { # make zsh default shell
   sudo -S sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells' <<< "${sudo_password}" 2> /dev/null
   sudo -S chsh -s '/usr/local/bin/zsh' "${USER}" <<< "${sudo_password}" 2> /dev/null
