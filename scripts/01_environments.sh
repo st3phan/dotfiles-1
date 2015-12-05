@@ -33,5 +33,5 @@ install_node() {
   nvm install node
   nvm alias default node
   # install some packages
-  npm install --global eslint jsonlint nightmare pageres-cli watch
+  npm install --global eslint jsonlint nightmare pageres-cli updtr watch
 }
