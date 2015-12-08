@@ -73,7 +73,7 @@ install_nvim_packages() {
 
 install_atom_packages() {
   # packages
-  apm install atom-alignment color-picker dash esformatter git-plus highlight-line language-jade linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck merge-conflicts node-debugger p5xjs-autocomplete pigments relative-numbers seeing-is-believing vim-mode vim-surround
+  apm install atom-alignment color-picker dash esformatter git-plus highlight-line language-jade language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck merge-conflicts node-debugger p5xjs-autocomplete pigments relative-numbers seeing-is-believing vim-mode vim-surround
 
   # themes and syntaxes
   apm install peacock-syntax seti-ui
