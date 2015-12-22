@@ -34,11 +34,11 @@ make_caskroom() {
 }
 
 install_cask_apps() {
-  brew cask install --appdir="/Applications" alfred atom bartender bettertouchtool calibre drop-to-gif dropbox duelystlauncher enjoyable flux fog google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes p5 processing shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
+  brew cask install --appdir="/Applications" alfred atom bartender bettertouchtool calibre drop-to-gif dropbox duelystlauncher enjoyable flux fog google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes p5 processing screenflow shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
 
   # install alternative versions
   brew tap caskroom/versions
-  brew cask install --appdir="/Applications" affinity-designer-beta affinity-photo-beta airmail-beta google-chrome-canary iterm2-beta openemu-experimental pokerstarseu screenflow4 vmware-fusion6
+  brew cask install --appdir="/Applications" affinity-designer-beta affinity-photo-beta airmail-beta google-chrome-canary iterm2-beta openemu-experimental pokerstarseu vmware-fusion6
 
   # drivers
   renew_sudo
