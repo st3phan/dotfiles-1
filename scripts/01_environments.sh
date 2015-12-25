@@ -17,9 +17,7 @@ install_python() {
 
 install_ruby() {
   brew reinstall chruby ruby-install
-  local latest_ruby=$(curl --silent 'https://raw.githubusercontent.com/postmodern/ruby-versions/master/ruby/stable.txt' | tail -1)
-  ruby-install --src-dir '/tmp/ruby-src' ruby "${latest_ruby}"
-  # ruby-install --cleanup ruby 2> /dev/null # when https://github.com/postmodern/ruby-install/issues/175 is done, this line should replace the previous two
+  ruby-install --src-dir "$(mktemp -d)" --latest ruby
   source '/usr/local/share/chruby/chruby.sh'
   chruby ruby
   # install some gems
