@@ -83,6 +83,8 @@ configure_git() {
   echo -e "[user]\n\tname = ${name}\n\temail = ${github_email}\n[github]\n\tuser = ${github_username}" > "${HOME}/.gitconfig"
   git config --global credential.helper osxkeychain
   git config --global push.default simple
+  git config --global rerere.enabled true
+  git config --global rerere.autoupdate true
 }
 
 install_launchagents() {
