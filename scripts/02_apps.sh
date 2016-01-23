@@ -1,13 +1,13 @@
 install_brew_apps() {
   brew install imagemagick --with-libtiff
   brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
+  brew install mpv --with-bundle
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
 
   brew install aria2 asciinema atool ccat cpulimit duff duti exiftool eye-d3 ghi gifify git git-extras git-ftp hr httpie jq lftp mediainfo mkvtoolnix mp4v2 onepass phantomjs pup shellcheck the_silver_searcher trash tree wiki youtube-dl z
 
   # install apps from other taps
-  brew install mpv-player/mpv/mpv
   brew install laurent22/massren/massren
   brew install peco/peco/peco
 
