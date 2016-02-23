@@ -58,7 +58,7 @@ install_cask_apps() {
   # sans
   brew cask install font-exo2 font-lato font-open-sans font-open-sans-condensed font-signika
   # serif
-  brew cask install font-abril-fatface font-gentium-book-basic font-playfair-display font-playfair-display-sc
+  brew cask install font-abril-fatface font-butler font-gentium-book-basic font-playfair-display font-playfair-display-sc
   # slab
   brew cask install font-bitter font-kreon
   # script
