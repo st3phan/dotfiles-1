@@ -26,12 +26,6 @@ set_keyboard_shortcuts() {
   # Global
   # defaults write -g NSUserKeyEquivalents '{}'
 
-  # Byword
-  defaults write com.metaclassy.byword NSUserKeyEquivalents '{
-    "Enter Full Screen"="@^f";
-    "Exit Full Screen"="@^f";
-  }'
-
   # Tweetbot
   defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
     "Open Links"="l";
