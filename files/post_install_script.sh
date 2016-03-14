@@ -206,9 +206,10 @@ request_chrome_extension 'Google Chrome' 'httpseverywhere' 'gcbommkclmclpchllfje
 request_chrome_extension 'Google Chrome' 'thegreatsuspender' 'klbibkeccnjlkjkiokjodocebajanakg'
 request_chrome_extension 'Google Chrome' 'ublockorigin' 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
 # new tab extensions
-#request_chrome_extension 'Google Chrome' 'unsplash-instant' 'pejkokffkapolfffcgbmdmhdelanoaih'
-#request_chrome_extension 'Google Chrome' 'embark-new-tab-page' 'aeajehgeohhgjbhhbicilpenjfcbfnpg'
 request_chrome_extension 'Google Chrome' 'dribbble-new-tab' 'hmhjbefkpednjogghoibpejdmemkinbn'
+#request_chrome_extension 'Google Chrome' 'embark-new-tab-page' 'aeajehgeohhgjbhhbicilpenjfcbfnpg'
+#request_chrome_extension 'Google Chrome' 'muzli-2-stay-inspired' 'glcipcfhmopcgidicgdociohdoicpdfc'
+#request_chrome_extension 'Google Chrome' 'unsplash-instant' 'pejkokffkapolfffcgbmdmhdelanoaih'
 
 request_chrome_extension 'Google Chrome Canary' 'chromeextensionsdeveloper' 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc'
 request_chrome_extension 'Google Chrome Canary' 'daydream' 'oajnmbophdhdobfpalhkfgahchpcoali'
