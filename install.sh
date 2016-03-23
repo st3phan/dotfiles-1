@@ -34,6 +34,7 @@ run_install_dotfiles() {
   install_atom_packages
   configure_git
   install_launchagents
+  lower_startup_chime
   alfred_allow_dropbox
 
   cleanup_brew
