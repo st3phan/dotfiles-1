@@ -45,5 +45,5 @@ run_install_dotfiles() {
 }
 
 # run and log errors to file (but still show them when they happen)
-error_log="${HOME}/Desktop/install_errors.log"
+readonly error_log="${HOME}/Desktop/install_errors.log"
 run_install_dotfiles 2> >(tee "${error_log}")

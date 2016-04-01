@@ -13,9 +13,9 @@ initial_setup() {
   caffeinate & # prevent computer from going to sleep
 
   # variables for helper files and directories
-  helper_files='/tmp/dotfiles-master/files'
-  post_install_files="${HOME}/Desktop/post_install_files"
-  post_install_script="${HOME}/Desktop/post_install_script.sh"
+  readonly helper_files='/tmp/dotfiles-master/files'
+  readonly post_install_files="${HOME}/Desktop/post_install_files"
+  readonly post_install_script="${HOME}/Desktop/post_install_script.sh"
 
   # ask for the administrator password upfront, for commands that require 'sudo'
   clear

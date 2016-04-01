@@ -18,7 +18,7 @@ install_brew_apps() {
 }
 
 install_brew_head_apps() {
-  local head_formulas='neovim/neovim/neovim'
+  readonly local head_formulas='neovim/neovim/neovim'
 
   for formula in ${head_formulas}; do
     formula_name=$(basename "${formula}")

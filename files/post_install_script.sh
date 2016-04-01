@@ -8,8 +8,8 @@ info() {
 }
 
 request() { # output a message and open an app
-  message="$1"
-  app="$2"
+  local message="$1"
+  local app="$2"
   shift && shift # get rid of '$1' and '$2'
 
   echo "$(tput setaf 5)•$(tput sgr0) ${message}"
@@ -21,9 +21,9 @@ request_preferences() { # 'request' for System Preferences
 }
 
 request_chrome_extension() { # 'request' for Google Chrome extensions
-  chrome_or_canary="$1"
-  extension_short_name="$2"
-  extension_code="$3"
+  local chrome_or_canary="$1"
+  local extension_short_name="$2"
+  local extension_code="$3"
 
   request "Install '${extension_short_name}' extension." "${chrome_or_canary}" --no-first-run "https://chrome.google.com/webstore/detail/${extension_short_name}/${extension_code}"
 }

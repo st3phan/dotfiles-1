@@ -18,7 +18,7 @@ set_default_apps() {
   duti -s com.seriflabs.affinityphoto.beta afphoto all
 
   # touch the mpv app bundle, so the system actually sees it (since it's not in a standard location)
-  local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
+  readonly local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
   [[ -f "${mpv_location}" ]] && touch "${mpv_location}"
 }
 
@@ -48,7 +48,7 @@ configure_zsh() { # make zsh default shell
 }
 
 install_zsh_plugins() {
-  local zsh_plugins_dir="${HOME}/.zsh-plugins"
+  readonly local zsh_plugins_dir="${HOME}/.zsh-plugins"
 
   # oh-my-zsh history
   curl --progress-bar --location 'https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/history.zsh' --output "${zsh_plugins_dir}/oh-my-zsh-history/history.zsh" --create-dirs
@@ -86,11 +86,11 @@ configure_git() {
 }
 
 install_launchagents() {
-  launchagents_dir="${HOME}/Library/LaunchAgents"
+  readonly local launchagents_dir="${HOME}/Library/LaunchAgents"
   mkdir -p "${launchagents_dir}"
 
   for plist_file in "${helper_files}/launchd_plists"/*; do
-    plist_name=$(basename "${plist_file}")
+    readonly local plist_name=$(basename "${plist_file}")
 
     mv "${plist_file}" "${launchagents_dir}"
     launchctl load -w "${launchagents_dir}/${plist_name}"
