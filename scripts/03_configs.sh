@@ -16,6 +16,10 @@ set_default_apps() {
   # Affinity apps (use beta versions)
   duti -s com.seriflabs.affinitydesigner.beta afdesign all
   duti -s com.seriflabs.affinityphoto.beta afphoto all
+
+  # touch the mpv app bundle, so the system actually sees it (since it's not in a standard location)
+  local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
+  [[ -f "${mpv_location}" ]] && touch "${mpv_location}"
 }
 
 set_keyboard_shortcuts() {
