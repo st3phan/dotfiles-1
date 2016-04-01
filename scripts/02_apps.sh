@@ -18,13 +18,13 @@ install_brew_apps() {
 }
 
 install_brew_head_apps() {
-  readonly local head_formulas='neovim/neovim/neovim'
+  readonly local head_formulas=(neovim/neovim/neovim)
 
-  for formula in ${head_formulas}; do
+  for formula in "${head_formulas[@]}"; do
     formula_name=$(basename "${formula}")
 
     [[ $(brew list "${formula_name}" 2> /dev/null) ]] && brew uninstall ${formula} # if formula is installed, uninstall it first
-    brew install --HEAD neovim ${head_formulas}
+    brew install --HEAD "${head_formulas[@]}"
   done
 }
 
