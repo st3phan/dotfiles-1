@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1458589071055,
+  "timeStamp": 1459014463762,
   "version": "1.6.4",
   "userSettings": {
     "advancedUserEnabled": false,
@@ -42,15 +42,15 @@
       "homeURL": "https://easylist-downloads.adblockplus.org/easylist.txt",
       "supportURL": "https://forums.lanik.us/",
       "off": false,
-      "entryCount": 62327,
-      "entryUsedCount": 0
+      "entryCount": 62435,
+      "entryUsedCount": 1
     },
     "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt": {
       "off": false,
       "title": "EasyList without element hiding rules",
       "group": "ads",
       "supportURL": "https://forums.lanik.us/",
-      "entryCount": 24292,
+      "entryCount": 24354,
       "entryUsedCount": 0
     },
     "assets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt": {
@@ -59,7 +59,7 @@
       "homeURL": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
       "supportURL": "https://forums.lanik.us/",
       "off": false,
-      "entryCount": 11226,
+      "entryCount": 11233,
       "entryUsedCount": 5
     },
     "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt": {
@@ -67,7 +67,7 @@
       "title": "Fanboy’s Annoyance List",
       "group": "social",
       "supportURL": "https://forums.lanik.us/",
-      "entryCount": 21969,
+      "entryCount": 22029,
       "entryUsedCount": 1
     },
     "https://easylist-downloads.adblockplus.org/fanboy-social.txt": {
@@ -75,7 +75,7 @@
       "title": "Fanboy’s Social Blocking List",
       "group": "social",
       "supportURL": "https://forums.lanik.us/",
-      "entryCount": 13290,
+      "entryCount": 13299,
       "entryUsedCount": 0
     },
     "http://hosts-file.net/.%5Cad_servers.txt": {
@@ -83,22 +83,22 @@
       "title": "hpHosts’ Ad and tracking servers",
       "group": "multipurpose",
       "supportURL": "http://hosts-file.net/",
-      "entryCount": 47647,
-      "entryUsedCount": 40665
+      "entryCount": 47709,
+      "entryUsedCount": 40725
     },
     "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt": {
       "off": false,
       "title": "Malvertising filter list by Disconnect",
       "group": "malware",
-      "entryCount": 5616,
-      "entryUsedCount": 280
+      "entryCount": 5615,
+      "entryUsedCount": 283
     },
     "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt": {
       "off": false,
       "title": "Malware filter list by Disconnect",
       "group": "malware",
-      "entryCount": 2880,
-      "entryUsedCount": 90
+      "entryCount": 2879,
+      "entryUsedCount": 96
     },
     "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt": {
       "off": false,
@@ -112,8 +112,8 @@
       "title": "Adblock Warning Removal List",
       "group": "ads",
       "supportURL": "https://forums.lanik.us/",
-      "entryCount": 104,
-      "entryUsedCount": 100
+      "entryCount": 111,
+      "entryUsedCount": 106
     },
     "http://malwaredomains.lehigh.edu/files/immortal_domains.txt": {
       "off": false,
@@ -129,8 +129,8 @@
       "homeURL": "https://mirror.cedia.org.ec/malwaredomains/justdomains",
       "supportURL": "http://www.malwaredomains.com/",
       "off": false,
-      "entryCount": 16753,
-      "entryUsedCount": 16635
+      "entryCount": 17739,
+      "entryUsedCount": 17621
     },
     "assets/thirdparties/pgl.yoyo.org/as/serverlist": {
       "title": "Peter Lowe’s Ad server list",
@@ -138,8 +138,8 @@
       "homeURL": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
       "supportURL": "https://pgl.yoyo.org/adservers/",
       "off": false,
-      "entryCount": 2425,
-      "entryUsedCount": 1575
+      "entryCount": 2422,
+      "entryUsedCount": 1571
     },
     "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt": {
       "off": false,
@@ -147,16 +147,16 @@
       "group": "ads",
       "supportURL": "https://github.com/reek/anti-adblock-killer",
       "instructionURL": "https://github.com/reek/anti-adblock-killer#instruction",
-      "entryCount": 1633,
-      "entryUsedCount": 1584
+      "entryCount": 1736,
+      "entryUsedCount": 1686
     },
     "http://someonewhocares.org/hosts/hosts": {
       "off": false,
       "title": "Dan Pollock’s hosts file",
       "group": "multipurpose",
       "supportURL": "http://someonewhocares.org/hosts/",
-      "entryCount": 12100,
-      "entryUsedCount": 10060
+      "entryCount": 12114,
+      "entryUsedCount": 10073
     },
     "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt": {
       "off": false,
@@ -179,7 +179,7 @@
       "title": "Fanboy’s Enhanced Tracking List",
       "group": "privacy",
       "supportURL": "https://forums.lanik.us/",
-      "entryCount": 927,
+      "entryCount": 929,
       "entryUsedCount": 0
     },
     "https://www.fanboy.co.nz/fanboy-antifacebook.txt": {
@@ -195,8 +195,8 @@
       "title": "Fanboy+Easylist-Merged Ultimate List",
       "group": "multipurpose",
       "supportURL": "https://forums.lanik.us/",
-      "entryCount": 96443,
-      "entryUsedCount": 96395
+      "entryCount": 96656,
+      "entryUsedCount": 96608
     },
     "assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt": {
       "title": "Malware Domain List",
@@ -207,7 +207,7 @@
       "entryUsedCount": 1572
     }
   },
-  "netWhitelist": "",
+  "netWhitelist": "coursera.org\ntvshowtime.com",
   "dynamicFilteringString": "",
   "urlFilteringString": "",
   "hostnameSwitchesString": "",
