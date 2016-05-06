@@ -22,7 +22,7 @@ set_default_apps() {
   [[ -f "${mpv_location}" ]] && touch "${mpv_location}"
 }
 
-set_keyboard_shortcuts() {
+# set_keyboard_shortcuts() {
   # Custom keyboard shortcuts for apps
   # @ is ⌘; ~ is ⌥; $ is ⇧; ^ is ⌃
   # read more at https://web.archive.org/web/20140810142907/http://hints.macworld.com/article.php?story=20131123074223584
@@ -31,11 +31,11 @@ set_keyboard_shortcuts() {
   # defaults write -g NSUserKeyEquivalents '{}'
 
   # Tweetbot
-  defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
-    "Open Links"="l";
-    "Send to Pinboard"="$l";
-  }'
-}
+  # defaults write com.tapbots.TweetbotMac NSUserKeyEquivalents '{
+  #   "Open Links"="l";
+  #   "Send to Pinboard"="$l";
+  # }'
+# }
 
 install_verb_font() {
   ditto -xk "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/verb_font/Verb_Desktop_Web.zip" '/tmp'
