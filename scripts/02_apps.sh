@@ -1,6 +1,6 @@
 install_brew_apps() {
   brew install imagemagick --with-libtiff
-  brew install ffmpeg --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
+  brew install ffmpeg --with-faac --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
   brew install mpv --with-bundle
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
