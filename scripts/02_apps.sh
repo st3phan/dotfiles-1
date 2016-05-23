@@ -34,7 +34,7 @@ make_caskroom() {
 }
 
 install_cask_apps() {
-  brew cask install --appdir='/Applications' alfred bartender bettertouchtool calibre drop-to-gif dropbox duelystlauncher enjoyable flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes p5 processing screenflow shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
+  brew cask install --appdir='/Applications' alfred bartender bettertouchtool calibre drop-to-gif dropbox duelystlauncher electron-api-demos enjoyable flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes p5 processing screenflow shotcut spectacle steam terminology textexpander torbrowser transmission yacreader
 
   # install alternative versions
   brew tap caskroom/versions
