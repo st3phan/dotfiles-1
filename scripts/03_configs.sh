@@ -11,7 +11,7 @@ set_default_apps() {
   for ext in {aac,avi,flac,m4a,m4b,mkv,mov,mp3,mp4,mpeg,mpg,wav,webm}; do duti -s io.mpv "${ext}" all; done # media
   for ext in {7z,bz2,gz,rar,tar,tgz,zip}; do duti -s com.aone.keka "${ext}" all; done # archives
   for ext in {cbr,cbz}; do duti -s com.richie.YACReader "${ext}" all; done # image archives
-  for ext in {css,jade,js,json,php,py,rb,sh,txt}; do duti -s com.github.atom "${ext}" all; done # code
+  for ext in {css,js,json,php,pug,py,rb,sh,txt}; do duti -s com.github.atom "${ext}" all; done # code
 
   # Affinity apps (use beta versions)
   duti -s com.seriflabs.affinitydesigner.beta afdesign all
@@ -71,7 +71,7 @@ install_nvim_packages() {
 
 install_atom_packages() {
   # packages
-  apm install atom-alignment color-picker dash esformatter git-plus highlight-line language-jade language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck merge-conflicts node-debugger p5xjs-autocomplete pigments relative-numbers seeing-is-believing vim-mode vim-surround
+  apm install atom-alignment color-picker dash esformatter git-plus highlight-line language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck merge-conflicts node-debugger p5xjs-autocomplete pigments relative-numbers seeing-is-believing vim-mode vim-surround
 
   # themes and syntaxes
   apm install peacock-syntax seti-ui
