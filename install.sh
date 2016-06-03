@@ -23,6 +23,7 @@ run_install_dotfiles() {
   make_caskroom
   install_cask_apps
   install_tinyscripts
+  install_mas_apps
 
   restore_settings
   set_default_apps

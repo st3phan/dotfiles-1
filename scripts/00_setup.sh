@@ -28,6 +28,12 @@ initial_setup() {
 }
 
 ask_details() {
+  # ask for Mac App Store password
+  clear
+  bold_echo 'Insert your Mac App Store details to install apps.'
+  read -p 'MAS email: '
+  read -s -p 'MAS password (will not be echoed): ' mas_password
+
   clear
   bold_echo 'Some details to be used when configuring git:'
   read -p 'First and last names > ' name
