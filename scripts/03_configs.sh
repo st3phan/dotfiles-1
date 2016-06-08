@@ -77,6 +77,10 @@ install_atom_packages() {
   apm install peacock-syntax seti-ui
 }
 
+install_vscode_packages() {
+  code --install-extension dbaeumer.vscode-eslint gerane.Theme-Peacock misogi.ruby-rubocop rebornix.Ruby 
+}
+
 configure_git() {
   echo -e "[user]\n\tname = ${name}\n\temail = ${github_email}\n[github]\n\tuser = ${github_username}" > "${HOME}/.gitconfig"
   git config --global credential.helper osxkeychain

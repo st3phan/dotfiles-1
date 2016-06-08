@@ -33,6 +33,7 @@ run_install_dotfiles() {
   install_zsh_plugins
   install_nvim_packages
   install_atom_packages
+  install_vscode_packages
   configure_git
   install_launchagents
   lower_startup_chime
