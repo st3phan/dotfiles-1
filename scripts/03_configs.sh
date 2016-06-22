@@ -7,9 +7,14 @@ set_default_apps() {
   /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
   killall Finder
 
-  # touch the mpv app bundle, so the system actually sees it (since it's not in a standard location)
+  # open the mpv app bundle, so the system actually sees it (since it's not in a standard location)
   readonly local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
-  [[ -f "${mpv_location}" ]] && touch "${mpv_location}"
+  readonly local mpv_process="$(ps -A | grep 'mpv.app' | grep --invert-match 'grep' | awk '{ print $1 }')"
+  if [[ -z "${mpv_process}" ]]; then
+    open "${mpv_location}"
+    sleep 2
+    killall mpv
+  fi
 
   # general extensions
   for ext in {aac,avi,f4v,flac,m4a,m4b,mkv,mov,mp3,mp4,mpeg,mpg,wav,webm}; do duti -s io.mpv "${ext}" all; done # media
