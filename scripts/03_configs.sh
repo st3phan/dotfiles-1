@@ -7,6 +7,10 @@ set_default_apps() {
   /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
   killall Finder
 
+  # touch the mpv app bundle, so the system actually sees it (since it's not in a standard location)
+  readonly local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
+  [[ -f "${mpv_location}" ]] && touch "${mpv_location}"
+
   # general extensions
   for ext in {aac,avi,f4v,flac,m4a,m4b,mkv,mov,mp3,mp4,mpeg,mpg,wav,webm}; do duti -s io.mpv "${ext}" all; done # media
   for ext in {7z,bz2,gz,rar,tar,tgz,zip}; do duti -s com.aone.keka "${ext}" all; done # archives
@@ -16,10 +20,6 @@ set_default_apps() {
   # Affinity apps (use beta versions)
   duti -s com.seriflabs.affinitydesigner.beta afdesign all
   duti -s com.seriflabs.affinityphoto.beta afphoto all
-
-  # touch the mpv app bundle, so the system actually sees it (since it's not in a standard location)
-  readonly local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
-  [[ -f "${mpv_location}" ]] && touch "${mpv_location}"
 }
 
 # set_keyboard_shortcuts() {
