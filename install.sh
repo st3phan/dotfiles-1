@@ -19,8 +19,6 @@ run_install_dotfiles() {
   install_node
 
   install_brew_apps
-  install_brew_head_apps
-  make_caskroom
   install_cask_apps
   install_tinyscripts
   install_mas_apps

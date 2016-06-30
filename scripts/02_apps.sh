@@ -20,22 +20,6 @@ install_brew_apps() {
   echo 'ExitNodes {us}' >> "$(brew --prefix)/etc/tor/torrc"
 }
 
-install_brew_head_apps() {
-  readonly local head_formulas=(neovim/neovim/neovim)
-
-  for formula in "${head_formulas[@]}"; do
-    formula_name=$(basename "${formula}")
-
-    [[ $(brew list "${formula_name}" 2> /dev/null) ]] && brew uninstall ${formula} # if formula is installed, uninstall it first
-    brew install --HEAD "${head_formulas[@]}"
-  done
-}
-
-make_caskroom() {
-  sudo -S mkdir -p /opt/homebrew-cask/Caskroom <<< "${sudo_password}" 2> /dev/null
-  sudo -S chown -R ${USER}:staff /opt/homebrew-cask <<< "${sudo_password}" 2> /dev/null
-}
-
 install_cask_apps() {
   brew cask install --appdir='/Applications' alfred appearin bartender bettertouchtool calibre drop-to-gif dropbox duelystlauncher electron-api-demos enjoyable flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes p5 processing screenflow shotcut spectacle steam terminology textexpander torbrowser transmission wwdc yacreader
 
