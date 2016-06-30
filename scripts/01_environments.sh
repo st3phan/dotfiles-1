@@ -12,7 +12,7 @@ install_python() {
   if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
   pyenv global "${python_latest}"
   # install some eggs
-  pip install livestreamer subliminal
+  pip install livestreamer
 }
 
 install_ruby() {
