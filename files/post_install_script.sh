@@ -131,6 +131,12 @@ defaults write com.apple.dock tilesize -int 35
 info 'Set Dock to appear on the left.'
 defaults write com.apple.dock orientation -string left
 
+info 'Allow scroll gesture with ⌃ to zoom.'
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# Follow the keyboard focus while zoomed in
+defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
 info 'Set hot corners.'
 # Possible values:
 #  0: no-op
