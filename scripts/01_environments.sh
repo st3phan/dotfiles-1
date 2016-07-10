@@ -16,10 +16,7 @@ install_python() {
 }
 
 install_ruby() {
-  brew reinstall chruby ruby-install
-  ruby-install --src-dir "$(mktemp -d)" --latest ruby
-  source '/usr/local/share/chruby/chruby.sh'
-  chruby ruby
+  brew install ruby
   # install some gems
   gem install --no-document bundler chromedriver2-helper maid pry redcarpet rubocop site_validator video_transcoding watir-webdriver
   gem install --no-document pygments.rb # needed for installing ghi with brew
