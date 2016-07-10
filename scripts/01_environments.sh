@@ -21,7 +21,7 @@ install_ruby() {
   source '/usr/local/share/chruby/chruby.sh'
   chruby ruby
   # install some gems
-  gem install --no-document bundler chromedriver2-helper ghi maid pry redcarpet rubocop seeing_is_believing site_validator video_transcoding watir-webdriver
+  gem install --no-document bundler chromedriver2-helper ghi maid pry redcarpet rubocop site_validator video_transcoding watir-webdriver
 }
 
 install_node() {
