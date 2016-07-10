@@ -4,7 +4,7 @@ install_brew_apps() {
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
 
-  brew install aria2 asciinema asciinema2gif atool ccat cpulimit duff duti exiftool eye-d3 git git-extras git-ftp haskell-stack hr httpie jq lftp livestreamer mediainfo mkvtoolnix mp4v2 onepass phantomjs pup shellcheck subliminal the_silver_searcher trash tree wiki youtube-dl z
+  brew install aria2 asciinema asciinema2gif atool ccat cpulimit duff duti exiftool eye-d3 ghi git git-extras git-ftp haskell-stack hr httpie jq lftp livestreamer mediainfo mkvtoolnix mp4v2 onepass phantomjs pup shellcheck subliminal the_silver_searcher trash tree wiki youtube-dl z
 
   # install HEAD apps
   brew install --HEAD neovim/neovim/neovim
