@@ -83,7 +83,11 @@ install_atom_packages() {
 }
 
 install_vscode_packages() {
-  code --install-extension dbaeumer.vscode-eslint gerane.Theme-Peacock misogi.ruby-rubocop rebornix.Ruby 
+  # packages
+  code --install-extension dbaeumer.vscode-eslint misogi.ruby-rubocop rebornix.Ruby
+
+  # themes and syntaxes
+  code --install-extension gerane.Theme-Peacock
 }
 
 configure_git() {
