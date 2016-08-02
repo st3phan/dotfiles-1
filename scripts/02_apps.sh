@@ -57,7 +57,7 @@ install_cask_apps() {
 
 install_tinyscripts() {
   brew tap vitorgalvao/tinyscripts
-  brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier fastmerge gifmaker gfv human-media-time labelcolor lovecolor pedir-gas pinboardlinkcheck podbook prfixmaster seren trello-purge-archives
+  brew install annotmd cask-repair contagem-edp crafts customise-terminal-notifier fastmerge gifmaker gfv human-media-time labelcolor lovecolor pedir-gas pinboardlinkcheck pinboardwaybackmachine podbook prfixmaster seren trello-purge-archives
 }
 
 install_mas_apps() {
