@@ -12,7 +12,6 @@ install_brew_apps() {
 
   # install apps from other taps
   brew install laurent22/massren/massren
-  brew install peco/peco/peco
   brew install vitorgalvao/geotoad/geotoad
 
   # install and configure tor
