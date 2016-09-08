@@ -21,7 +21,7 @@ install_brew_apps() {
 }
 
 install_cask_apps() {
-  brew cask install alfred appearin bartender bettertouchtool calibre dropbox electron-api-demos flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes little-snitch p5 processing screenflow shotcut spectacle steam terminology textexpander torbrowser transmission wwdc yacreader
+  brew cask install alfred appearin apple-events bartender bettertouchtool calibre dropbox electron-api-demos flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone jadengeller-helium keka key-codes little-snitch p5 processing screenflow shotcut spectacle steam terminology textexpander torbrowser transmission wwdc yacreader
 
   # install alternative versions
   brew tap caskroom/versions
