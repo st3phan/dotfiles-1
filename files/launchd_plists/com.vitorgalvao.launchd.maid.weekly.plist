@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.vitorgalvao.launchd.maid</string>
+	<string>com.vitorgalvao.launchd.maid.weekly</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>sh</string>
 		<string>-c</string>
-		<string>source '/usr/local/share/chruby/chruby.sh' &amp;&amp; chruby ruby &amp;&amp; maid clean --force</string>
+		<string>maid clean --force --rules &quot;${HOME}/.maid/weekly.rb&quot;</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<dict>
