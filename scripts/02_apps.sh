@@ -25,7 +25,7 @@ install_cask_apps() {
 
   # install alternative versions
   brew tap caskroom/versions
-  brew cask install affinity-designer-beta affinity-photo-beta atom-beta google-chrome-canary iterm2-beta openemu-experimental pokerstarseu vmware-fusion6
+  brew cask install affinity-designer-beta affinity-photo-beta atom-beta google-chrome-canary iterm2-beta openemu-experimental pokerstarseu
 
   # drivers
   renew_sudo
