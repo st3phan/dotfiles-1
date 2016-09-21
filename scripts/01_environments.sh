@@ -2,7 +2,7 @@ install_brew() {
   renew_sudo
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null
   # disable analytics
-  git config --file="$(brew --repository)/.git/config" --replace-all homebrew.analyticsdisabled true
+  brew analytics off
 }
 
 install_python() {
