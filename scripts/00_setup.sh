@@ -2,7 +2,7 @@ bold_echo() { # helper function for bold text
   echo "$(tput bold)$1$(tput sgr0)"
 }
 
-renew_sudo() { # helper function for when the following command needs 'sudo' active but shouldn't be called with it
+renew_sudo() { # helper function for when the following command needs `sudo` active but shouldn't be called with it
   sudo -S -v <<< "${sudo_password}" 2> /dev/null
 }
 
@@ -19,7 +19,7 @@ initial_setup() {
 }
 
 ask_details() {
-  # ask for the administrator password upfront, for commands that require 'sudo'
+  # ask for the administrator password upfront, for commands that require `sudo`
   clear
   bold_echo 'Insert the "sudo" password now (will not be echoed).'
   until sudo -n true 2> /dev/null; do # if password is wrong, keep asking
