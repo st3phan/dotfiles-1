@@ -21,5 +21,5 @@ install_ruby() {
 install_node() {
   brew install node
   # install some packages
-  npm install --global eslint eslint-plugin-immutable eslint-plugin-shopify how2 jsonlint nativefier nightmare npm-check-updates pageres-cli watch webcoach
+  npm install --global eslint eslint-plugin-immutable eslint-plugin-shopify how2 jsonlint nativefier nightmare npm-check-updates pageres-cli webcoach
 }
