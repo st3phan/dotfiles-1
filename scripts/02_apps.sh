@@ -1,10 +1,9 @@
 install_brew_apps() {
-  brew install imagemagick --with-libtiff
   brew install ffmpeg --with-faac --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
 
-  brew install aria2 asciinema asciinema2gif ccat cpulimit duti eye-d3 ghi git git-ftp haskell-stack hr httpie jq livestreamer mediainfo mkvtoolnix mp4v2 onepass phantomjs pup shellcheck subliminal the_silver_searcher trash tree youtube-dl z
+  brew install aria2 asciinema asciinema2gif ccat cpulimit duti eye-d3 ghi git git-ftp haskell-stack hr httpie imagemagick jq livestreamer mediainfo mkvtoolnix mp4v2 onepass phantomjs pup shellcheck subliminal the_silver_searcher trash tree youtube-dl z
 
   # install HEAD apps
   brew install --HEAD neovim/neovim/neovim
