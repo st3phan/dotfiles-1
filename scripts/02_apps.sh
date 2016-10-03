@@ -20,6 +20,7 @@ install_brew_apps() {
 }
 
 install_cask_apps() {
+  renew_sudo # to make the Caskroom on first install
   brew cask install alfred appearin apple-events bartender bettertouchtool calibre dropbox electron-api-demos flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone keka key-codes little-snitch p5 processing shotcut spectacle steam torbrowser transmission wwdc yacreader
 
   # install alternative versions
