@@ -19,7 +19,8 @@ install_ruby() {
 }
 
 install_node() {
-  brew install node
+  brew install node --without-npm
+  brew install yarn
   # install some packages
-  npm install --global eslint eslint-plugin-immutable eslint-plugin-shopify how2 jsonlint nativefier nightmare npm-check-updates pageres-cli webcoach
+  yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nativefier nightmare pageres-cli webcoach
 }
