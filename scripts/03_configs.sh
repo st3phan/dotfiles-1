@@ -76,10 +76,10 @@ install_nvim_packages() {
 
 install_atom_packages() {
   # packages
-  apm install dash esformatter git-plus highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck pigments relative-numbers vim-mode vim-surround
+  apm-beta install dash esformatter git-plus highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck pigments relative-numbers vim-mode vim-surround
 
   # themes and syntaxes
-  apm install peacock-syntax
+  apm-beta install peacock-syntax
 }
 
 install_vscode_packages() {
