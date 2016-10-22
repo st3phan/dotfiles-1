@@ -3,12 +3,6 @@ cleanup_brew() {
   rm -rf "$(brew --cache)"
 }
 
-cleanup_error_log() {
-  sed -i '' '/^Downloading /d;/^-> /d;/^Installing /d;/^Installed /d' "${error_log}" # pyenv downloads
-  sed -i '' -E '/#{2,}.*%/d' "${error_log}" # curl progress bars
-  sed -i '' '/^Cloning into/d' "${error_log}" # git cloning messages
-}
-
 move_manual_action_files() {
   mv "${helper_files}" "${post_install_files}"
   mv "${post_install_files}/post_install_script.sh" "${post_install_script}"
