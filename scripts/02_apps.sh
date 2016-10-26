@@ -5,6 +5,9 @@ install_brew_apps() {
 
   brew install aria2 asciinema asciinema2gif cpulimit duti eye-d3 ghi git git-ftp haskell-stack hr httpie imagemagick jq livestreamer mediainfo mkvtoolnix mp4v2 onepass phantomjs pup ripgrep rmlint shellcheck subliminal trash tree youtube-dl z
 
+  # install zsh_plugins
+  brew install zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting
+
   # install HEAD apps
   brew install --HEAD neovim/neovim/neovim
   brew install --with-bundle --HEAD mpv

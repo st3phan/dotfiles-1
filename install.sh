@@ -27,7 +27,6 @@ run_install_dotfiles() {
   # set_keyboard_shortcuts
   install_verb_font
   configure_zsh
-  install_zsh_plugins
   install_nvim_packages
   install_atom_packages
   install_vscode_packages

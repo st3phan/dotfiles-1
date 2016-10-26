@@ -52,20 +52,6 @@ configure_zsh() { # make zsh default shell
   sudo -S chsh -s '/usr/local/bin/zsh' "${USER}" <<< "${sudo_password}" 2> /dev/null
 }
 
-install_zsh_plugins() {
-  readonly local zsh_plugins_dir="${HOME}/.zsh-plugins"
-
-  # oh-my-zsh history
-  curl --silent --location 'https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/history.zsh' --output "${zsh_plugins_dir}/oh-my-zsh-history/history.zsh" --create-dirs
-  # zsh-completions
-  git clone --quiet 'git://github.com/zsh-users/zsh-completions.git' "${zsh_plugins_dir}/zsh-completions"
-  rm -f "${HOME}/.zcompdump"; compinit # force rebuild zcompdump
-  # zsh-syntax-highlighting
-  git clone --quiet 'git://github.com/zsh-users/zsh-syntax-highlighting.git' "${zsh_plugins_dir}/zsh-syntax-highlighting"
-  # zsh-history-substring-search
-  git clone --quiet 'git://github.com/zsh-users/zsh-history-substring-search.git' "${zsh_plugins_dir}/zsh-history-substring-search"
-}
-
 install_nvim_packages() {
   # download and configure vim-plug
   # there's a chance it won't be needed in the future (https://github.com/junegunn/vim-plug/issues/249)
