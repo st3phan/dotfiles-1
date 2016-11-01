@@ -9,11 +9,13 @@ set_default_apps() {
 
   # open the mpv app bundle, so the system actually sees it (since it's not in a standard location)
   readonly local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
-  readonly local mpv_process="$(ps -A | grep 'mpv.app' | grep --invert-match 'grep' | awk '{ print $1 }')"
-  if [[ -z "${mpv_process}" ]]; then
-    open "${mpv_location}"
-    sleep 2
-    killall mpv
+  if [[ -n "${mpv_location}" ]]; then
+    readonly local mpv_process="$(ps -A | grep 'mpv.app' | grep --invert-match 'grep' | awk '{ print $1 }')"
+    if [[ -z "${mpv_process}" ]]; then
+      open "${mpv_location}"
+      sleep 2
+      killall mpv
+    fi
   fi
 
   # general extensions
