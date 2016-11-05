@@ -29,7 +29,6 @@ run_install_dotfiles() {
   configure_zsh
   install_nvim_packages
   install_atom_packages
-  install_vscode_packages
   configure_git
   install_launchagents
   lower_startup_chime
