@@ -22,7 +22,7 @@ set_default_apps() {
   for ext in {aac,avi,f4v,flac,m4a,m4b,mkv,mov,mp3,mp4,mpeg,mpg,wav,webm}; do duti -s io.mpv "${ext}" all; done # media
   for ext in {7z,bz2,gz,rar,tar,tgz,zip}; do duti -s com.aone.keka "${ext}" all; done # archives
   for ext in {cbr,cbz}; do duti -s com.richie.YACReader "${ext}" all; done # image archives
-  for ext in {css,js,json,php,pug,py,rb,sh,txt}; do duti -s com.github.atom "${ext}" all; done # code
+  for ext in {css,js,json,md,php,pug,py,rb,sh,txt}; do duti -s com.github.atom "${ext}" all; done # code
 
   # Affinity apps (use beta versions)
   duti -s com.seriflabs.affinitydesigner.beta afdesign all
