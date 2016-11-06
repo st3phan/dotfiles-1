@@ -8,7 +8,7 @@ set_default_apps() {
   killall Finder
 
   # open the mpv app bundle, so the system actually sees it (since it's not in a standard location)
-  readonly local mpv_location="$(readlink "$(brew --repository)/bin/mpv" | sed "s:^\.\.:$(brew --repository):;s:bin/mpv$:mpv.app:")"
+  readonly local mpv_location="$(readlink "$(brew --prefix)/bin/mpv" | sed "s:^\.\.:$(brew --prefix):;s:bin/mpv$:mpv.app:")"
   if [[ -n "${mpv_location}" ]]; then
     readonly local mpv_process="$(pgrep -f 'mpv.app')"
     if [[ -z "${mpv_process}" ]]; then
