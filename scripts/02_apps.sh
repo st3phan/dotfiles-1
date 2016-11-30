@@ -1,5 +1,6 @@
 install_brew_apps() {
   brew install ffmpeg --with-faac --with-libvpx --with-libvorbis --with-openssl --with-theora --with-x265
+  brew install mpv --with-bundle
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
 
@@ -8,12 +9,9 @@ install_brew_apps() {
   # install zsh_plugins
   brew install zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting
 
-  # install HEAD apps
-  brew install --HEAD neovim/neovim/neovim
-  brew install --with-bundle --HEAD mpv
-
   # install apps from other taps
   brew install laurent22/massren/massren
+  brew install neovim/neovim/neovim
   brew install vitorgalvao/geotoad/geotoad
 
   # install and configure tor
