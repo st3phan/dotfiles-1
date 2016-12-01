@@ -30,15 +30,15 @@ request_chrome_extension() { # 'request' for Google Chrome extensions
 
 preferences_pane() { # open 'System Preferences' is specified pane
   osascript -e "tell application \"System Preferences\"
-    activate
     reveal pane \"${1}\"
+    activate
   end tell" &> /dev/null
 }
 
 preferences_pane_anchor() { # open 'System Preferences' is specified pane and tab
   osascript -e "tell application \"System Preferences\"
-    activate
     reveal anchor \"${1}\" of pane \"${2}\"
+    activate
   end tell" &> /dev/null
 }
 
