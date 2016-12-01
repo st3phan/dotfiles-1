@@ -45,6 +45,8 @@ ask_details() {
   read -p 'Email address: ' email
   read -p 'Telephone number: ' telephone
   sudo -S defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}" <<< "${sudo_password}" 2> /dev/null
+  
+  clear
 }
 
 update_system() {
