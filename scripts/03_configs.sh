@@ -83,14 +83,14 @@ install_launchagents() {
   mkdir -p "${user_launchagents_dir}"
 
   for plist_file in "${helper_files}/launchd_plists/user_plists"/*; do
-    readonly local plist_name=$(basename "${plist_file}")
+    local plist_name=$(basename "${plist_file}")
 
     mv "${plist_file}" "${user_launchagents_dir}"
     launchctl load -w "${user_launchagents_dir}/${plist_name}"
   done
 
   for plist_file in "${helper_files}/launchd_plists/system_plists"/*; do
-    readonly local plist_name=$(basename "${plist_file}")
+    local plist_name=$(basename "${plist_file}")
 
     sudo mv "${plist_file}" "${system_launchagents_dir}" <<< "${sudo_password}" 2> /dev/null
     sudo launchctl load -w "${system_launchagents_dir}/${plist_name}" <<< "${sudo_password}" 2> /dev/null
