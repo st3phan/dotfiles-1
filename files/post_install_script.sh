@@ -8,22 +8,22 @@ info() {
 }
 
 request() { # output a message and open an app
-  local message="$1"
-  local app="$2"
-  shift && shift # get rid of '$1' and '$2'
+  local message="${1}"
+  local app="${2}"
+  shift 2
 
   echo "$(tput setaf 5)•$(tput sgr0) ${message}"
   open -Wa "${app}" --args "$@" # don't continue until app closes
 }
 
 request_preferences() { # 'request' for System Preferences
-  request "$1" "System Preferences"
+  request "$1" 'System Preferences'
 }
 
 request_chrome_extension() { # 'request' for Google Chrome extensions
-  local chrome_or_canary="$1"
-  local extension_short_name="$2"
-  local extension_code="$3"
+  local chrome_or_canary="${1}"
+  local extension_short_name="${2}"
+  local extension_code="${3}"
 
   request "Install '${extension_short_name}' extension." "${chrome_or_canary}" --no-first-run "https://chrome.google.com/webstore/detail/${extension_short_name}/${extension_code}"
 }
@@ -31,14 +31,14 @@ request_chrome_extension() { # 'request' for Google Chrome extensions
 preferences_pane() { # open 'System Preferences' is specified pane
   osascript -e "tell application \"System Preferences\"
     activate
-    reveal pane \"$1\"
+    reveal pane \"${1}\"
   end tell" &> /dev/null
 }
 
 preferences_pane_anchor() { # open 'System Preferences' is specified pane and tab
   osascript -e "tell application \"System Preferences\"
     activate
-    reveal anchor \"$1\" of pane \"$2\"
+    reveal anchor \"${1}\" of pane \"${2}\"
   end tell" &> /dev/null
 }
 
@@ -89,7 +89,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 info 'Set Desktop as the default location for new Finder windows.'
 # For other paths, use `PfLo` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTarget -string 'PfDe'
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
 
 info 'Show all filename extensions in Finder.'
