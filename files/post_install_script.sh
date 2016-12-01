@@ -174,8 +174,6 @@ done
 
 echo
 
-request 'Download the apps you want.' 'App Store'
-
 request 'Allow to send and receive SMS messages.' 'Messages'
 
 preferences_pane 'com.apple.preference.general'
