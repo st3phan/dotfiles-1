@@ -63,10 +63,10 @@ install_nvim_packages() {
 
 install_atom_packages() {
   # packages
-  apm-beta install atom-beautify highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck relative-numbers vim-mode vim-surround
+  apm install atom-beautify highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck relative-numbers vim-mode vim-surround
 
   # themes and syntaxes
-  apm-beta install peacock-syntax
+  apm install peacock-syntax
 }
 
 configure_git() {
