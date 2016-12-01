@@ -185,9 +185,6 @@ request_preferences "Turn off Spotlight's keyboard shortcut."
 preferences_pane 'com.apple.preference.trackpad'
 request_preferences 'ALL TABS: Set Trackpad preferences.'
 
-preferences_pane_anchor 'com.apple.twitter' 'com.apple.preferences.internetaccounts'
-request_preferences 'Setup Twitter account.'
-
 preferences_pane 'com.apple.preferences.users'
 request_preferences 'Turn off Guest User account.'
 
