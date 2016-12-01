@@ -174,7 +174,7 @@ echo
 request 'Allow to send and receive SMS messages.' 'Messages'
 
 preferences_pane 'com.apple.preference.general'
-request_preferences 'Set dark menu bar and dock.' 'System Preferences'
+request_preferences 'Set dark menu bar and dock.'
 
 preferences_pane_anchor 'shortcutsTab' 'com.apple.preference.keyboard'
 request_preferences "Turn off Spotlight's keyboard shortcut."
