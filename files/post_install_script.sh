@@ -194,7 +194,7 @@ request_preferences 'Turn off Guest User account.'
 preferences_pane_anchor 'Mouse' 'com.apple.preference.universalaccess'
 request_preferences 'Under "Trackpad Options…", enable three finger drag.'
 
-preferences_pane_anchor 'Dictation' 'com.apple.preference.speech'
+preferences_pane_anchor 'Dictation' 'com.apple.preference.keyboard'
 request_preferences 'Turn on enhanced dictation and download other languages.'
 
 preferences_pane_anchor 'TTS' 'com.apple.preference.speech'
