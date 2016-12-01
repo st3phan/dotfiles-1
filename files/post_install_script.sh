@@ -87,9 +87,6 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 info 'Disable auto-correct.'
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-info 'Disable shadow in screenshots.'
-defaults write com.apple.screencapture disable-shadow -bool true
-
 info 'Set Desktop as the default location for new Finder windows.'
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
