@@ -161,7 +161,7 @@ sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
 info 'Stop iTunes from responding to keyboard media keys.'
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
-for app in "Dock" "Finder"; do
+for app in 'Dock' 'Finder'; do
   killall "${app}" &> /dev/null
 done
 
