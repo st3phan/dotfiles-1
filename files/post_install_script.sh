@@ -77,9 +77,6 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 info 'Disable Resume system-wide.'
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
-info 'Enable tap to click for this user.'
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
 info 'Enable full keyboard access for all controls.'
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
