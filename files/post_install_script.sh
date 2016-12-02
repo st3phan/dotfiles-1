@@ -170,6 +170,9 @@ echo
 
 request 'Allow to send and receive SMS messages.' 'Messages'
 
+preferences_pane 'com.apple.preference.dock'
+request_preferences 'Always prefer tabs when opening documents.'
+
 preferences_pane 'com.apple.preference.displays'
 request_preferences 'Turn off showing mirroring options in the menu bar.'
 
