@@ -196,7 +196,6 @@ request_preferences 'Under "Trackpad Options…", enable three finger drag.'
 echo
 
 request_chrome_extension 'Google Chrome' '1password-password-manage' 'aomjjhallfgjeglblehebfpbcfeobpgk'
-request_chrome_extension 'Google Chrome' 'directlinks' 'mmlodedokepmgdiakhfcbopalplppiok'
 request_chrome_extension 'Google Chrome' 'httpseverywhere' 'gcbommkclmclpchllfjekcdonpmejbdp'
 request_chrome_extension 'Google Chrome' 'thegreatsuspender' 'klbibkeccnjlkjkiokjodocebajanakg'
 request_chrome_extension 'Google Chrome' 'ublockorigin' 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
