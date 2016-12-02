@@ -173,20 +173,23 @@ request 'Allow to send and receive SMS messages.' 'Messages'
 preferences_pane_anchor 'shortcutsTab' 'com.apple.preference.keyboard'
 request_preferences "Turn off Spotlight's keyboard shortcut."
 
+preferences_pane_anchor 'Dictation' 'com.apple.preference.keyboard'
+request_preferences 'Turn on enhanced dictation and download other languages.'
+
 preferences_pane 'com.apple.preference.trackpad'
 request_preferences 'ALL TABS: Set Trackpad preferences.'
 
 preferences_pane 'com.apple.preferences.users'
 request_preferences 'Turn off Guest User account.'
 
-preferences_pane_anchor 'Mouse' 'com.apple.preference.universalaccess'
-request_preferences 'Under "Trackpad Options…", enable three finger drag.'
-
-preferences_pane_anchor 'Dictation' 'com.apple.preference.keyboard'
-request_preferences 'Turn on enhanced dictation and download other languages.'
+preferences_pane 'com.apple.preference.speech'
+request_preferences 'Set Siri voice.'
 
 preferences_pane_anchor 'TextToSpeech' 'com.apple.preference.universalaccess'
 request_preferences 'Download and keep only "Ava" and "Joana" voices.'
+
+preferences_pane_anchor 'Mouse' 'com.apple.preference.universalaccess'
+request_preferences 'Under "Trackpad Options…", enable three finger drag.'
 
 # chrome extentions
 
