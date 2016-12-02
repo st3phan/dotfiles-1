@@ -32,7 +32,6 @@ run_install_dotfiles() {
   configure_git
   install_launchagents
   lower_startup_chime
-  alfred_allow_dropbox
 
   cleanup_brew
   cleanup_error_log

@@ -105,7 +105,3 @@ lower_startup_chime() {
   chmod +x '/tmp/lowchime'
   sudo -S /tmp/lowchime install <<< "${sudo_password}" 2> /dev/null
 }
-
-alfred_allow_dropbox() {
-  defaults write com.runningwithcrayons.Alfred-Preferences dropbox.allowappsfolder -bool TRUE
-}
