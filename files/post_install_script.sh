@@ -66,7 +66,7 @@ else
 fi
 
 # first part
-# more options on http://mths.be/osx
+# more options on http://mths.be/macos
 
 info 'Expand save panel by default.'
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
