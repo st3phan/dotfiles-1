@@ -156,6 +156,9 @@ for app in 'Dock' 'Finder'; do
   killall "${app}" &> /dev/null
 done
 
+info 'Set dark menu bar and Dock.'
+osascript -e 'tell application "System Events" to tell appearance preferences to set properties to {dark mode:true}'
+
 info 'Set Dock size and screen edge.'
 osascript -e 'tell application "System Events" to tell dock preferences to set properties to {dock size:0.17, screen edge:left}'
 
@@ -166,9 +169,6 @@ osascript -e 'tell application "System Events" to tell dock preferences to set p
 echo
 
 request 'Allow to send and receive SMS messages.' 'Messages'
-
-preferences_pane 'com.apple.preference.general'
-request_preferences 'Set dark menu bar and dock.'
 
 preferences_pane_anchor 'shortcutsTab' 'com.apple.preference.keyboard'
 request_preferences "Turn off Spotlight's keyboard shortcut."
