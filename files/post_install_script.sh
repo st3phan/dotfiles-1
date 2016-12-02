@@ -170,6 +170,9 @@ echo
 
 request 'Allow to send and receive SMS messages.' 'Messages'
 
+preferences_pane 'com.apple.preference.displays'
+request_preferences 'Turn off showing mirroring options in the menu bar.'
+
 preferences_pane_anchor 'shortcutsTab' 'com.apple.preference.keyboard'
 request_preferences "Turn off Spotlight's keyboard shortcut."
 
@@ -215,3 +218,6 @@ request_chrome_extension 'Google Chrome Canary' 'snappysnippet' 'blfngdefapoapkc
 request_chrome_extension 'Google Chrome Canary' 'tape' 'jmfleijdbicilompnnombcbkcgidbefb'
 request_chrome_extension 'Google Chrome Canary' 'thecamelizer' 'ghnomdcacenbmilgjigehppbamfndblo'
 request_chrome_extension 'Google Chrome Canary' 'tincr' 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
+
+
+request 'Remove Google-imposed extensions.' 'Google Chrome' 'chrome://extensions'
