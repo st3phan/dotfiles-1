@@ -35,6 +35,7 @@ run_install_dotfiles() {
   alfred_allow_dropbox
 
   cleanup_brew
+  cleanup_error_log
   move_manual_action_files
   killall caffeinate # computer can go back to sleep
   final_message
