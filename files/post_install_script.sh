@@ -119,12 +119,6 @@ chflags hidden "${HOME}/Music"
 chflags hidden "${HOME}/Pictures"
 chflags hidden "${HOME}/Public"
 
-info 'Set the icon size of Dock items.'
-defaults write com.apple.dock tilesize -int 35
-
-info 'Set Dock to appear on the left.'
-defaults write com.apple.dock orientation -string left
-
 info 'Allow scroll gesture with ⌃ to zoom.'
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
@@ -161,6 +155,9 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 for app in 'Dock' 'Finder'; do
   killall "${app}" &> /dev/null
 done
+
+info 'Set Dock size and screen edge.'
+osascript -e 'tell application "System Events" to tell dock preferences to set properties to {dock size:0.17, screen edge:left}'
 
 # second part
 # find values for System Preferences by opening the desired pane and running the following AppleScript:
