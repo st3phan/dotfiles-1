@@ -91,6 +91,9 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 info 'Show all filename extensions in Finder.'
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+info 'Remove items from the Trash after 30 days.'
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
 info 'Disable the warning when changing a file extension.'
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
