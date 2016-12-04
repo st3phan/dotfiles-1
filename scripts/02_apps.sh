@@ -23,7 +23,7 @@ install_cask_apps() {
   renew_sudo # to make the Caskroom on first install
   brew cask install alfred appearin apple-events atom bartender bettertouchtool calibre dash dropbox electron-api-demos flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone iterm2 keka key-codes p5 processing shotcut spectacle steam torbrowser transmission veertu-desktop wwdc yacreader
 
-  brew cask install pokerstars --language='pt'
+  brew cask install pokerstars --language='PT'
 
   # install alternative versions
   brew tap caskroom/versions
