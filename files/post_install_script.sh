@@ -106,9 +106,9 @@ info 'Increase grid spacing for icons on the desktop.'
 info 'Increase the size of icons on the desktop.'
 /usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:iconSize 128' "${HOME}/Library/Preferences/com.apple.finder.plist"
 
-info 'Use list view in all Finder windows by default.'
-# Four-letter codes for the other view modes: 'icnv', 'clmv', 'Flwv'
-defaults write com.apple.finder FXPreferredViewStyle -string 'Nlsv'
+info 'Use columns view in all Finder windows by default.'
+# Four-letter codes for the other view modes: 'icnv', 'Nlsv', 'Flwv'
+defaults write com.apple.finder FXPreferredViewStyle -string 'clmv'
 
 info 'Disable the warning before emptying the Trash.'
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
