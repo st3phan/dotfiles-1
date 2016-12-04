@@ -190,6 +190,9 @@ request_preferences 'ALL TABS: Set Trackpad preferences.'
 preferences_pane 'com.apple.preferences.icloud'
 request_preferences "Uncheck what you don't want synced to iCloud."
 
+preferences_pane 'com.apple.preferences.internetaccounts'
+request_preferences 'Remove Game Center.'
+
 preferences_pane 'com.apple.preferences.users'
 request_preferences 'Turn off Guest User account.'
 
