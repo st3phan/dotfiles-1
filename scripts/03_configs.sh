@@ -97,8 +97,7 @@ install_launchagents() {
     sudo launchctl load "${global_launchdaemons_dir}/${plist_name}" <<< "${sudo_password}" 2> /dev/null
   done
 
-  rmdir "${helper_files}/launchd_plists"/*
-  rmdir "${helper_files}/launchd_plists"
+  rmdir -p "${helper_files}/launchd_plists"/* 2> /dev/null
 }
 
 lower_startup_chime() {
