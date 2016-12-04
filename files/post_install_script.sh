@@ -84,10 +84,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 info 'Disable auto-correct.'
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-info 'Set Desktop as the default location for new Finder windows.'
-# For other paths, use `PfLo` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string 'PfDe'
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+info 'Set Home as the default location for new Finder windows.'
+defaults write com.apple.finder NewWindowTarget -string 'PfLo'
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 info 'Show all filename extensions in Finder.'
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
