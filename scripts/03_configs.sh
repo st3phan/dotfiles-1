@@ -79,7 +79,7 @@ configure_git() {
 
 install_launchagents() {
   readonly local user_launchagents_dir="${HOME}/Library/LaunchAgents"
-  readonly local system_launchagents_dir='/Library/LaunchAgents/'
+  readonly local global_launchdaemons_dir='/Library/LaunchDaemons/'
   mkdir -p "${user_launchagents_dir}"
 
   for plist_file in "${helper_files}/launchd_plists/user_plists"/*; do
@@ -92,9 +92,9 @@ install_launchagents() {
   for plist_file in "${helper_files}/launchd_plists/global_plists"/*; do
     local plist_name=$(basename "${plist_file}")
 
-    sudo mv "${plist_file}" "${system_launchagents_dir}" <<< "${sudo_password}" 2> /dev/null
-    sudo chown root "${system_launchagents_dir}/${plist_name}" <<< "${sudo_password}" 2> /dev/null
-    sudo launchctl load -w "${system_launchagents_dir}/${plist_name}" <<< "${sudo_password}" 2> /dev/null
+    sudo mv "${plist_file}" "${global_launchdaemons_dir}" <<< "${sudo_password}" 2> /dev/null
+    sudo chown root "${global_launchdaemons_dir}/${plist_name}" <<< "${sudo_password}" 2> /dev/null
+    sudo launchctl load -w "${global_launchdaemons_dir}/${plist_name}" <<< "${sudo_password}" 2> /dev/null
   done
 
   rmdir "${helper_files}/launchd_plists"/*
