@@ -187,6 +187,9 @@ request_preferences 'Turn on enhanced dictation and download other languages.'
 preferences_pane 'com.apple.preference.trackpad'
 request_preferences 'ALL TABS: Set Trackpad preferences.'
 
+preferences_pane 'com.apple.preferences.icloud'
+request_preferences "Uncheck what you don't want synced to iCloud."
+
 preferences_pane 'com.apple.preferences.users'
 request_preferences 'Turn off Guest User account.'
 
