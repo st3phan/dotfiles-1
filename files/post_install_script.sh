@@ -230,4 +230,4 @@ request_chrome_extension 'Google Chrome Canary' 'tape' 'jmfleijdbicilompnnombcbk
 request_chrome_extension 'Google Chrome Canary' 'thecamelizer' 'ghnomdcacenbmilgjigehppbamfndblo'
 request_chrome_extension 'Google Chrome Canary' 'tincr' 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
 
-request 'Remove Google-imposed extensions.' 'Google Chrome' 'chrome://extensions'
+request 'Remove Google-imposed extensions.' 'Google Chrome'
