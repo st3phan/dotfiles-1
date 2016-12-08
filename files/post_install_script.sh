@@ -231,3 +231,9 @@ request_chrome_extension 'Google Chrome Canary' 'thecamelizer' 'ghnomdcacenbmilg
 request_chrome_extension 'Google Chrome Canary' 'tincr' 'lfjbhpnjiajjgnjganiaggebdhhpnbih'
 
 request 'Remove Google-imposed extensions.' 'Google Chrome'
+
+# misc
+
+echo
+
+request 'Create a token with the "repo" scope for CLI access.' 'Google Chrome' 'https://github.com/settings/tokens'
