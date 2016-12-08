@@ -4,7 +4,7 @@
 trap 'exit 0' SIGINT # exit cleanly if aborted with ⌃C
 
 info() {
-  echo "$(tput setaf 2)•$(tput sgr0) $1"
+  echo "$(tput setaf 2)•$(tput sgr0) ${1}"
 }
 
 request() { # output a message and open an app
@@ -17,7 +17,7 @@ request() { # output a message and open an app
 }
 
 request_preferences() { # 'request' for System Preferences
-  request "$1" 'System Preferences'
+  request "${1}" 'System Preferences'
 }
 
 request_chrome_extension() { # 'request' for Google Chrome extensions
