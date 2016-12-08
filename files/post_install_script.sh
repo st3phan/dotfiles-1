@@ -48,7 +48,7 @@ clear
 echo "This script will help configure the rest of OS X. It is divided in two parts:
 
   $(tput setaf 2)•$(tput sgr0) Commands that will change settings without needing intervetion.
-  $(tput setaf 5)•$(tput sgr0) Commands that will open a GUI and require manual graphical interaction.
+  $(tput setaf 5)•$(tput sgr0) Commands that will require manual interaction.
 
   The first part will simply output what it is doing (the action itself, not the commands).
 
