@@ -237,3 +237,9 @@ request 'Remove Google-imposed extensions.' 'Google Chrome'
 echo
 
 request 'Create a token with the "repo" scope for CLI access.' 'Google Chrome' 'https://github.com/settings/tokens'
+read -p 'Github username: ' github_username
+read -p 'Github token: ' github_token
+echo "host=github.com
+protocol=https
+password=${github_token}
+username=${github_username}" | git credential-osxkeychain store
