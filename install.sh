@@ -31,6 +31,7 @@ run_install_dotfiles() {
   install_nvim_packages
   install_atom_packages
   configure_git
+  configure_pinboard_scripts
   install_launchagents
   lower_startup_chime
 

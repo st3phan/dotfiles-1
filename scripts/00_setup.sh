@@ -46,6 +46,10 @@ ask_details() {
   sudo -S defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}" <<< "${sudo_password}" 2> /dev/null
 
   clear
+  bold_echo 'Your Pinboard token for configuration of personal Pinboard script:'
+  read -p 'Pinboard token: ' pinboard_token
+
+  clear
 }
 
 sync_icloud() {

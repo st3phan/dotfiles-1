@@ -77,6 +77,10 @@ configure_git() {
   git config --global rerere.autoupdate true
 }
 
+configure_pinboard_scripts() {
+  pinboardlinkcheck --save-token --token "${pinboard_token}"
+}
+
 install_launchagents() {
   readonly local user_launchagents_dir="${HOME}/Library/LaunchAgents"
   readonly local global_launchdaemons_dir='/Library/LaunchDaemons/'
