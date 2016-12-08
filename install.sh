@@ -10,6 +10,7 @@ run_install_dotfiles() {
 
   initial_setup
   ask_details
+  sync_icloud
   update_system
 
   install_brew

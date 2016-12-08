@@ -44,8 +44,13 @@ ask_details() {
   read -p 'Email address: ' email
   read -p 'Telephone number: ' telephone
   sudo -S defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}" <<< "${sudo_password}" 2> /dev/null
-  
+
   clear
+}
+
+sync_icloud() {
+  bold_echo 'Press the download icons to download everything.'
+  open "${HOME}/Library/Mobile Documents/com~apple~CloudDocs"
 }
 
 update_system() {
