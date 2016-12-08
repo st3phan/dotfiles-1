@@ -28,7 +28,6 @@ ask_details() {
     sudo -S -v <<< "${sudo_password}" 2> /dev/null
   done
 
-  # ask for Mac App Store password
   clear
   bold_echo 'Insert your Mac App Store details to install apps.'
   read -p 'MAS email: '
