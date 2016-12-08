@@ -29,7 +29,7 @@ ask_details() {
   done
 
   clear
-  bold_echo 'Insert your Mac App Store details to install apps.'
+  bold_echo 'Your Mac App Store details to install apps:'
   read -p 'MAS email: '
   read -s -p 'MAS password (will not be echoed): ' mas_password
 
