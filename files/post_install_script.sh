@@ -45,7 +45,7 @@ preferences_pane_anchor() { # open 'System Preferences' is specified pane and ta
 # intial message
 clear
 
-echo "This script will help configure the rest of OS X. It is divided in two parts:
+echo "This script will help configure the rest of macOS. It is divided in two parts:
 
   $(tput setaf 2)•$(tput sgr0) Commands that will change settings without needing intervetion.
   $(tput setaf 5)•$(tput sgr0) Commands that will require manual interaction.
