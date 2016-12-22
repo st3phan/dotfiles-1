@@ -61,6 +61,21 @@ install_nvim_packages() {
   nvim +PlugInstall +qall
 }
 
+fix_initial_nvim_health() {
+  # save CheckHealth pre fixes so in future installs we can identify which are no longer needed
+  nvim +CheckHealth +'w ~/Desktop/Neovim_CheckHealth_before_fixes.txt' +qall
+
+  # fixes needed last time it was checked
+  infocmp "${TERM}" | sed 's/kbs=^[hH]/kbs=\\177/' > "/tmp/${TERM}.ti"
+  tic "/tmp/${TERM}.ti"
+
+  gem install neovim
+  pip2 install neovim
+  pip3 install neovim
+
+  nvim +CheckHealth +'w ~/Desktop/Neovim_CheckHealth_after_fixes.txt' +qall
+}
+
 install_atom_packages() {
   # packages
   apm install atom-beautify highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck relative-numbers vim-mode vim-surround

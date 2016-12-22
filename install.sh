@@ -29,6 +29,7 @@ run_install_dotfiles() {
   install_verb_font
   configure_zsh
   install_nvim_packages
+  fix_initial_nvim_health
   install_atom_packages
   configure_git
   configure_pinboard_scripts
