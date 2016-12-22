@@ -5,7 +5,7 @@ install_brew() {
 }
 
 install_python() {
-  brew install python3
+  brew install python python3
   # install some eggs
   # pip3 install ...
 }
