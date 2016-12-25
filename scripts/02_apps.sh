@@ -3,7 +3,7 @@ install_brew_apps() {
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
 
-  brew install aria2 asciinema asciinema2gif cpulimit duti eye-d3 ffmpeg ghi git git-ftp haskell-stack hr httpie imagemagick jq livestreamer mas mediainfo mkvtoolnix mp4v2 onepass phantomjs pup ripgrep rmlint shellcheck subliminal svgcleaner trash tree youtube-dl z
+  brew install aria2 asciinema asciinema2gif cpulimit duti eye-d3 ffmpeg ghi git git-ftp handbrake haskell-stack hr httpie imagemagick jq livestreamer mas mediainfo mkvtoolnix mp4v2 onepass phantomjs pup ripgrep rmlint shellcheck subliminal svgcleaner trash tree youtube-dl z
 
   # install zsh_plugins
   brew install zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting
@@ -21,7 +21,7 @@ install_brew_apps() {
 
 install_cask_apps() {
   renew_sudo # to make the Caskroom on first install
-  brew cask install alfred appearin apple-events atom bartender bettertouchtool calibre dash dolphin dropbox electron-api-demos flux fog gifloopcoder gitup google-chrome handbrakecli imageoptim imitone iterm2 keka key-codes oversight p5 processing shotcut spectacle steam taskexplorer torbrowser transmission veertu-desktop whatsyoursign wwdc yacreader
+  brew cask install alfred appearin apple-events atom bartender bettertouchtool calibre dash dolphin dropbox electron-api-demos flux fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka key-codes oversight p5 processing shotcut spectacle steam taskexplorer torbrowser transmission veertu-desktop whatsyoursign wwdc yacreader
 
   brew cask install pokerstars --language='PT'
 
