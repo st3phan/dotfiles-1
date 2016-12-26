@@ -69,10 +69,6 @@ fix_initial_nvim_health() {
   infocmp "${TERM}" | sed 's/kbs=^[hH]/kbs=\\177/' > "/tmp/${TERM}.ti"
   tic "/tmp/${TERM}.ti"
 
-  gem install neovim
-  pip2 install neovim
-  pip3 install neovim
-
   nvim +CheckHealth +'w ~/Desktop/Neovim_CheckHealth_after_fixes.txt' +qall
 }
 

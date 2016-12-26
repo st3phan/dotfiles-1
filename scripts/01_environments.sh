@@ -7,13 +7,14 @@ install_brew() {
 install_python() {
   brew install python python3
   # install some eggs
-  # pip3 install ...
+  pip2 install neovim
+  pip3 install neovim
 }
 
 install_ruby() {
   brew install ruby
   # install some gems
-  gem install --no-document bundler chromedriver2-helper maid pry redcarpet rubocop site_validator video_transcoding watir-webdriver
+  gem install --no-document bundler chromedriver2-helper maid neovim pry redcarpet rubocop site_validator video_transcoding watir-webdriver
   gem install --no-document pygments.rb # needed for installing ghi with brew
 }
 
