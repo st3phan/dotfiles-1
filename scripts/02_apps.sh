@@ -45,7 +45,7 @@ install_cask_apps() {
   brew cask install font-merriweather font-merriweather-sans
   brew cask install font-fira-code font-fira-mono font-fira-sans
   # sans
-  brew cask install font-aileron font-exo2 font-lato font-open-sans font-open-sans-condensed font-signika
+  brew cask install font-aileron font-bebas-neue font-exo2 font-lato font-open-sans font-open-sans-condensed font-signika
   # serif
   brew cask install font-abril-fatface font-butler font-gentium-book-basic font-playfair-display font-playfair-display-sc
   # slab
