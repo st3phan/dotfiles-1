@@ -25,7 +25,7 @@ set_default_apps() {
   for ext in {css,js,json,md,php,pug,py,rb,sh,txt}; do duti -s com.github.atom "${ext}" all; done # code
 
   # Affinity apps (use beta versions)
-  duti -s com.seriflabs.affinitydesigner.beta afdesign all
+  for ext in {afdesign,eps}; do duti -s com.seriflabs.affinitydesigner.beta "${ext}" all; done
   duti -s com.seriflabs.affinityphoto.beta afphoto all
 }
 
