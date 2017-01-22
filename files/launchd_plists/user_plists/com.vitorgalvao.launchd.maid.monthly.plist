@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.vitorgalvao.launchd.maid.weekly</string>
+	<string>com.vitorgalvao.launchd.maid.monthly</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>sh</string>
 		<string>-c</string>
-		<string>maid clean --silent --force --rules &quot;${HOME}/.maid/weekly.rb&quot;</string>
+		<string>maid clean --silent --force --rules &quot;${HOME}/.maid/monthly.rb&quot;</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<dict>
