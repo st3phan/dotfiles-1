@@ -21,5 +21,5 @@ install_ruby() {
 install_node() {
   brew install node yarn
   # install some packages
-  yarn global --prefix "$(brew --prefix)" add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nativefier nightmare pageres-cli webcoach write-good
+  yarn global --prefix "$(brew --prefix)" add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nightmare pageres-cli webcoach write-good
 }
