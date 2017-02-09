@@ -74,7 +74,7 @@ fix_initial_nvim_health() {
 
 install_atom_packages() {
   # packages
-  apm install atom-beautify highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck linter-write-good relative-numbers vim-mode-plus vim-mode-plus-ex-mode vim-mode-plus-keymaps-for-surround
+  apm install highlight-line language-haskell language-pug language-swift linter linter-eslint linter-jsonlint linter-rubocop linter-shellcheck linter-write-good relative-numbers vim-mode-plus vim-mode-plus-ex-mode vim-mode-plus-keymaps-for-surround
 
   # themes and syntaxes
   apm install peacock-syntax
