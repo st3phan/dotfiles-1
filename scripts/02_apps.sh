@@ -40,11 +40,11 @@ install_cask_apps() {
   brew tap caskroom/fonts
   # multiple
   brew cask install font-alegreya font-alegreya-sans font-alegreya-sans-sc font-alegreya-sc
-  brew cask install font-source-code-pro font-source-sans-pro font-source-serif-pro
-  brew cask install font-pt-mono font-pt-sans font-pt-serif
-  brew cask install font-merriweather font-merriweather-sans
   brew cask install font-fira-mono font-fira-sans
   brew cask install font-input
+  brew cask install font-merriweather font-merriweather-sans
+  brew cask install font-pt-mono font-pt-sans font-pt-serif
+  brew cask install font-source-code-pro font-source-sans-pro font-source-serif-pro
   # sans
   brew cask install font-aileron font-bebas-neue font-exo2 font-lato font-open-sans font-open-sans-condensed font-signika
   # serif
