@@ -21,6 +21,7 @@ install_ruby() {
 install_node() {
   brew install node yarn
   yarn config set prefix "$(brew --prefix)"
+  yarn config set ignore-engines
   # install some packages
   yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nightmare pageres-cli webcoach write-good
 }
