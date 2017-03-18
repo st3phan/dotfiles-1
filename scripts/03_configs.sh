@@ -44,9 +44,14 @@ set_default_apps() {
   # }'
 # }
 
-install_verb_font() {
-  ditto -xk "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/verb_font/Verb_Desktop_Web.zip" '/tmp'
-  mv '/tmp/Verb_Desktop_Web/YDS Verb Complete/Verb'* "${HOME}/Library/Fonts"
+install_commercial_fonts() {
+  readonly local tmp_fonts_dir="$(mktemp -d)"
+
+  for font_zip in "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/fonts/"*; do
+    ditto -xk "${font_zip}" "${tmp_fonts_dir}"
+  done
+
+  find "${tmp_fonts_dir}" -iname '*otf' -exec mv '{}' "${HOME}/Library/Fonts" \;
 }
 
 configure_zsh() { # make zsh default shell
