@@ -8,7 +8,7 @@
 	<array>
 		<string>sh</string>
 		<string>-c</string>
-		<string>maid clean --silent --force --rules &quot;${HOME}/.maid/weekly.rb&quot;</string>
+		<string>PATH=/usr/local/bin:$PATH &amp;&amp; maid clean --silent --force --rules &quot;${HOME}/.maid/weekly.rb&quot;</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<dict>
