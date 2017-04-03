@@ -30,6 +30,7 @@ install_cask_apps() {
   brew cask install affinity-designer-beta affinity-photo-beta dash3 google-chrome-canary openemu-experimental screenflow5
 
   # drivers
+  brew tap caskroom/drivers
   renew_sudo
   brew cask install xbox360-controller-driver
 
