@@ -148,8 +148,8 @@ defaults write com.apple.dock wvous-br-corner -int 2
 info 'Disable Time Machine.'
 sudo tmutil disable
 
-info 'Use Google Public DNS servers.'
-sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
+info 'Use OpenDNS and Google Public DNS servers.'
+sudo networksetup -setdnsservers Wi-Fi 208.67.222.222 8.8.8.8 208.67.220.220 8.8.4.4
 
 info 'Stop iTunes from responding to keyboard media keys.'
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
