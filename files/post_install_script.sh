@@ -222,6 +222,7 @@ request_chrome_extension 'Google Chrome Canary' 'chromeextensionsdeveloper' 'ohm
 request_chrome_extension 'Google Chrome Canary' 'daydream' 'oajnmbophdhdobfpalhkfgahchpcoali'
 request_chrome_extension 'Google Chrome Canary' 'emmetlivestyle' 'diebikgmpmeppiilkaijjbdgciafajmg'
 request_chrome_extension 'Google Chrome Canary' 'honey' 'bmnlcjabgnpnenekpadlanbbkooimhnj'
+request_chrome_extension 'Google Chrome Canary' 'css-peeper' 'mbnbehikldjhnfehhnaidhjhoofhpehk'
 request_chrome_extension 'Google Chrome Canary' 'pesticide' 'bblbgcheenepgnnajgfpiicnbbdmmooh'
 request_chrome_extension 'Google Chrome Canary' 'selectorgadget' 'mhjhnkcfbdhnjickkkdbjoemdmbfginb'
 request_chrome_extension 'Google Chrome Canary' 'snappysnippet' 'blfngdefapoapkcdibbdkigpeaffgcil'
