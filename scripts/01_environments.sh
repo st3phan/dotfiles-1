@@ -14,7 +14,7 @@ install_python() {
 install_ruby() {
   brew install ruby
   # install some gems
-  gem install --no-document bundler chromedriver-helper maid neovim pry redcarpet rubocop site_validator video_transcoding watir
+  gem install --no-document bundler maid neovim pry redcarpet rubocop site_validator video_transcoding watir
   gem install --no-document pygments.rb # needed for installing ghi with brew
 }
 
