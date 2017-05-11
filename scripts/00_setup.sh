@@ -7,7 +7,7 @@ renew_sudo() { # helper function for when the following command needs `sudo` act
 }
 
 initial_setup() {
-  export PATH="/usr/local/bin:$PATH"
+  export PATH="/usr/local/bin:${PATH}"
 
   trap 'exit 0' SIGINT # exit cleanly if aborted with ⌃C
   caffeinate & # prevent computer from going to sleep
@@ -46,7 +46,7 @@ ask_details() {
   sudo -S defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}" <<< "${sudo_password}" 2> /dev/null
 
   clear
-  bold_echo 'Your Pinboard token for configuration of personal Pinboard script:'
+  bold_echo 'Your Pinboard token for configuration of personal Pinboard scripts:'
   read -p 'Pinboard token: ' pinboard_token
 
   clear
@@ -54,6 +54,7 @@ ask_details() {
 
 sync_icloud() {
   bold_echo 'Press the download icons to download everything.'
+  read -n0 -p '↩ to continue.'
   open "${HOME}/Library/Mobile Documents/com~apple~CloudDocs"
 }
 
