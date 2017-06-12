@@ -220,6 +220,7 @@ request_chrome_extension 'Google Chrome' 'dribbble-new-tab' 'hmhjbefkpednjogghoi
 
 request_chrome_extension 'Google Chrome Canary' 'chromeextensionsdeveloper' 'ohmmkhmmmpcnpikjeljgnaoabkaalbgc'
 request_chrome_extension 'Google Chrome Canary' 'daydream' 'oajnmbophdhdobfpalhkfgahchpcoali'
+request_chrome_extension 'Google Chrome Canary' 'emmet-review' 'epejoicbhllgiimigokgjdoijnpaphdp'
 request_chrome_extension 'Google Chrome Canary' 'emmetlivestyle' 'diebikgmpmeppiilkaijjbdgciafajmg'
 request_chrome_extension 'Google Chrome Canary' 'honey' 'bmnlcjabgnpnenekpadlanbbkooimhnj'
 request_chrome_extension 'Google Chrome Canary' 'css-peeper' 'mbnbehikldjhnfehhnaidhjhoofhpehk'
