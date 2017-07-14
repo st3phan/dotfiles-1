@@ -3,7 +3,7 @@ install_brew_apps() {
   brew install sox --with-flac --with-lame --with-libvorbis
   brew install zsh --without-etcdir
 
-  brew install aria2 asciinema asciinema2gif chromedriver cpulimit duti eye-d3 ffmpeg ghi git git-ftp handbrake haskell-stack hr httpie imagemagick jq livestreamer mas mediainfo mkvtoolnix mp4v2 onepass pup ripgrep rmlint shellcheck subliminal svgcleaner trash tree youtube-dl z
+  brew install aria2 chromedriver cpulimit duti eye-d3 ffmpeg ghi git git-ftp handbrake haskell-stack hr httpie imagemagick jq livestreamer mas mediainfo mkvtoolnix mp4v2 onepass pup ripgrep rmlint shellcheck subliminal svgcleaner trash tree youtube-dl z
 
   # install zsh_plugins
   brew install zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting
