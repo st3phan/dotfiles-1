@@ -14,7 +14,7 @@ install_python() {
 install_ruby() {
   brew install ruby
   # install some gems
-  gem install --no-document bundler maid neovim pry redcarpet rubocop video_transcoding watir
+  gem install --no-document bundler maid neovim pry redcarpet ronn rubocop video_transcoding watir
   gem install --no-document pygments.rb # needed for installing ghi with brew
 }
 
@@ -23,5 +23,5 @@ install_node() {
   yarn config set prefix "$(brew --prefix)"
   yarn config set ignore-engines
   # install some packages
-  yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nightmare pageres-cli ronn webcoach write-good
+  yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nightmare pageres-cli webcoach write-good
 }
