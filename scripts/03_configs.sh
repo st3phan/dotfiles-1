@@ -3,10 +3,6 @@ restore_settings() {
 }
 
 set_default_apps() {
-  # fix duplicates in `open with`
-  /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
-  killall Finder
-
   # open the mpv app bundle, so the system actually sees it (since it's not in a standard location)
   readonly local mpv_location="$(readlink "$(brew --prefix)/bin/mpv" | sed "s:^\.\.:$(brew --prefix):;s:bin/mpv$:mpv.app:")"
   if [[ -n "${mpv_location}" ]]; then
