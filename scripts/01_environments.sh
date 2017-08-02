@@ -23,5 +23,5 @@ install_node() {
   yarn config set prefix "$(brew --prefix)"
   yarn config set ignore-engines
   # install some packages
-  yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nightmare pageres-cli
+  yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint nightmare pageres-cli prettier
 }
