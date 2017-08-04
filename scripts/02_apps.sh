@@ -27,7 +27,7 @@ install_cask_apps() {
 
   # install alternative versions
   brew tap caskroom/versions
-  brew cask install affinity-designer-beta affinity-photo-beta dash3 google-chrome-canary openemu-experimental screenflow5
+  brew cask install affinity-designer-beta affinity-photo-beta dash3 google-chrome-canary screenflow5
 
   # drivers
   brew tap caskroom/drivers
