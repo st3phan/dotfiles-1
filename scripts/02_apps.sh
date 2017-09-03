@@ -12,6 +12,7 @@ install_brew_apps() {
   brew install laurent22/massren/massren
   brew install neovim/neovim/neovim
   brew install vitorgalvao/geotoad/geotoad
+  brew install vitorgalvao/kepubify/kepubify
 
   # install and configure tor
   brew install tor torsocks
