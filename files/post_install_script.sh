@@ -182,7 +182,7 @@ preferences_pane_anchor 'shortcutsTab' 'com.apple.preference.keyboard'
 request_preferences "Turn off Spotlight's keyboard shortcut."
 
 preferences_pane_anchor 'Dictation' 'com.apple.preference.keyboard'
-request_preferences 'Turn on enhanced dictation and download other languages.'
+request_preferences 'Download other languages.'
 
 preferences_pane 'com.apple.preference.trackpad'
 request_preferences 'ALL TABS: Set Trackpad preferences.'
