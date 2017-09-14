@@ -22,7 +22,7 @@ install_brew_apps() {
 
 install_cask_apps() {
   renew_sudo # to make the Caskroom on first install
-  brew cask install alfred apple-events atom bartender bettertouchtool blockblock dolphin dropbox electron-api-demos fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka oversight processing shotcut spectacle steam torbrowser transmission whale whatsyoursign wwdc yacreader
+  brew cask install alfred apple-events atom bartender bettertouchtool blockblock dolphin dropbox electron-api-demos fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka oversight processing shotcut spectacle steam torbrowser transmission whatsyoursign wwdc yacreader
 
   brew cask install pokerstars --language='PT'
 
@@ -66,7 +66,7 @@ install_tinyscripts() {
 }
 
 install_mas_apps() {
-  readonly local mas_apps=('1password=443987910' 'affinity-designer=824171161' 'affinity-photo=824183456' 'colorsnapper2=969418666' 'dropshelf=540404405' 'haskell=841285201' 'ia-writer=775737590' 'quiver=866773894' 'reeder=880001334' 'spark=1176895641' 'tweetbot=557168941' 'xcode=497799835')
+  readonly local mas_apps=('1password=443987910' 'affinity-designer=824171161' 'affinity-photo=824183456' 'colorsnapper2=969418666' 'dropshelf=540404405' 'haskell=841285201' 'ia-writer=775737590' 'quiver=866773894' 'reeder=880001334' 'spark=1176895641' 'trello=1278508951' 'tweetbot=557168941' 'xcode=497799835')
 
   mas signin "${mas_email}" "${mas_password}"
 
