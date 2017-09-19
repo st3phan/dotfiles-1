@@ -22,7 +22,7 @@ install_brew_apps() {
 
 install_cask_apps() {
   renew_sudo # to make the Caskroom on first install
-  brew cask install alfred apple-events atom bartender bettertouchtool blockblock dolphin dropbox electron-api-demos fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka oversight processing shotcut spectacle steam torbrowser transmission whatsyoursign wwdc yacreader
+  brew cask install alfred apple-events atom bartender bettertouchtool blockblock dolphin dropbox electron-api-demos fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka lulu oversight processing shotcut spectacle steam torbrowser transmission whatsyoursign wwdc yacreader
 
   brew cask install pokerstars --language='PT'
 
