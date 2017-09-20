@@ -61,8 +61,8 @@ install_cask_apps() {
 }
 
 install_tinyscripts() {
-  brew tap vitorgalvao/tinyscripts
-  brew install annotmd cask-repair contagem-edp fastmerge gfv gifmaker human-media-time labelcolor lovecolor pedir-gas pinboardbackup pinboardlinkcheck pinboardwaybackmachine podbook prfixmaster progressbar ringtonemaker seren trello-purge-archives
+  brew tap vitorgalvao/tiny-scripts
+  brew install annotmd cask-repair climergebutton contagem-edp fastmerge gfv gifmaker human-media-time labelcolor lovecolor pedir-gas pinboardbackup pinboardlinkcheck pinboardwaybackmachine podbook prfixmaster progressbar ringtonemaker seren trello-purge-archives
 }
 
 install_mas_apps() {
