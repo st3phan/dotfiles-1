@@ -57,12 +57,12 @@ echo "This script will help configure the rest of macOS. It is divided in two pa
 " | sed -E 's/ {2}//'
 
 # ask for 'sudo' authentication
-if sudo -n true 2> /dev/null; then
+if sudo --non-interactive true 2> /dev/null; then
   read -s -n0 -p "$(tput bold)Some commands require 'sudo', but it seems you have already authenticated. When you’re ready to continue, press ↵.$(tput sgr0)"
   echo
 else
   echo -n "$(tput bold)When you’re ready to continue, insert your password. This is done upfront for the commands that require 'sudo'.$(tput sgr0) "
-  sudo -v
+  sudo --validate
 fi
 
 # first part
