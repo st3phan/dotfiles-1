@@ -110,9 +110,6 @@ info 'Use columns view in all Finder windows by default.'
 # Four-letter codes for the other view modes: 'icnv', 'Nlsv', 'Flwv'
 defaults write com.apple.finder FXPreferredViewStyle -string 'clmv'
 
-info 'Disable the warning before emptying the Trash.'
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
-
 info 'Show the ~/Library folder, and hide Applications, Documents, Music, Pictures and Public.'
 chflags nohidden "${HOME}/Library"
 chflags hidden "${HOME}/Applications"
