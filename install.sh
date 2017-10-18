@@ -32,6 +32,7 @@ run_install_dotfiles() {
   fix_initial_nvim_health
   install_atom_packages
   configure_git
+  configure_massren
   configure_pinboard_scripts
   install_launchagents
   lower_startup_chime

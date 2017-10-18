@@ -110,6 +110,10 @@ configure_git() {
   git config --global rerere.autoupdate true
 }
 
+configure_massren() {
+  massren --config include_header 0
+}
+
 configure_pinboard_scripts() {
   pinboardlinkcheck --save-token --token "${pinboard_token}"
 }
