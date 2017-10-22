@@ -33,7 +33,7 @@ install_cask_apps() {
   # drivers
   brew tap caskroom/drivers
   renew_sudo
-  brew cask install xbox360-controller-driver
+  brew cask install xbox360-controller-driver-unofficial
 
   # prefpanes, qlplugins, colorpickers
   brew cask install betterzipql epubquicklook qlcolorcode qlimagesize qlmarkdown qlplayground qlstephen quicklook-json quicklookase
