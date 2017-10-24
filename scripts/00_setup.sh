@@ -54,7 +54,7 @@ ask_details() {
 
 sync_icloud() {
   bold_echo 'Press the download icons to download everything.'
-  read -n0 -p '↩ to continue.'
+  read -n0 -p '↵ to continue.'
   open "${HOME}/Library/Mobile Documents/com~apple~CloudDocs"
 }
 
