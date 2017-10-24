@@ -111,6 +111,7 @@ configure_git() {
 }
 
 configure_massren() {
+  massren --config editor 'nvim'
   massren --config include_header 0
 }
 
