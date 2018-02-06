@@ -148,9 +148,6 @@ sudo tmutil disable
 info 'Use OpenDNS and Google Public DNS servers.'
 sudo networksetup -setdnsservers Wi-Fi 208.67.222.222 8.8.8.8 208.67.220.220 8.8.4.4
 
-info 'Stop iTunes from responding to keyboard media keys.'
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
-
 for app in 'Dock' 'Finder'; do
   killall "${app}" &> /dev/null
 done
