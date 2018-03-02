@@ -5,10 +5,9 @@ install_brew() {
 }
 
 install_python() {
-  brew install python python3
+  brew install python
   # install some eggs
-  pip2 install neovim
-  pip3 install neovim
+  pip install neovim
 }
 
 install_ruby() {
