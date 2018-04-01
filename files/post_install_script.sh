@@ -145,8 +145,8 @@ defaults write com.apple.dock wvous-br-corner -int 2
 info 'Disable Time Machine.'
 sudo tmutil disable
 
-info 'Use OpenDNS and Google Public DNS servers.'
-sudo networksetup -setdnsservers Wi-Fi 208.67.222.222 8.8.8.8 208.67.220.220 8.8.4.4
+info 'Use Cloudflare and APNIC DNS servers.'
+sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1
 
 for app in 'Dock' 'Finder'; do
   killall "${app}" &> /dev/null
