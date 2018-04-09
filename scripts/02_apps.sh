@@ -54,9 +54,6 @@ install_cask_apps() {
   brew cask install font-bitter font-kreon
   # script
   brew cask install font-pecita
-
-  # games
-  #brew cask install gridwars noiz2sa rootage torustrooper
 }
 
 install_tinyscripts() {
