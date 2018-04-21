@@ -23,8 +23,6 @@ install_cask_apps() {
   renew_sudo # to make the Caskroom on first install
   brew cask install alfred apple-events atom bartender bettertouchtool blockblock dolphin dropbox chromedriver electron-api-demos firefox fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka lulu oversight processing shotcut spectacle steam torbrowser transmission whatsyoursign wwdc yacreader
 
-  brew cask install pokerstars --language='PT'
-
   # install alternative versions
   brew tap caskroom/versions
   brew cask install affinity-designer-beta affinity-photo-beta google-chrome-canary screenflow5
