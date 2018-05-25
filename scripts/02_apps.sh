@@ -24,11 +24,11 @@ install_cask_apps() {
   brew cask install alfred apple-events atom bartender bettertouchtool blockblock dolphin dropbox chromedriver electron-api-demos firefox fog gifloopcoder gitup google-chrome imageoptim imitone iterm2 keka lulu oversight phoenix processing shotcut steam torbrowser transmission whatsyoursign wwdc yacreader
 
   # install alternative versions
-  brew tap caskroom/versions
+  brew tap homebrew/cask-versions
   brew cask install affinity-designer-beta affinity-photo-beta google-chrome-canary screenflow5
 
   # drivers
-  brew tap caskroom/drivers
+  brew tap homebrew/cask-drivers
   renew_sudo
   brew cask install xbox360-controller-driver-unofficial
 
@@ -36,7 +36,7 @@ install_cask_apps() {
   brew cask install betterzipql epubquicklook qlcolorcode qlimagesize qlmarkdown qlplayground qlstephen quicklook-json quicklookase
 
   # fonts
-  brew tap caskroom/fonts
+  brew tap homebrew/cask-fonts
   # multiple
   brew cask install font-alegreya font-alegreya-sans font-alegreya-sans-sc font-alegreya-sc
   brew cask install font-fira-mono font-fira-sans
