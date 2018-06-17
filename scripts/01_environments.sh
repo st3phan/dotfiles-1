@@ -18,9 +18,7 @@ install_ruby() {
 }
 
 install_node() {
-  brew install node yarn
-  yarn config set prefix "$(brew --prefix)"
-  yarn config set ignore-engines
+  brew install node
   # install some packages
-  yarn global add eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint neovim nightmare pageres-cli prettier
+  npm install --global eslint eslint-plugin-immutable eslint-plugin-shopify jsonlint neovim nightmare pageres-cli prettier
 }
