@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.vitorgalvao.launchd.delete_old_reminders</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/osascript</string>
+		<string>-e</string>
+		<string>
+			set reminders_open to application &quot;Reminders&quot; is running
+			set old_reminders to (current date) - (10 * days)
+
+			tell application &quot;Reminders&quot;
+				set my_lists to name of every list
+				repeat with this_list in my_lists
+					tell list this_list to delete (every reminder whose completion date is less than old_reminders)
+				end repeat
+
+				if not reminders_open then quit
+			end tell
+		</string>
+	</array>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>20</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+		<key>Weekday</key>
+		<integer>6</integer>
+	</dict>
+</dict>
+</plist>
