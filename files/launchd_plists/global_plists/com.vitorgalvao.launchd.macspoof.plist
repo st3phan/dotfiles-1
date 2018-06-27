@@ -4,7 +4,7 @@
 <dict>
 	<key>Label</key>
 	<string>com.vitorgalvao.launchd.macspoof</string>
-        <key>LaunchOnlyOnce</key>
+	<key>LaunchOnlyOnce</key>
 	<true/>
 	<key>ProgramArguments</key>
 	<array>
