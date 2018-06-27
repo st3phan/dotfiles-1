@@ -17,6 +17,8 @@
 	</array>
 	<key>StandardOutPath</key>
 	<string>/tmp/weekly_cleanup_script.log</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/weekly_cleanup_script.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
