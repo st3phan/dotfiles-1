@@ -10,7 +10,6 @@ install_brew_apps() {
 
   # install software from other taps
   brew install neovim/neovim/neovim
-  brew install vitorgalvao/geotoad/geotoad
   brew install vitorgalvao/kepubify/kepubify
 
   # install and configure tor
