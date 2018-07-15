@@ -14,7 +14,6 @@ install_ruby() {
   brew install ruby
   # install some gems
   gem install --no-document neovim nokogiri pry redcarpet ronn rubocop video_transcoding watir
-  gem install --no-document pygments.rb # needed for installing ghi with brew
 }
 
 install_node() {
