@@ -16,9 +16,9 @@
 		<string>for script in &quot;${HOME}/Dropbox/Libraries/CleanupScripts/monthly/&quot;*; do &quot;${script}&quot;; done</string>
 	</array>
 	<key>StandardOutPath</key>
-	<string>/tmp/weekly_cleanup_script.log</string>
+	<string>/tmp/monthly_cleanup_script.log</string>
 	<key>StandardErrorPath</key>
-	<string>/tmp/weekly_cleanup_script.log</string>
+	<string>/tmp/monthly_cleanup_script.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Day</key>
