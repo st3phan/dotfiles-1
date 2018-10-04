@@ -7,7 +7,7 @@ install_brew() {
 install_python() {
   brew install python
   # install some eggs
-  pip3 install neovim
+  pip3 install instapy-cli neovim
 }
 
 install_ruby() {
